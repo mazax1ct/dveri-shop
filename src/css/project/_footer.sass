@@ -1,0 +1,136 @@
+.footer
+  padding-bottom: 45px
+
+  @media (min-width: 1200px)
+    flex: 0 0 auto
+
+  &__inner
+    margin-left: 20px
+    margin-right: 20px
+
+    @media(min-width: 768px)
+      border-top: 1px solid #d7d7d7
+      display: flex
+      flex-wrap: wrap
+
+    @media(min-width: 1500px)
+      justify-content: space-between
+      margin-left: 50px
+      margin-right: 50px
+
+  &__column
+    border-top: 1px solid #d7d7d7
+    padding-bottom: 20px
+    padding-top: 20px
+
+    @media(min-width: 768px)
+      border-top: none
+      padding-bottom: 0
+      padding-right: 30px
+      width: 25%
+
+    @media(min-width: 1200px)
+      padding-top: 50px
+
+    @media(min-width: 1500px)
+      width: auto
+
+  &__column-title
+    cursor: pointer
+    font-size: 18px
+    line-height: 1
+    margin-bottom: 0
+    position: relative
+
+    @media(min-width: 768px)
+      cursor: default
+
+    &.is-open
+      &::after
+        transform: rotate(-180deg)
+
+    &::after
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAQAAAA9Wg7gAAAAPUlEQVQI12NgWMLgyYAAHkA+gznDS4YAqEAAkG0BYhgxPGOIANLhQNoIplyH4QnDTIanQBoJqDMcB2IwAAA4kAtpuzD/xwAAAABJRU5ErkJggg==)
+      content: ''
+      height: 5px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 9px
+
+      @media(min-width: 768px)
+        display: none
+
+    & + .footer-menu
+      display: none
+      padding-top: 13px
+
+      @media(min-width: 768px)
+        display: block
+
+  &__payment
+    padding-top: 20px
+
+  &__payment-title
+    margin-bottom: 15px
+
+  &__payments
+    align-items: center
+    display: flex
+
+    img
+      &:not(:last-child)
+        margin-right: 25px
+
+.social-links
+  align-items: center
+  display: flex
+  margin-top: 15px
+
+.social-link
+  align-items: center
+  border-radius: 50%
+  border: 1px solid rgba(#1a1a1a, 0.3)
+  display: flex
+  height: 34px
+  justify-content: center
+  transition: border-color 0.3s
+  width: 34px
+
+  &:not(:last-child)
+    margin-right: 10px
+
+  &:hover,
+  &:focus
+    border-color: #1a1a1a
+
+    .social-link__icon
+      fill: #1a1a1a
+
+  &__icon
+    fill: #1a1a1a
+    height: 15px
+    transition: fill 0.3s
+    width: 15px
+
+.footer-menu
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__link
+    color: #9c9c9c
+    display: inline-block
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: none
+
+    @media(min-width: 1200px)
+      padding-top: 8px
+      padding-bottom: 8px
+
+    &:hover,
+    &:focus
+      text-decoration: underline

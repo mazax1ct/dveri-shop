@@ -1,0 +1,75 @@
+.input,
+.textarea
+  background-color: #fff
+  border: 1px solid #ceced0
+  border-radius: 5px
+  color: inherit
+  width: 100%
+
+  &:focus
+    border-color: #303032
+    box-shadow: 0 0 5px 2px #00d123
+
+  &.error
+    border-color: #ff0000
+
+    &:focus
+      border-color: #ff0000
+      box-shadow: 0 0 5px 2px #ff0000
+
+  &:disabled
+    opacity: 0.5
+
+.input
+  height: 50px
+  line-height: 50px
+  padding: 0 10px
+
+.textarea
+  height: 100px
+  padding: 10px
+  resize: none
+
+/*placeholder*/
+.input::-webkit-input-placeholder
+  color: #303032
+  opacity: 1
+
+.input::-moz-placeholder
+  color: #303032
+  opacity: 1
+
+.input:-ms-input-placeholder
+  color: #303032
+  opacity: 1
+
+.textarea::-webkit-input-placeholder
+  color: #303032
+  opacity: 1
+
+.textarea::-moz-placeholder
+  color: #303032
+  opacity: 1
+
+.textarea:-ms-input-placeholder
+  color: #303032
+  opacity: 1
+
+/*:focus placeholder*/
+.input:focus::-webkit-input-placeholder
+  opacity: 0
+
+.input:focus::-moz-placeholder
+  opacity: 0
+
+.input:focus:-ms-input-placeholder
+  opacity: 0
+
+.textarea:focus::-webkit-input-placeholder
+  opacity: 0
+
+.textarea:focus::-moz-placeholder
+  opacity: 0
+
+.textarea:focus:-ms-input-placeholder
+  opacity: 0

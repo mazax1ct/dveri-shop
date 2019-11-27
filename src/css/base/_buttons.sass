@@ -1,0 +1,31 @@
+.button
+  background-color: #00c220
+  border: none
+  border-radius: 5px
+  color: #fff
+  cursor: pointer
+  display: inline-block
+  font-family: inherit
+  font-size: inherit
+  line-height: 18px
+  padding: 11px 14px
+  text-decoration: none
+  text-align: center
+  vertical-align: middle
+
+  &:hover,
+  &:active
+    background-color: #00d123
+    color: #fff
+
+  &:focus
+    box-shadow: 0 0 5px 2px #00d123
+    outline: 1px dotted #000
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
