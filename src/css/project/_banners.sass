@@ -1,0 +1,58 @@
+.banners
+  @media(min-width: 600px)
+    display: flex
+
+.banner
+  color: #fff
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #1a1a1a
+  display: block
+  font-size: 18px
+  min-height: 210px
+  overflow: hidden
+  position: relative
+  text-decoration: none
+
+  @media(min-width: 600px)
+    width: 50%
+
+  @media(min-width: 1200px)
+    font-size: 22px
+    min-height: 300px
+
+  &__inner
+    bottom: 0
+    left: 0
+    position: absolute
+    padding-left: 20px
+    padding-right: 20px
+    padding-bottom: 20px
+    top: auto
+    width: 100%
+
+    @media(min-width: 1500px)
+      padding-bottom: 50px
+      padding-left: 50px
+      padding-right: 50px
+
+  &__title
+    display: block
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.2
+
+    @media(min-width: 1200px)
+      font-size: 35px
+      line-height: 1.1
+      margin-bottom: 15px
+
+  &__text
+    display: block
+
+a.banner
+  &:hover,
+  &:focus
+    .banner__title
+      text-decoration: underline

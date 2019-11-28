@@ -1,5 +1,39 @@
 $(document).ready(function () {
+  //слайдер на главной
+  if ($('.js-slider').length) {
+    $('.js-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      appendArrows: $('.js-slider-nav'),
+      dots: false
+    });
+  }
 
+  //проверка на пустоту поля ввода при загрузке страницы
+  $('.js-input').each(function() {
+    if($(this).val()) {
+      $(this).parent('.input-label').addClass('filled');
+    }
+  });
+
+  //проверка на пустоту поля ввода
+  $('.js-input').blur(function () {
+    if($(this).val()) {
+      $(this).parent('.input-label').addClass('filled');
+    } else {
+      $(this).parent('.input-label').removeClass('filled');
+    }
+  });
+
+  
+  $('.js-custom-scroll').each(function(index, element) {
+    new SimpleBar(element, { autoHide: false })
+  });
 });
 
 //открытие сайдбара

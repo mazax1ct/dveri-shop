@@ -1,0 +1,88 @@
+.slider
+  min-height: 250px
+  position: relative
+
+  &__slide
+    min-height: 250px
+    overflow: hidden
+    position: relative
+
+  &__image
+    display: block
+    height: 100%
+    min-height: 250px
+    left: 50%
+    max-width: initial
+    position: absolute
+    transform: translateX(-50%)
+    top: 0
+    width: auto
+
+    @media(min-width: 520px)
+      height: auto
+      left: auto
+      max-width: 100%
+      position: static
+      transform: none
+      top: auto
+      width: 100%
+
+  &__slide-inner
+    bottom: 70px
+    left: 0
+    position: absolute
+    padding-left: 20px
+    padding-right: 20px
+    top: auto
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 1500px)
+      padding-left: 170px
+      padding-right: 170px
+
+  &__title
+    color: #fff
+    font-size: 40px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 0
+    text-transform: uppercase
+
+    @media(min-width: 1500px)
+      font-size: 70px
+      line-height: 1.1
+
+  &__text
+    color: #fff
+    font-size: 18px
+
+    @media(min-width: 1500px)
+      font-size: 22px
+
+  &__nav
+    align-items: center
+    bottom: 12px
+    display: flex
+    justify-content: space-between
+    left: 0
+    position: absolute
+    padding-left: 20px
+    padding-right: 20px
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 1500px)
+      bottom: 65px
+      padding-left: 50px
+      padding-right: 50px
+
+  .slick-arrow
+    position: static
+    top: auto
+    transform: none
+
+  .slick-arrow__icon
+    fill: #fff
+    height: 22px
+    width: 22px

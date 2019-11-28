@@ -1,0 +1,164 @@
+.features
+  @media(min-width: 768px)
+    display: flex
+
+.feature
+  align-items: center
+  border-bottom: 1px solid #d7d7d7
+  display: flex
+  font-size: 18px
+  padding: 15px 20px
+
+  @media(min-width: 768px)
+    width: 33.33333%
+
+  @media(min-width: 1200px)
+    display: block
+    font-size: 22px
+
+  @media(min-width: 1500px)
+    padding: 50px
+
+  &:not(:last-child)
+    @media(min-width: 768px)
+      border-right: 1px solid #d7d7d7
+
+  &__icon-block
+    min-width: 36px
+    margin-right: 14px
+
+    @media(min-width: 1200px)
+      min-width: 56px
+      margin-bottom: 24px
+      margin-right: 0
+
+  &__icon
+    vertical-align: top
+    width: 36px
+
+    @media(min-width: 1200px)
+      width: 56px
+
+  br
+    @media(max-width: 767px)
+      display: none
+
+.features2
+  overflow-x: auto
+  margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 45px
+    padding-bottom: 55px
+
+  &__list
+    display: flex
+
+.feature2
+  border-bottom: 1px solid #d7d7d7
+  color: #9c9c9c
+  min-width: 265px
+  padding: 35px 20px
+
+  @media(min-width: 1200px)
+    border-bottom: none
+    min-width: 0
+    padding-top: 10px
+    padding-bottom: 10px
+    width: 25%
+
+  @media(min-width: 1500px)
+    padding-left: 50px
+    padding-right: 50px
+
+  &:not(:last-child)
+    border-right: 1px solid #d7d7d7
+
+  &__image
+    align-items: center
+    display: flex
+    min-height: 43px
+    margin-bottom: 10px
+
+    @media(min-width: 1500px)
+      margin-bottom: 25px
+
+  &__title
+    color: #1a1a1a
+    font-size: 18px
+    margin-bottom: 10px
+
+    @media(min-width: 1500px)
+      font-size: 22px
+      margin-bottom: 15px
+
+.features3
+  overflow-x: auto
+  padding-top: 20px
+  padding-bottom: 20px
+
+  @media(min-width: 1200px)
+    padding-top: 50px
+    padding-bottom: 0
+
+  &__list
+    display: flex
+    padding-left: 10px
+    padding-right: 10px
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+  &__list-item
+    display: flex
+    padding-right: 10px
+    padding-left: 10px
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+    &:first-child
+      .feature3
+        background-color: #133d52
+
+    &:nth-child(2)
+      .feature3
+        background-color: #c8e0d5
+        color: #133d52
+
+      .feature3__title
+        color: #133d52
+
+    &:nth-child(3)
+      .feature3
+        background-color: #e22a1b
+
+.feature3
+  color: #fff
+  min-width: 260px
+  padding: 20px
+
+  &__image
+    align-items: center
+    display: flex
+    min-height: 63px
+    margin-bottom: 10px
+
+    @media(min-width: 1500px)
+      margin-bottom: 20px
+
+  &__title
+    color: #c8e0d5
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.2
+
+    @media(min-width: 1500px)
+      font-size: 22px
+      margin-bottom: 15px
+
+    br
+      @media(max-width: 767px)
+        display: none
