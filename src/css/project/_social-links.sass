@@ -1,0 +1,37 @@
+.social-links
+  align-items: center
+  display: flex
+
+.social-link
+  align-items: center
+  border-radius: 50%
+  border: 1px solid rgba(#1a1a1a, 0.3)
+  display: flex
+  height: 34px
+  justify-content: center
+  transition: border-color 0.3s
+  width: 34px
+
+  &:not(:last-child)
+    margin-right: 10px
+
+  &:hover,
+  &:focus
+    border-color: #1a1a1a
+
+
+  &--white
+    border-color: rgba(#fff, 0.3)
+
+    &:hover,
+    &:focus
+      border-color: rgba(#fff, 1)
+
+    .social-link__icon
+      fill: #fff
+
+  &__icon
+    fill: #1a1a1a
+    height: 15px
+    transition: fill 0.3s
+    width: 15px

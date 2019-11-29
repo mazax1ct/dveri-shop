@@ -1,47 +1,104 @@
+.features2 + .banners,
+.news-block + .banners
+  @media(max-width: 1199px)
+    margin-top: 30px
+
 .banners
   @media(min-width: 600px)
     display: flex
 
+  &--indented
+    padding-top: 20px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+
+    @media(min-width: 1200px)
+      padding-top: 50px
+      padding-bottom: 50px
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+    .banners__item
+      padding: 0 20px 20px
+
+      @media(min-width: 600px)
+        padding-left: 10px
+        padding-right: 10px
+        padding-bottom: 0
+
+      @media(min-width: 1500px)
+        padding-left: 25px
+        padding-right: 25px
+
+  &__item
+    @media(min-width: 600px)
+      display: flex
+      width: 50%
+
 .banner
-  color: #fff
-  background-position: 50% 50%
-  background-repeat: no-repeat
-  background-size: cover
+  align-items: flex-end
   background-color: #1a1a1a
-  display: block
+  background-size: cover
+  background-position: 50% 50%
+  color: #fff
+  display: flex
   font-size: 18px
-  min-height: 210px
+  min-height: 190px
   overflow: hidden
   position: relative
   text-decoration: none
-
-  @media(min-width: 600px)
-    width: 50%
+  width: 100%
 
   @media(min-width: 1200px)
     font-size: 22px
     min-height: 300px
 
-  &__inner
-    bottom: 0
+  &::after
+    background-color: transparent
+    content: ''
+    height: 100%
     left: 0
     position: absolute
-    padding-left: 20px
-    padding-right: 20px
-    padding-bottom: 20px
-    top: auto
+    top: 0
+    transition: background-color 0.3s
     width: 100%
+    z-index: 1
+
+  &:hover,
+  &:focus
+    &::after
+      background-color: rgba(0,0,0,0.3)
+
+  &__inner
+    display: block
+    padding: 20px
+    position: relative
+    z-index: 2
 
     @media(min-width: 1500px)
       padding-bottom: 50px
       padding-left: 50px
       padding-right: 50px
 
+  &__icon
+    height: 32px
+    margin-bottom: 10px
+    width: 32px
+
+    @media(min-width: 1200px)
+      height: 48px
+      width: 48px
+
   &__title
     display: block
     font-size: 22px
     font-weight: 700
     line-height: 1.2
+    margin-bottom: 0
 
     @media(min-width: 1200px)
       font-size: 35px
@@ -49,7 +106,15 @@
       margin-bottom: 15px
 
   &__text
-    display: block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    min-height: 44px
+
+    .social-links
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 15px
 
 a.banner
   &:hover,

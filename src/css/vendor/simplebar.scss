@@ -165,8 +165,14 @@
 }
 
 .simplebar-track.simplebar-horizontal {
-  left: 0;
+  left: 20px;
   height: 5px;
+  width: calc(100% - 40px);
+}
+
+.container .simplebar-track.simplebar-horizontal {
+  left: 0;
+  width: 100%;
 }
 
 .simplebar-track.simplebar-horizontal::after {
@@ -182,8 +188,8 @@
 
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
   height: 100%;
-  left: 2px;
-  right: 2px;
+  left: 0;
+  right: 0;
   z-index: 2;
 }
 

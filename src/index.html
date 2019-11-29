@@ -54,13 +54,13 @@
               <h3 class="form-block__title get-coupon__title">Получить купон на скидку</h3>
               <form class="form get-coupon__form" action="/" method="post">
                 <div class="get-coupon__cell">
-                  <label class="input-label" for="">
+                  <label class="input-label" for="name">
                     <input id="name" class="js-input input" type="text" name="name" value="" />
                     <span class="input-label__label">Имя</span>
                   </label>
                 </div>
                 <div class="get-coupon__cell">
-                  <label class="input-label" for="name">
+                  <label class="input-label" for="phone">
                     <input id="phone" class="js-input js-phone-mask input" type="text" name="phone" value="" />
                     <span class="input-label__label">Телефон</span>
                   </label>
@@ -96,18 +96,267 @@
             </div>
           </div>
           <div class="banners">
-            <a class="banner" href="#" style="background-image: url('../images/content/img_2.jpg')">
-              <span class="banner__inner">
-                <span class="banner__title">Как выбрать дверь?</span>
-                <span class="banner__text">Почитайте советы наших<br> профессионалов</span>
-              </span>
-            </a>
-            <a class="banner" href="#" style="background-image: url('../images/content/img_3.jpg')">
-              <span class="banner__inner">
-                <span class="banner__title">На нашу работу<br> приятно смотреть</span>
-                <span class="banner__text">Посмотрите и убедитесь сами</span>
-              </span>
-            </a>
+            <div class="banners__item">
+              <a class="banner" href="#" style="background-image: url('/images/content/img_2.jpg')">
+                <span class="banner__inner">
+                  <span class="banner__title">Как выбрать дверь?</span>
+                  <span class="banner__text">Почитайте советы наших<br> профессионалов</span>
+                </span>
+              </a>
+            </div>
+            <div class="banners__item">
+              <a class="banner" href="#" style="background-image: url('/images/content/img_3.jpg')">
+                <span class="banner__inner">
+                  <span class="banner__title">На нашу работу<br> приятно смотреть</span>
+                  <span class="banner__text">Посмотрите и убедитесь сами</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="reviews-block">
+            <div class="container">
+              <div class="title-block">
+                <h2>Отзывы о нашей работе</h2>
+                <div class="js-reviews-nav title-block__nav"></div>
+              </div>
+              <div class="js-custom-scroll-mobile reviews">
+                <div class="js-reviews-slider reviews__list">
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение, не смотря на твой бюджет и выбор дверей. Подскажут, что лучше в той или иной ценовой категории взять.</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/content/img_6.jpg" alt="Александра"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Александра</p>
+                          <p class="review__date">05.06.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/content/img_6.jpg" alt="Александра"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Евгения</p>
+                          <p class="review__date">10.07.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение, не смотря на твой бюджет и выбор дверей. Подскажут, что лучше в той или иной ценовой категории взять.</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/icons/review__avatar-default.jpg" alt="Григорий"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Григорий</p>
+                          <p class="review__date">15.09.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение, не смотря на твой бюджет и выбор дверей. Подскажут, что лучше в той или иной ценовой категории взять.</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/content/img_6.jpg" alt="Александра"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Александра</p>
+                          <p class="review__date">05.06.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/content/img_6.jpg" alt="Александра"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Евгения</p>
+                          <p class="review__date">10.07.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__list-item">
+                    <div class="review">
+                      <div class="review__text">
+                        <p>Понравилось человеческое отношение, не смотря на твой бюджет и выбор дверей. Подскажут, что лучше в той или иной ценовой категории взять.</p>
+                      </div>
+                      <div class="review__author">
+                        <div class="review__author-avatar"><img src="images/icons/review__avatar-default.jpg" alt="Григорий"></div>
+                        <div class="review__author-about">
+                          <p class="review__author-name">Григорий</p>
+                          <p class="review__date">15.09.19</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="reviews-block__to-all"><a href="#">Все отзывы</a></p>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="container">
+              <div class="title-block">
+                <h2>Новости</h2>
+                <div class="js-news-nav title-block__nav"></div>
+              </div>
+            </div>
+            <div class="js-custom-scroll-mobile news">
+              <div class="js-news-slider news__list">
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Скидка 7%<br> на весь заказ</span>
+                    <span class="news-item__preview-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации.</span>
+                  </a>
+                </div>
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Длинный текст заголовка для проверки блока новости</span>
+                    <span class="news-item__preview-text">Короткий текст превью</span>
+                  </a>
+                </div>
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Скидка 7%<br> на весь заказ</span>
+                    <span class="news-item__preview-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации.</span>
+                  </a>
+                </div>
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Скидка 7%<br> на весь заказ</span>
+                    <span class="news-item__preview-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации.</span>
+                  </a>
+                </div>
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Скидка 7%<br> на весь заказ</span>
+                    <span class="news-item__preview-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации.</span>
+                  </a>
+                </div>
+                <div class="news__list-item">
+                  <a class="news-item" href="news-detail.html">
+                    <span class="news-item__date">07.08.19</span>
+                    <span class="news-item__title">Скидка 7%<br> на весь заказ</span>
+                    <span class="news-item__preview-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banners banners--indented">
+            <div class="banners__item">
+              <div class="banner" style="background-image: url('/images/content/img_4.jpg')">
+                <span class="banner__inner">
+                  <img class="banner__icon" src="images/icons/banner_1.svg" alt="">
+                  <p class="banner__title">Актуальные<br> новости и скидки
+                </span>
+                <div class="banner__text">
+                  В Социальных сетях
+                  <div class="social-links">
+                    <a class="social-link social-link--white" href="#" target="_blank" title="Instagram">
+                      <svg class="social-link__icon" aria-hidden="true">
+                        <use xlink:href="#inst" />
+                      </svg>
+                    </a>
+                    <a class="social-link social-link--white" href="#" target="_blank" title="Facebook">
+                      <svg class="social-link__icon" aria-hidden="true">
+                        <use xlink:href="#fb" />
+                      </svg>
+                    </a>
+                    <a class="social-link social-link--white" href="#" target="_blank" title="Vk">
+                      <svg class="social-link__icon" aria-hidden="true">
+                        <use xlink:href="#vk" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                </span>
+              </div>
+            </div>
+            <div class="banners__item">
+              <a class="banner" href="#" style="background-image: url('/images/content/img_5.jpg')">
+                <span class="banner__inner">
+                  <img class="banner__icon" src="images/icons/banner_2.svg" alt="">
+                  <span class="banner__title">Горячая<br> линия качества</span>
+                  <span class="banner__text">Если что-то пошло не так</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="map-block">
+            <div class="container">
+              <h2>10 Больших удобных магазинов</h2>
+              <p>В том числе 2 огромных гипермаркета</p>
+              <div id="map" class="map"></div>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="container">
+              <div class="info-banner" style="background-image: url('/images/content/img_7.jpg')">
+                <h2 class="info-banner__title">За 10 лет мы установили более 200 000 дверей</h2>
+                <p class="info-banner__text">Это средняя численность населения провинциального российского города.</p>
+                <div class="info-features">
+                  <div class="info-feature">
+                    <p class="info-feature__num">800</p>
+                    <p class="info-feature__text">Человек стали нашими<br> клиентами в ноябре</p>
+                  </div>
+                  <div class="info-feature">
+                    <p class="info-feature__num">89 000</p>
+                    <p class="info-feature__text">Клиентов<br> за 10 лет работы</p>
+                  </div>
+                  <div class="info-feature">
+                    <p class="info-feature__num">92%</p>
+                    <p class="info-feature__text">Клиентов готовы<br> нас рекомендовать</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-block manager-request">
+            <div class="container">
+              <div class="manager-request__inner">
+                <h3 class="manager-request__title form-block__title">Выбери на сайте и купи двери, не выходя из дома!</h3>
+                <p class="manager-request__subtitle">Вызвать менеджера на дом</p>
+                <form class="manager-request__form form" action="/" method="post">
+                  <div class="manager-request__cell">
+                    <label class="input-label" for="name_">
+                      <input id="name_" class="js-input input" type="text" name="name_" value="" />
+                      <span class="input-label__label">Имя</span>
+                    </label>
+                  </div>
+                  <div class="manager-request__cell">
+                    <label class="input-label" for="phone_">
+                      <input id="phone_" class="js-input js-phone-mask input" type="text" name="phone_" value="" />
+                      <span class="input-label__label">Телефон</span>
+                    </label>
+                  </div>
+                  <div class="form-block__button-block manager-request__cell">
+                    <button class="form-block__button button" type="submit">Вызвать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
           <div class="js-custom-scroll features3">
             <div class="features3__list">
@@ -142,6 +391,128 @@
 
 
   //= template/scripts.html
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script>
+    function initContactsMap() {
+      var stylesArray = [{
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#444444"
+          }]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [{
+            "color": "#f2f2f2"
+          }]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "simplified"
+          }]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{
+              "color": "#dedee4"
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        }
+      ];
+
+      var bounds = new google.maps.LatLngBounds();
+
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        scrollwheel: false,
+        zoomControl: true,
+        scaleControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        styles: stylesArray
+      });
+
+      var icon_default = "images/icons/default_pin.svg";
+      var icon_active = "images/icons/active_pin.svg";
+
+      var icon = {
+        url: icon_default,
+        scaledSize: new google.maps.Size(50, 50),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(25, 25)
+      };
+
+      var locations = [
+        ['<p class="location-title">Невский центр</p>', '<p class="location-address">ст. м. «Пл. Восстания», Невский пр. 114-116<br> Ежедневно с 10: 00 до 23: 00</p>', "images/content/img_8.jpg", 59.901342, 30.288938],
+        ['<p class="location-title">Фрунзенский центр</p>', '<p class="location-address">ст. м. «Пл. Восстания», Невский пр. 114-116<br> Ежедневно с 10: 00 до 23: 00</p>', "images/content/img_8.jpg", 59.859902, 30.287653]
+      ];
+
+      var infowindow = new google.maps.InfoWindow();
+
+      var marker, i;
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][3], locations[i][4]),
+          map: map,
+          draggable: false,
+          icon: icon
+        });
+
+        bounds.extend(marker.position);
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(locations[i][0], locations[i][1], locations[i][2]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+
+      map.fitBounds(bounds);
+    }
+  </script>
 </body>
 
 </html>

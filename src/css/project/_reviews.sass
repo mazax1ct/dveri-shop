@@ -1,0 +1,96 @@
+.banners + .reviews-block
+  margin-top: 50px
+
+.reviews-block
+  &__to-all
+    margin-top: 20px
+
+    @media(min-width: 1200px)
+      margin-top: 40px
+
+    a
+      color: #e22a1b
+      font-size: 16px
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+.reviews
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      display: block
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1500px)
+      margin-left: -25px
+      margin-right: -25px
+
+    .slick-track
+      display: flex
+      min-width: 100%
+
+  &__list-item
+    display: flex
+    height: auto
+
+    &:not(:last-child)
+      padding-right: 20px
+
+      @media(min-width: 1200px)
+        padding-right: 10px
+
+      @media(min-width: 1500px)
+        padding-right: 25px
+
+    @media(min-width: 1200px)
+      padding-left: 10px
+      padding-right: 10px
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+.review
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  height: 100%
+  min-width: 280px
+  padding: 20px
+  width: 280px
+
+  @media(min-width: 1200px)
+    min-width: 0
+    padding: 35px 30px 25px
+    width: 100%
+
+  &__text
+    background: url('../images/icons/quotes.svg') no-repeat 0 0 transparent
+    color: #9c9c9c
+    flex-grow: 1
+    padding-top: 50px
+    padding-bottom: 25px
+
+  &__author
+    border-top: 1px solid #d7d7d7
+    display: flex
+    padding-top: 20px
+
+  &__author-avatar
+    min-width: 50px
+    margin-right: 20px
+
+    img
+      border-radius: 50%
+
+  &__author-name
+    font-size: 18px
+    margin-bottom: 0
+
+  &__date
+    color: #9c9c9c

@@ -1,0 +1,52 @@
+.info-banner
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  color: #fff
+  display: flex
+  flex-direction: column
+  padding: 35px 20px
+
+  @media(min-width: 768px)
+    min-height: 300px    
+
+  @media(min-width: 1500px)
+    min-height: 515px
+    padding: 50px
+
+  &__title
+    margin-bottom: 15px
+
+  &__text
+    @media(min-width: 1500px)
+      font-size: 22px
+
+.info-features
+  @media(min-width: 768px)
+    display: flex
+    margin-top: auto
+
+.info-feature
+  @media(min-width: 768px)
+    padding-right: 20px
+    width: 30%
+
+  &:not(:last-child)
+    margin-bottom: 25px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__num
+    color: #c8e0d5
+    font-size: 35px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 10px
+
+    @media(min-width: 1500px)
+      font-size: 50px
+
+  &__text
+    @media(min-width: 1500px)
+      font-size: 22px
