@@ -86,6 +86,7 @@ $(document).on('click', '.js-side-bar-opener', function () {
   $('body').addClass('overflow');
   $('.side-bar').addClass('is-open');
   document.addEventListener('click', closeSideBar); //подписка на событие
+  document.addEventListener('keydown', onSideBarEscPress);
   return false;
 });
 
@@ -94,6 +95,7 @@ $(document).on('click', '.js-side-bar-close', function () {
   $('.side-bar').removeClass('is-open');
   $('body').removeClass('overflow');
   document.removeEventListener('click', closeSideBar); //отписываемся от события
+  document.removeEventListener('keydown', onSideBarEscPress);
   return false;
 });
 
@@ -103,8 +105,16 @@ function closeSideBar(evt) {
     $('.side-bar').removeClass('is-open');
     $('body').removeClass('overflow');
     document.removeEventListener('click', closeSideBar); //отписываемся от события
+    document.removeEventListener('keydown', onSideBarEscPress);
 	}
 }
+
+// функция для обработчика нажатия Esc в открытом сайдбаре
+var onSideBarEscPress = function (evt) {
+  if (evt.keyCode === 27) {
+    closeSideBar(evt);
+  }
+};
 
 //открытие поиска
 $(document).on('click', '.js-search-opener', function () {

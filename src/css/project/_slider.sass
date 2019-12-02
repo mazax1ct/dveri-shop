@@ -2,10 +2,22 @@
   min-height: 250px
   position: relative
 
+  &__list
+    display: flex
+    overflow: auto
+
+    &.slick-initialized
+      display: block
+
+      .slider__slide
+        min-width: 0
+
   &__slide
+    min-width: 100%
     min-height: 250px
     overflow: hidden
     position: relative
+    width: 100%
 
   &__image
     display: block
@@ -88,9 +100,16 @@
       padding-right: 50px
 
   .slick-arrow
+    color: #fff
     position: static
     top: auto
     transform: none
+
+    &:focus
+      outline: 1px dotted #fff
+
+  .slick-next
+    justify-content: flex-end
 
   .slick-arrow__icon
     fill: #fff

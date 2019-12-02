@@ -1,5 +1,133 @@
+.open-map-popup
+  overflow: hidden
+
+  @media(min-width: 1200px)
+    overflow: auto
+
+.map-container
+  @media(min-width: 1200px)
+    position: relative
+
 .map
   height: 280px
 
   @media(min-width: 1200px)
     height: 515px
+
+.map-popup-container
+  background-color: rgba(#000, 0.5)
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 10
+
+  @media(min-width: 1200px)
+    background: none
+    height: auto
+    left: 20px
+    position: absolute
+    transform: translateY(-50%)
+    top: 50%
+    width: 300px
+
+.map-popup
+  background-color: #fff
+  left: 50%
+  max-width: 300px
+  padding: 40px 20px 20px
+  position: absolute
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  z-index: 1
+
+  @media(min-width: 1200px)
+    left: auto
+    position: relative
+    transform: none
+    top: auto
+
+  &__close
+    align-items: center
+    background: none
+    border: none
+    box-shadow: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 40px
+    left: auto
+    padding: 0
+    position: absolute
+    right: 5px
+    top: 5px
+    width: 40px
+
+    @media(min-width: 1200px)
+      display: none
+
+  &__close-icon
+    fill: #1a1a1a
+    height: 18px
+    width: 18px
+
+  &__title
+    font-size: 22px
+    margin-bottom: 10px
+
+  &__address,
+  &__time
+    color: #9c9c9c
+
+  &__address
+    margin-bottom: 0
+
+  &__time
+    margin-bottom: 25px
+
+  &__pictures
+    position: relative
+
+  &__picture
+    display: none
+
+    &.is-active
+      display: block
+
+  &__pictures-buttons
+    align-items: center
+    bottom: 5px
+    display: none
+    justify-content: space-between
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+
+    &.is-active
+      display: flex
+
+  &__pictures-button
+    align-items: center
+    background: none
+    border: none
+    box-shadow: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 40px
+    padding: 0
+    width: 40px
+
+    &--prev
+      margin-left: 10px
+
+    &--next
+      margin-right: 10px
+
+  &__pictures-arrow-icon
+    fill: #fff
+    height: 18px
+    width: 18px
