@@ -41,13 +41,58 @@ $(document).ready(function () {
       new SimpleBar(element, { autoHide: false })
     });
   } else {
+    //слайдер каталога
+    if ($('.js-catalog-slider_1').length) {
+      $('.js-catalog-slider_1').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: $('.js-catalog-nav_1'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 5
+            }
+          },
+        ]
+      });
+    }
+
+    if ($('.js-catalog-slider_2').length) {
+      $('.js-catalog-slider_2').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: $('.js-catalog-nav_2'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 5
+            }
+          },
+        ]
+      });
+    }
+
     //слайдер отзывов
     if ($('.js-reviews-slider').length) {
       $('.js-reviews-slider').slick({
         auto: false,
         mobileFirst: true,
         slidesToShow: 3,
-        infinite: true,
+        infinite: false,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
         nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
@@ -62,7 +107,7 @@ $(document).ready(function () {
         auto: false,
         mobileFirst: true,
         slidesToShow: 3,
-        infinite: true,
+        infinite: false,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
         nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
@@ -130,4 +175,19 @@ $(document).on('click', '.js-footer-menu-opener', function () {
     $(this).next('.footer-menu').slideToggle();
     return false;
   }
+});
+
+//переключение каталога на главной
+$(document).on('click', '.js-catalog-switch', function () {
+  $('.js-catalog-switch').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.catalog-block__item').removeClass('is-active');
+  $('.catalog-block__item[data-target="'+ $(this).attr('data-href') +'"]').addClass('is-active');
+  $('.title-block__nav-inner').removeClass('is-active');
+  $('.title-block__nav-inner[data-target="'+ $(this).attr('data-href') +'"]').addClass('is-active');
+  if($('body').width() > 1199) {
+    $('.js-catalog-slider_1').slick('setPosition');
+    $('.js-catalog-slider_2').slick('setPosition');
+  }
+  return false;
 });

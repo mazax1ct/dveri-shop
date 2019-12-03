@@ -1,0 +1,118 @@
+.features + .catalog-block
+  margin-top: 40px
+
+.catalog-block
+  &__title
+    a
+      color: #ec564b
+      text-decoration: none
+
+      &.is-active,
+      &:hover,
+      &:focus
+        border-bottom: 1px dotted currentColor
+
+  &__item
+    display: none
+
+    &.is-active
+      display: block
+
+.catalog-slider
+  overflow: auto
+
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      overflow: auto
+
+    &.slick-initialized
+      display: block
+
+    .slick-track
+      display: flex
+      min-width: 100%
+
+  &__item
+    border: 1px solid #d7d7d7
+    display: flex
+    height: auto
+    min-width: 220px
+    padding: 25px 0 30px
+    width: 220px
+
+    &:not(:last-child)
+      border-right: none
+
+.catalog-item
+  color: #1a1a1a
+  display: flex
+  flex-direction: column
+  margin-left: auto
+  margin-right: auto
+  min-width: 170px
+  text-decoration: none
+  width: 170px
+
+  &__image-block,
+  &__type,
+  &__title,
+  &__marker
+    display: block
+
+  &__image-block
+    margin-bottom: 25px
+    position: relative
+    text-align: center
+
+    img
+      margin-left: auto
+      margin-right: auto
+
+  &__type
+    color: #9d9d9d
+
+  &__title
+    margin-bottom: 15px
+
+  &__marker
+    align-items: center
+    border-radius: 50%
+    bottom: 0
+    color: #fff
+    display: flex
+    font-size: 11px
+    font-weight: 700
+    height: 64px
+    justify-content: center
+    left: 0
+    position: absolute
+    transform: translate(-10px, 15px) rotate(45deg)
+    top: auto
+    width: 64px
+
+    & + &
+      left: 50px
+
+    &--hit
+      background-color: #133d52
+      z-index: 2
+
+    &--action
+      background-color: #e22a1b
+      z-index: 1
+
+  &__price-block
+    display: flex
+    justify-content: space-between
+
+  &__price
+    font-size: 23px
+
+    &--new
+      color: #ec564b
+
+    &--old
+      font-size: 15px
+      text-decoration: line-through

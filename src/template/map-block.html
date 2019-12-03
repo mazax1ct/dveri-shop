@@ -1,0 +1,38 @@
+<div class="map-block">
+  <div class="container">
+    <h2 class="map-block__title">10 Больших удобных магазинов</h2>
+    <p class="map-block__text">В том числе 2 огромных гипермаркета</p>
+    <div class="map-container">
+      <div id="map" class="map"></div>
+      <template>
+        <div class="map-popup-container">
+          <div class="map-popup">
+            <button type="button" class="map-popup__close" title="Закрыть">
+              <svg class="map-popup__close-icon" aria-hidden="true">
+                <use xlink:href="#close" />
+              </svg>
+            </button>
+            <p class="map-popup__title">Невский центр</p>
+            <p class="map-popup__address">ст. м. «Пл. Восстания», Невский пр. 114-116 Ежедневно с 10: 00 до 23: 00</p>
+            <p class="map-popup__time">Ежедневно с 10:00 до 23:00</p>
+            <div class="map-popup__pictures">
+              <div class="map-popup__pictures-list">
+                <img class="map-popup__picture" src="images/content/img_8.jpg" alt="Картинка">
+              </div>
+              <div class="map-popup__pictures-buttons">
+                <button onclick="minusSlide()" type="button" class="map-popup__pictures-button map-popup__pictures-button--prev" title="Назад">
+                  <svg class="map-popup__pictures-arrow-icon" aria-hidden="true">
+                    <use xlink:href="#slider_arrow_left" /></svg>
+                </button>
+                <button onclick="plusSlide()" type="button" class="map-popup__pictures-button map-popup__pictures-button--next" title="Вперед">
+                  <svg class="map-popup__pictures-arrow-icon" aria-hidden="true">
+                    <use xlink:href="#slider_arrow_right" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>

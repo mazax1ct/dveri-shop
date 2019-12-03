@@ -1,3 +1,9 @@
+//объявляем переменные
+var slideIndex = 1; //Индекс слайда по умолчанию
+var activeMarker; //пустая для маркера
+var icon_default = "images/icons/default_pin.svg"; //иконки
+var icon_active = "images/icons/active_pin.svg";
+
 var locations = [
   ["Невский центр", "ст. м. «Пл. Восстания», Невский пр. 114-116", "Ежедневно с 10:00 до 23:00", ['images/content/img_2.jpg', 'images/content/img_3.jpg'], 59.901342, 30.288938],
   ["Фрунзенский центр", "ст. м. «Фрунзенская», Фрунзенская пр. 9", "Ежедневно с 11:00 до 22:00", ['images/content/img_8.jpg'], 59.859902, 30.287653]
@@ -5,7 +11,7 @@ var locations = [
 
 var mapContainer = document.querySelector('.map-container'); // блок карты
 
-var mapPopup = document.querySelector('template').content.querySelector('.map-popup-container'); // выбираем шаблон для попапа
+var mapPopup = document.querySelector('template').content.querySelector('.map-popup-container'); // шаблон для попапа
 
 var body = document.querySelector('body');
 
@@ -21,30 +27,31 @@ var drawPopup = function (locations, i) {
   element.querySelector('.map-popup__address').textContent = locations[i][1];
   // пишем время
   element.querySelector('.map-popup__time').textContent = locations[i][2];
-  //перебираем картинки и вставляем
+  // блок для вставки картинок
   var picturesList = element.querySelector('.map-popup__pictures-list');
   // перебираем массив с картинками и рисуем блоки
   var photoFragment = document.createDocumentFragment();
+
   locations[i][3].forEach(function (photo, i) {
     var photoElement = document.querySelector('template').content.querySelector('.map-popup__pictures-list img').cloneNode(true);
     photoElement.src = photo;
     if(i == 0) {
-      photoElement.classList.add("is-active");
+      photoElement.classList.add("is-active"); //на первую картинку вешаем класс
     }
     photoFragment.appendChild(photoElement);
   });
+  //чистим блок с картинками и вставляем новый набор
   element.querySelector('.map-popup__pictures-list').innerHTML = '';
   element.querySelector('.map-popup__pictures-list').appendChild(photoFragment);
+
   // вставляем новую разметку в фрагмент
   fragment.appendChild(element);
   // возвращаем фрагмент
   return fragment;
 };
 
-var slideIndex = 1; //Индекс слайда по умолчанию
-
 //функция для слайдера карттнок
-function popupSlider() {
+function popupSliderNavShow() {
   //переключаем видимость блока с кнопками листалки картинок
   var buttons = document.querySelector('.map-popup__pictures-buttons');
   buttons.classList.remove("is-active");
@@ -89,13 +96,9 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("is-active");
 }
 
-var activeMarker;
-
-var icon_default = "images/icons/default_pin.svg";
-var icon_active = "images/icons/active_pin.svg";
-
 //инициализация карты и связанные с ней функции
 function initContactsMap() {
+
   //настройки вида карты
   var stylesArray = [
     {
@@ -202,6 +205,7 @@ function initContactsMap() {
         if (openedPopup !== null) {
           mapContainer.removeChild(openedPopup);
         }
+
         //рисуем и вставляем попап
         body.classList.add("open-map-popup");
         var popup = drawPopup(locations, i);
@@ -213,8 +217,10 @@ function initContactsMap() {
 
         //устанавливаем маркер по центру
         map.setCenter(marker.position);
+
         //показываем листалку картинок
-        popupSlider();
+        popupSliderNavShow();
+
         //смена иконки активного маркера
         activeMarker && activeMarker.setIcon(icon_default);
         marker.setIcon(icon_active);
@@ -226,11 +232,14 @@ function initContactsMap() {
   map.fitBounds(bounds);
 }
 
+//функция закрытия попапа карты
 function mapPopupClose() {
-  body.classList.remove("open-map-popup");
+  body.classList.remove("open-map-popup"); //удаляем класс с body
+  //удаляем попап из разметки
   var openedPopup = mapContainer.querySelector('.map-popup-container');
   if (openedPopup !== null) {
     mapContainer.removeChild(openedPopup);
   }
+  //переключаем иконку маркера
   activeMarker.setIcon(icon_default);
 }
