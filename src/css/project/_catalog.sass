@@ -4,13 +4,13 @@
 .catalog-block
   &__title
     a
+      border-bottom: 1px dotted currentColor
       color: #ec564b
       text-decoration: none
 
-      &.is-active,
-      &:hover,
-      &:focus
-        border-bottom: 1px dotted currentColor
+      &.is-active
+        border-bottom-color: transparent
+        cursor: default
 
   &__item
     display: none
