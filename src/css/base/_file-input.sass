@@ -1,0 +1,38 @@
+.file-label
+  cursor: pointer
+  display: block
+  min-height: 46px
+  position: relative
+  padding-right: 62px
+
+  &::after
+    align-items: center
+    border: 1px solid #a4bfbb
+    border-radius: 3px
+    content: '...'
+    display: flex
+    height: 100%
+    justify-content: center
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 54px
+
+  &__input
+    width: 0
+    height: 0
+    overflow: hidden
+    opacity: 0
+    position: absolute
+    z-index: 0
+
+  &__file-title
+    border-bottom: 1px solid #a4bfbb
+    color: #133d52
+    display: block
+    line-height: 18px
+    overflow: hidden
+    padding: 16px 0 12px
+    text-overflow: ellipsis
+    white-space: nowrap

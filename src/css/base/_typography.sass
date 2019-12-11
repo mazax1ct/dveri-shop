@@ -5,17 +5,16 @@ body
   line-height: 1.6
   letter-spacing: -0.2px
 
-h1,.h1,
-h2,.h2,
 h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
-  font-weight: 700
+  font-weight: 400
 
 h1,.h1,
-h2, .h2
+h2,.h2
   font-size: 22px
+  font-weight: 700
   line-height: 1.2
 
   @media(min-width: 1200px)
@@ -24,15 +23,23 @@ h2, .h2
 h1,.h1
   margin-bottom: 25px
 
-h2, .h2
+h2,.h2
   margin-bottom: 25px
 
   @media(min-width: 1200px)
     margin-bottom: 40px
 
+h3,.h3
+  font-size: 18px
+  margin-bottom: 25px
+  margin-top: 25px
+
+  @media(min-width: 1200px)
+    font-size: 22px
+    margin-top: 40px
+
 h1,.h1,
 h2,.h2,
-h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6,
@@ -64,6 +71,17 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+ol,
+ul
+  list-style-position: inside
+  padding-left: 0
+
+li
+  margin-bottom: 15px
+
+  &:last-child
+    margin-bottom: 0
 
 .color-red
   color: #e22a1b

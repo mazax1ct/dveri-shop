@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Вакансия</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/side-bar.html
+    <main class="main">
+      <div class="main__inner">
+        //= template/header.html
+        <div class="page-content">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="vacancies.html">Вакансии</a></li>
+              <li class="breadcrumbs__item">Менеджер по продажам</li>
+            </ul>
+            <div class="vacancy">
+              <div class="vacancy__info">
+                <h1>Менеджер по продажам</h1>
+                <h2 class="h3">Должностные обязанности:</h2>
+                <p>Работа в салоне-магазине по продаже межкомнатных дверей.</p>
+                <ul>
+                  <li>Работа с клиентами в торговом зале,</li>
+                  <li>Продажа межкомнатных и входных дверей,</li>
+                  <li>Выявление потребностей, обслуживание.</li>
+                </ul>
+                <h2 class="h3">Требования:</h2>
+                <p>Активность, ответственность, умение общаться, грамотная речь, вежливое общение с людьми.</p>
+                <p>Желание и умение продавать.</p>
+                <p>Умение работать в команде.</p>
+                <p>Следование стандартам компании.</p>
+                <p>Опыт в продажах межкомнатных и входных дверей желателен!</p>
+                <p>Знание 1С, Outlook, excel, word, google диск, skype.</p>
+                <h2 class="h3">Условия:</h2>
+                <p>Заработная плата: по итогам собеседования (оклад + проценты от продаж)</p>
+                <p>Занятость: сменный график</p>
+                <ul>
+                  <li>Высокий уровень заработной платы</li>
+                  <li>Официальное трудоустройство</li>
+                  <li>Карьерный рост</li>
+                  <li>Бесплатное обучение</li>
+                </ul>
+                <h2 class="h3">Что отличает нас от других компаний:</h2>
+                <ul>
+                  <li>мы – стабильная, развивающаяся компания, у нас никогда не бывает задержек зарплаты</li>
+                  <li>у нас 9 больших магазинов в Санкт-Петербурге, один гипермаркет – множество дверей можно увидеть своими глазами</li>
+                  <li>у нас удобный сайт и приложение дополненной реальности для смартфонов – мы понимаем, что интернет, это огромные перспективы для бизнеса</li>
+                </ul>
+              </div>
+              <form action="/" method="post" class="vacancy__form">
+                <p class="vacancy__form-title">Откликнуться на вакансию</p>
+                <label class="input-label" for="name">
+                  <input id="name" class="js-input input" type="text" name="name" value="" />
+                  <span class="input-label__label">Ваше имя</span>
+                </label>
+                <label class="input-label" for="email">
+                  <input id="email" class="js-input input" type="text" name="email" value="" />
+                  <span class="input-label__label">E-mail</span>
+                </label>
+                <label class="input-label" for="phone">
+                  <input id="phone" class="js-input js-phone-mask input" type="text" name="phone" value="" />
+                  <span class="input-label__label">Телефон</span>
+                </label>
+                <label class="file-label" for="file">
+                  <input id="file" class="file-label__input" type="file" name="file" value="" />
+                  <span class="file-label__file-title">Резюме</span>
+                </label>
+                <div class="vacancy__form-button-block">
+                  <button class="vacancy__form-button button" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/scripts.html
+
+</body>
+
+</html>
