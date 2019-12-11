@@ -1,5 +1,75 @@
+.main-page
+  .header
+    background-color: #f5f5f5
+
+    @media(min-width: 992px)
+      background-color: rgba(0,0,0,0.4)
+      box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
+      left: 0
+      min-height: 126px
+      position: absolute
+      top: 0
+
+    &__inner
+      @media(min-width: 992px)
+        min-height: 126px
+
+    &__phone-block
+      @media(min-width: 1600px)
+        margin-right: auto
+
+    &__phone
+      color: #fff
+
+      &:hover,
+      &:focus
+        border-bottom-color: #fff
+
+    &__recall-button
+      border: 1px solid rgba(255,255,255,0.3)
+      color: #fff
+
+      &:hover,
+      &:focus
+        background-color: rgba(255,255,255,0.3)
+
+    .logo
+      @media(min-width: 992px)
+        display: none
+
+  .main-menu
+    @media(min-width: 1600px)
+      margin-left: auto
+      margin-right: auto
+
+    &__item
+      &:not(:last-child)
+        margin-right: 20px
+
+        @media(min-width: 1200px)
+          margin-right: 20px
+
+        @media(min-width: 1400px)
+          margin-right: 30px
+
+        @media(min-width: 1600px)
+          margin-right: 45px
+
+        @media(min-width: 1900px)
+          margin-right: 70px
+
+    &__link
+      color: #fff
+
+  .cart-link
+    color: #fff
+
+    &__icon
+      @media(min-width: 992px)
+        fill: #fff
+
 .header
-  background-color: #f5f5f5
+  background-color: #fff
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
   left: 0
   min-height: 68px
@@ -9,9 +79,12 @@
   z-index: 10
 
   @media(min-width: 992px)
-    background-color: rgba(0,0,0,0.4)
-    min-height: 126px
-    position: absolute
+    background-color: #f5f5f5
+    box-shadow: none
+    min-height: 97px
+    left: auto
+    position: static
+    top: auto
 
   &__inner
     align-items: center
@@ -20,31 +93,35 @@
     min-height: 68px
 
     @media(min-width: 992px)
-      min-height: 126px
+      min-height: 97px
 
   &__phone-block
     display: none
+    line-height: 1.388
     text-align: center
 
     @media(min-width: 992px)
       display: block
 
+    @media(min-width: 1600px)
+      margin-right: 40px
+
   &__phone
     border-bottom: 1px dotted transparent
-    color: #fff
+    color: #1a1a1a
     font-size: 16px
     transition: border-color 0.3s
     text-decoration: none
 
     &:hover,
     &:focus
-      border-bottom-color: #fff
+      border-bottom-color: #1a1a1a
 
   &__recall-button
     background: none
-    border: 1px solid rgba(255,255,255,0.3)
+    border: 1px solid rgba(#1a1a1a, 0.3)
     border-radius: 16px
-    color: #fff
+    color: #1a1a1a
     cursor: pointer
     font-size: 13px
     height: 20px
@@ -54,7 +131,7 @@
 
     &:hover,
     &:focus
-      background-color: rgba(255,255,255,0.3)
+      background-color: rgba(#1a1a1a, 0.3)
 
   .logo
     left: 50%
@@ -64,7 +141,19 @@
     width: 98px
 
     @media(min-width: 992px)
-      display: none
+      left: auto
+      min-width: 80px
+      position: static
+      top: auto
+      transform: none
+      width: 80px
+
+    @media(min-width: 1350px)
+      min-width: 127px
+      width: 127px
+
+    @media(min-width: 1600px)
+      margin-right: 80px
 
 .burger
   align-items: center
@@ -91,6 +180,9 @@
   @media(min-width: 992px)
     display: block
 
+  @media(min-width: 1600px)
+    margin-right: auto
+
   &__list
     align-items: center
     display: flex
@@ -99,17 +191,17 @@
     margin: 0
     padding: 0
 
-    @media(min-width: 1200px) and (max-width: 1499px)
+    @media(min-width: 992px) and (max-width: 1499px)
       font-size: 13px
 
   &__item
     &:not(:last-child)
       margin-right: 20px
 
-      @media(min-width: 1400px)
+      @media(min-width: 1200px)
         margin-right: 30px
 
-      @media(min-width: 1600px)
+      @media(min-width: 1400px)
         margin-right: 45px
 
       @media(min-width: 1900px)
@@ -117,7 +209,7 @@
 
   &__link
     align-items: center
-    color: #fff
+    color: #1a1a1a
     display: flex
     padding-top: 15px
     padding-bottom: 15px
@@ -144,7 +236,7 @@
 
 .cart-link
   align-items: center
-  color: #fff
+  color: #1a1a1a
   display: flex
   height: 40px
   justify-content: center
@@ -156,9 +248,6 @@
     fill: #1a1a1a
     height: 20px
     width: 20px
-
-    @media(min-width: 992px)
-      fill: #fff
 
   &__count
     align-items: center

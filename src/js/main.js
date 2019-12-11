@@ -123,6 +123,29 @@ $(document).ready(function () {
         ]
       });
     }
+
+    //слайдер сертификатов
+    if ($('.js-sertificates-slider').length) {
+      $('.js-sertificates-slider').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 5,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: $('.js-sertificates-nav'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 6
+            }
+          },
+        ]
+      });
+    }
   }
 });
 

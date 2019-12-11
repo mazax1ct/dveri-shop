@@ -1,0 +1,77 @@
+.team
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1200px)
+    margin-bottom: 25px
+
+  @media(min-width: 1500px)
+    margin-left: -20px
+    margin-right: -20px
+    margin-bottom: 50px
+
+  &--employe
+    .team__item
+      @media(min-width: 992px)
+        width: 33.33333%
+
+      @media(min-width: 1200px)
+        width: 16.66666%
+
+    .person__name
+      @media(min-width: 1200px)
+        font-size: 15px
+
+      @media(min-width: 1500px)
+        font-size: 18px
+
+  &__item
+    margin-bottom: 25px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 992px)
+      width: 25%
+
+    @media(min-width: 1500px)
+      padding-left: 20px
+      padding-right: 20px
+
+.person
+  line-height: 1.388
+  margin-left: auto
+  margin-right: auto
+  max-width: 320px
+
+  &__photo
+    margin-bottom: 15px
+
+  &__name
+    font-size: 18px
+    margin-bottom: 5px
+
+    @media(min-width: 1500px)
+      font-size: 22px
+
+  &__position
+    color: #9c9c9c
+    margin-bottom: 15px
+
+  &__contacts
+    color: #9c9c9c
+    font-size: 14px
+    line-height: 20px
+
+    a
+      color: #1a1a1a
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline

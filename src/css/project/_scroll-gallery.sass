@@ -1,0 +1,53 @@
+.container
+  .scroll-gallery
+    margin-left: -20px
+    margin-right: -20px
+
+    @media(min-width: 1500px)
+      margin-left: -50px
+      margin-right: -50px
+
+    .simplebar-track.simplebar-horizontal
+      left: 20px
+      width: calc(100% - 40px)
+
+      @media(min-width: 1500px)
+        left: 50px
+        width: calc(100% - 100px)
+
+.scroll-gallery
+  margin-bottom: 40px
+  overflow-x: auto
+  padding-left: 20px
+
+  @media(min-width: 1500px)
+    margin-bottom: 90px
+    padding-left: 50px
+
+  .simplebar-track.simplebar-horizontal
+    @media(min-width: 1500px)
+      left: 50px
+      width: calc(100% - 100px)
+
+  &__list
+    display: flex
+
+  &__item
+    margin-right: 20px
+    min-width: 240px
+    width: 240px
+
+    @media(min-width: 1500px)
+      margin-right: 40px
+      min-width: 290px
+      width: 290px
+
+    img
+      transition: transform 0.3s
+      transform: scale(1)
+
+    a
+      &:hover,
+      &:focus
+        img
+          transform: scale(1.05)

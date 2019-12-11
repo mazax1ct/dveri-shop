@@ -7,6 +7,7 @@
   border-bottom: 1px solid #d7d7d7
   display: flex
   font-size: 18px
+  line-height: 1.388
   padding: 15px 20px
 
   @media(min-width: 768px)
@@ -52,6 +53,7 @@
 .feature2
   border-bottom: 1px solid #d7d7d7
   color: #9c9c9c
+  line-height: 1.388
   min-width: 265px
   padding: 35px 20px
 
@@ -132,6 +134,7 @@
 
 .feature3
   color: #fff
+  line-height: 1.388
   min-width: 260px
   padding: 20px
 
@@ -157,3 +160,50 @@
     br
       @media(max-width: 767px)
         display: none
+
+.features4
+  margin-bottom: 25px
+
+  @media(min-width: 768px)
+    border: 1px solid #bfbfbf
+    padding-top: 40px
+    padding-bottom: 20px
+    padding-left: 20px
+    padding-right: 20px
+
+  @media(min-width: 1500px)
+    margin-bottom: 80px
+    padding-top: 80px
+    padding-bottom: 60px
+    padding-left: 40px
+    padding-right: 40px
+
+  &__list
+    @media(min-width: 768px)
+      display: flex
+
+  &__list-item
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      padding-left: 20px
+      padding-right: 20px
+      width: 33.33333%
+
+    @media(min-width: 1500px)
+      padding-left: 40px
+      padding-right: 40px
+
+.feature4
+  @media(min-width: 1500px)
+    font-size: 22px
+
+  &__title
+    color: #e22a1b
+    font-size: 22px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 1500px)
+      font-size: 35px
+      margin-bottom: 20px

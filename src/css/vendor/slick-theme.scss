@@ -22,6 +22,7 @@
 
 .slick-prev.slick-disabled,
 .slick-next.slick-disabled {
+  cursor: default;
   opacity: .25;
 }
 

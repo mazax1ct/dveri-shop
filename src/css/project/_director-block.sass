@@ -1,0 +1,102 @@
+.director-block
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1500px)
+    margin-bottom: 50px
+
+  &__image
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    width: 210px
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 1500px)
+      width: 350px
+
+    img
+      border-radius: 50%
+
+  &__text
+    background: url('../images/icons/quotes.svg') no-repeat 0 0 / 49px 38px transparent
+    font-size: 16px
+    margin-bottom: 30px
+    padding-top: 55px
+
+    @media(min-width: 768px)
+      background-position: 40px 0
+      padding-left: 40px
+      width: calc(100% - 210px)
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+      padding-right: 40px
+      width: calc(100% - 510px)
+
+    @media(min-width: 1500px)
+      background-size: 61px 48px
+      background-position: 70px 0
+      padding-top: 80px
+      padding-left: 70px
+      padding-right: 70px
+      width: calc(100% - 800px)
+
+    @media(min-width: 1600px)
+      padding-right: 130px
+
+  &__position
+    color: #9c9c9c
+    font-size: 15px
+
+  &__stats
+    background-color: #c8e0d5
+    color: #133d52
+    padding: 35px 40px
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+      width: 100%
+
+    @media(min-width: 1200px)
+      flex-direction: column
+      width: 300px
+
+    @media(min-width: 1500px)
+      margin-right: -50px
+      padding: 45px 90px
+      width: 500px
+
+  &__stats-block
+    &:not(:last-child)
+      margin-bottom: 25px
+
+      @media(min-width: 768px) and (max-width: 1199px)
+        margin-bottom: 0
+
+      @media(min-width: 1500px)
+        margin-bottom: 35px
+
+  &__stats-num
+    font-size: 35px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 0
+
+    @media(min-width: 1500px)
+      font-size: 50px
+      margin-bottom: 5px
+
+  &__stats-text
+    line-height: 1.388
+
+    @media(min-width: 1500px)
+      font-size: 22px

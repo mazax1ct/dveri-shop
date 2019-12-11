@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="main-page">
+
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/side-bar.html
+    <main class="main">
+      <div class="main__inner">
+        //= template/header.html
+        <div class="page-content">
+          //= template/slider.html
+
+          //= template/features.html
+
+          <div class="catalog-block">
+            <div class="container">
+              <div class="catalog-block__title title-block">
+                <h2><a class="js-catalog-switch is-active" href="javascript:void(0)" data-href="1">Межкомнатные</a> и <a class="js-catalog-switch" href="javascript:void(0)" data-href="2">входные</a> хиты продаж</h2>
+                <div class="title-block__nav">
+                  <div class="js-catalog-nav_1 title-block__nav-inner is-active" data-target="1"></div>
+                  <div class="js-catalog-nav_2 title-block__nav-inner" data-target="2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-block__item is-active" data-target="1">
+              //= template/catalog-list.html
+            </div>
+            <div class="catalog-block__item" data-target="2">
+              //= template/catalog-list2.html
+            </div>
+          </div>
+
+          //= template/get-coupon.html
+
+          //= template/features2.html
+
+          //= template/banners.html
+
+          //= template/reviews-block.html
+
+          //= template/news-block.html
+
+          //= template/banners2.html
+
+          //= template/map-block.html
+
+          //= template/info-block.html
+
+          //= template/manager-request.html
+
+          //= template/features3.html
+        </div>
+      </div>
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/scripts.html
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+
+</html>

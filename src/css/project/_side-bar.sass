@@ -10,9 +10,204 @@
     @media(min-width: 1200px)
       width: 310px
 
-  .side-bar__inner
-    @media(min-width: 1200px) and (min-height: 950px)
-      padding-top: 35px
+    &__inner
+      @media(min-width: 1200px)
+        padding-top: 20px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        padding-top: 35px
+
+    &__logo
+      @media(min-width: 1200px)
+        display: block
+        min-height: 47px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 15px
+        width: 127px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        margin-bottom: 30px
+
+  .search-bar
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+    margin-left: 20px
+    margin-right: 20px
+    margin-bottom: 13px
+    position: relative
+
+    @media(min-width: 992px) and (max-width: 1199px)
+      border-top: none
+      border-bottom: none
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 0
+
+    &.is-open
+      @media(min-width: 992px) and (max-width: 1199px)
+        .search-bar__label
+          opacity: 1
+          width: 260px
+
+    &__label
+      display: block
+
+      @media(min-width: 992px) and (max-width: 1199px)
+        height: 100%
+        left: 100%
+        opacity: 0
+        overflow: hidden
+        position: absolute
+        top: 0
+        transition: all 0.3s
+        width: 0
+
+      @media(min-width: 1200px)
+        left: auto
+        opacity: 1
+        position: static
+        top: auto
+        width: 100%
+
+    &__input
+      border: none
+      border-radius: 0
+      box-shadow: none
+      background-color: #fff
+      font-size: 14px
+      height: 46px
+      line-height: 20px
+      padding: 13px 10px 13px 50px
+      width: 100%
+
+      @media(min-width: 992px) and (max-width: 1199px)
+        padding-left: 10px
+
+      @media(min-width: 1200px)
+        padding-left: 60px
+
+      &::-webkit-input-placeholder
+        color: #9c9c9c
+        opacity: 1
+
+      &::-moz-placeholder
+        color: #9c9c9c
+        opacity: 1
+
+      &:-ms-input-placeholder
+        color: #9c9c9c
+        opacity: 1
+
+    &__button
+      align-items: center
+      background-color: #fff
+      border: none
+      cursor: pointer
+      display: flex
+      justify-content: flex-end
+      height: 44px
+      left: 0
+      padding: 0 16px
+      position: absolute
+      top: 1px
+      width: 50px
+
+      @media(min-width: 992px) and (max-width: 1199px)
+        position: relative
+        top: 0
+        z-index: 1
+
+      @media(min-width: 1200px)
+        cursor: default
+        width: 60px
+
+    &__button-icon
+      fill: #1a1a1a
+      height: 18px
+      width: 18px
+
+  .catalog-menu
+    &__link
+      @media(min-width: 992px) and (max-width: 1199px)
+        padding-left: 10px
+
+      @media(min-width: 1200px) and (min-height: 700px)
+        padding-top: 10px
+        padding-bottom: 10px
+
+      @media(min-width: 1200px) and (min-height: 850px)
+        padding-top: 13px
+        padding-bottom: 13px
+
+    &__link-text
+      @media(min-width: 1200px)
+        background-color: transparent
+        opacity: 1
+        position: static
+        padding-left: 0
+        width: auto
+
+    &__icon-block
+      @media(min-width: 1200px) and (min-height: 800px)
+        height: 36px
+        min-width: 36px
+        width: 36px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        height: 43px
+        min-width: 43px
+        width: 43px
+
+    &__icon
+      @media(min-width: 1200px) and (min-height: 800px)
+        height: 36px
+        width: 36px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        height: 43px
+        width: 43px
+
+  .service-menu
+    &__link
+      @media(min-width: 992px) and (max-width: 1199px)
+        padding-left: 10px
+
+      @media(min-width: 1200px)
+        padding-top: 10px
+        padding-bottom: 10px
+
+      @media(min-width: 1200px)
+        padding-top: 13px
+        padding-bottom: 13px
+
+    &__link-text
+      @media(min-width: 1200px)
+        background-color: transparent
+        opacity: 1
+        position: static
+        padding-left: 0
+        width: auto
+
+    &__icon-block
+      @media(min-width: 1200px) and (min-height: 800px)
+        height: 36px
+        min-width: 36px
+        width: 36px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        height: 43px
+        min-width: 43px
+        width: 43px
+
+    &__icon
+      @media(min-width: 1200px) and (min-height: 800px)
+        height: 36px
+        width: 36px
+
+      @media(min-width: 1200px) and (min-height: 950px)
+        height: 43px
+        width: 43px
 
 .side-bar
   background-color: #fff
@@ -58,9 +253,6 @@
       padding-top: 0
       padding-bottom: 0
 
-    @media(min-width: 1200px)
-      padding-top: 20px
-
   &__close
     align-items: center
     background-color: #fff
@@ -95,21 +287,11 @@
   &__phone
     color: #1a1a1a
     font-size: 16px
+    line-height: 1.388
     text-decoration: none
 
   &__logo
     display: none
-
-    @media(min-width: 1200px)
-      display: block
-      min-height: 47px
-      margin-left: auto
-      margin-right: auto
-      margin-bottom: 15px
-      width: 127px
-
-    @media(min-width: 1200px) and (min-height: 950px)
-      margin-bottom: 30px
 
   &__nav
     display: flex
@@ -124,7 +306,7 @@
   margin-bottom: 13px
   position: relative
 
-  @media(min-width: 992px) and (max-width: 1199px)
+  @media(min-width: 992px)
     border-top: none
     border-bottom: none
     margin-left: 0
@@ -132,7 +314,7 @@
     margin-bottom: 0
 
   &.is-open
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       .search-bar__label
         opacity: 1
         width: 260px
@@ -140,7 +322,7 @@
   &__label
     display: block
 
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       height: 100%
       left: 100%
       opacity: 0
@@ -161,11 +343,8 @@
     padding: 13px 10px 13px 50px
     width: 100%
 
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       padding-left: 10px
-
-    @media(min-width: 1200px)
-      padding-left: 60px
 
     &::-webkit-input-placeholder
       color: #9c9c9c
@@ -193,13 +372,10 @@
     top: 1px
     width: 50px
 
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       position: relative
       top: 0
       z-index: 1
-
-    @media(min-width: 1200px)
-      width: 60px
 
   &__button-icon
     fill: #1a1a1a
@@ -233,16 +409,8 @@
     transition: background-color 0.3s, color 0.3s
     white-space: nowrap
 
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       padding-left: 10px
-
-    @media(min-width: 1200px) and (min-height: 700px)
-      padding-top: 10px
-      padding-bottom: 10px
-
-    @media(min-width: 1200px) and (min-height: 900px)
-      padding-top: 13px
-      padding-bottom: 13px
 
     &:hover,
     &:focus
@@ -261,7 +429,7 @@
         width: 260px
 
   &__link-text
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       align-items: center
       background-color: #e22a1b
       display: flex
@@ -281,16 +449,6 @@
     margin-right: 28px
     width: 30px
 
-    @media(min-width: 1200px) and (min-height: 800px)
-      height: 36px
-      min-width: 36px
-      width: 36px
-
-    @media(min-width: 1200px) and (min-height: 950px)
-      height: 43px
-      min-width: 43px
-      width: 43px
-
   &__icon
     fill: none
     height: 30px
@@ -300,14 +458,6 @@
     stroke-linejoin: round
     transition: stroke 0.3s, fill 0.3s
     width: 30px
-
-    @media(min-width: 1200px) and (min-height: 800px)
-      height: 36px
-      width: 36px
-
-    @media(min-width: 1200px) and (min-height: 950px)
-      height: 43px
-      width: 43px
 
     &.stroke-fill-revert
       fill: #1a1a1a
@@ -354,16 +504,8 @@
     transition: background-color 0.3s, color 0.3s
     white-space: nowrap
 
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       padding-left: 10px
-
-    @media(min-width: 1200px) and (min-height: 700px)
-      padding-top: 10px
-      padding-bottom: 10px
-
-    @media(min-width: 1200px) and (min-height: 900px)
-      padding-top: 13px
-      padding-bottom: 13px
 
     &:hover,
     &:focus
@@ -382,7 +524,7 @@
         width: 260px
 
   &__link-text
-    @media(min-width: 992px) and (max-width: 1199px)
+    @media(min-width: 992px)
       align-items: center
       background-color: #e22a1b
       display: flex
@@ -402,16 +544,6 @@
     margin-right: 28px
     width: 30px
 
-    @media(min-width: 1200px) and (min-height: 800px)
-      height: 36px
-      min-width: 36px
-      width: 36px
-
-    @media(min-width: 1200px) and (min-height: 950px)
-      height: 43px
-      min-width: 43px
-      width: 43px
-
   &__icon
     fill: none
     height: 30px
@@ -421,14 +553,6 @@
     stroke-linejoin: round
     transition: stroke 0.3s, fill 0.3s
     width: 30px
-
-    @media(min-width: 1200px) and (min-height: 800px)
-      height: 36px
-      width: 36px
-
-    @media(min-width: 1200px) and (min-height: 950px)
-      height: 43px
-      width: 43px
 
     &.stroke-fill-revert
       fill: #1a1a1a

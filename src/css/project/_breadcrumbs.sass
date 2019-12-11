@@ -1,0 +1,26 @@
+.breadcrumbs
+  color: #9c9c9c
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+
+  &__item
+    align-items: center
+    display: flex
+    margin-right: 15px
+
+    &:not(:last-child)
+      &::after
+        content: '/'
+        margin-left: 15px
+
+  &__link
+    color: #9c9c9c
+    display: inline-flex
+    padding-top: 10px
+    padding-bottom: 10px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline

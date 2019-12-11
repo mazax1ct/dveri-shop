@@ -1,0 +1,64 @@
+.container
+  .scroll-sertificates
+    margin-left: -20px
+    margin-right: -20px
+
+    @media(min-width: 1500px)
+      margin-left: -50px
+      margin-right: -50px
+
+    .simplebar-track.simplebar-horizontal
+      left: 20px
+      width: calc(100% - 40px)
+
+.scroll-sertificates
+  margin-bottom: 40px
+  overflow-x: auto
+
+  @media(min-width: 1500px)
+    margin-bottom: 60px
+
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      overflow: auto
+
+    &.slick-initialized
+      display: block
+
+    .slick-track
+      display: flex
+      min-width: 100%
+
+  &__item
+    border: 1px solid #d7d7d7
+    min-width: 220px
+    padding: 20px
+    width: 220px
+
+    &:not(:last-child)
+      border-right: none
+
+    @media(min-width: 1200px)
+      min-width: 0
+      width: auto
+
+    @media(min-width: 1500px)
+      padding: 30px
+
+    a
+      display: block
+      max-width: 202px
+      margin-left: auto
+      margin-right: auto
+
+  img
+    transition: transform 0.3s
+    transform: scale(1)
+
+  a
+    &:hover,
+    &:focus
+      img
+        transform: scale(1.05)
