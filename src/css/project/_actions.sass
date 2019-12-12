@@ -1,0 +1,163 @@
+.action-big
+  background-color: #1a1a1a
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  color: #fff
+  display: block
+  font-size: 18px
+  line-height: 1.388
+  margin-bottom: 20px
+  overflow: hidden
+  position: relative
+  text-decoration: none
+  width: 100%
+
+  @media(min-width: 1200px)
+    min-height: 400px
+    margin-bottom: 40px
+
+  @media(min-width: 1500px)
+    min-height: 620px
+    margin-bottom: 50px
+
+  &:hover,
+  &:focus
+    .action-big__title
+      text-decoration: underline
+
+    .action-big__button
+      background-color: darken(#e22a1b, 10%)
+      color: #f5f5f5
+
+  &__container,
+  &__title,
+  &__preview-text
+    display: block
+
+  &__container
+    align-items: flex-start
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    min-height: 280px
+    padding: 20px
+
+    @media(min-width: 680px)
+      min-height: 400px
+
+    @media(min-width: 1200px)
+      min-height: 620px
+
+    @media(min-width: 1500px)
+      padding: 50px
+
+  &__title
+    color: #f5f5f5
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      font-size: 35px
+
+  &__preview-text
+    letter-spacing: -0.5px
+    margin-bottom: 20px
+    max-width: 650px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+      margin-bottom: 35px
+
+  &__button
+    min-width: 186px
+
+.actions-list
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1500px)
+    margin-left: -25px
+    margin-right: -25px
+
+  &__item
+    display: flex
+    margin-bottom: 20px
+
+    @media(min-width: 1500px)
+      margin-bottom: 50px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+.action
+  background-color: #fff
+  color: #1a1a1a
+  display: flex
+  flex-direction: column
+  height: auto
+  line-height: 1.388
+  padding: 20px
+  text-decoration: none
+  width: 100%
+
+  @media(min-width: 992px)
+    align-items: center
+    flex-direction: row
+
+  &:hover,
+  &:focus
+    .action__title
+      text-decoration: underline
+
+    .action__image
+      transform: scale(1.02)
+
+  &__image-block
+    margin-bottom: 20px
+    text-align: center
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      min-width: 50%
+      width: 50%
+
+    @media(min-width: 1500px)
+      min-width: 330px
+      width: 330px
+
+  &__image
+    transition: transform 0.3s
+    transform: scale(1)
+
+  &__info
+    @media(min-width: 992px)
+      padding-left: 20px
+
+    @media(min-width: 1500px)
+      padding-left: 40px
+
+  &__title
+    display: block
+    font-size: 18px
+    line-height: 1.2
+    margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+      margin-bottom: 20px
+
+  &__preview-text
+    color: #9c9c9c
+    display: block

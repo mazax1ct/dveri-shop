@@ -1,8 +1,11 @@
 .breadcrumbs
   color: #9c9c9c
-  display: flex
+  display: none
   flex-wrap: wrap
   list-style: none
+
+  @media(min-width: 992px)
+    display: flex
 
   &__item
     align-items: center

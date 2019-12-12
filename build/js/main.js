@@ -147,6 +147,34 @@ $(document).ready(function () {
       });
     }
   }
+
+  //слайдер картинок на деталке товара
+  if ($('.js-product-images').length) {
+    $('.js-product-images').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.js-product-images-nav',
+      dots: false,
+      auto: false,
+      mobileFirst: true
+    });
+
+    $('.js-product-images-nav').slick({
+      infinite: false,
+      vertical: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-product-images',
+      dots: false,
+      focusOnSelect: true,
+      mobileFirst: true,
+      prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_down"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_up"/></svg></button>'
+    });
+  }
 });
 
 //открытие сайдбара

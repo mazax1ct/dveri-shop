@@ -1,0 +1,158 @@
+.product-detail
+
+.product-detail2
+
+  &__title-block
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+    h1
+      @media(min-width: 600px)
+        margin-right: 30px
+        margin-bottom: 0
+
+    .button
+      @media(max-width: 599px)
+        display: none
+
+  &__inner
+    @media(min-width: 992px)
+      display: flex
+
+  &__images
+    @media(min-width: 992px)
+      max-width: 520px
+      min-width: 520px
+      width: 43.23%
+
+  &__description
+    @media(min-width: 992px)
+      max-width: 620px
+
+    @media(min-width: 1500px)
+      padding-left: 20px
+
+.product-images
+  max-width: 520px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 40px
+
+  .button
+    max-width: 280px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+
+    @media(min-width: 600px)
+      display: none
+
+  &__inner
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      margin-bottom: 0
+
+  &__nav
+    display: flex
+    min-width: 30px
+    padding-top: 50px
+    padding-bottom: 50px
+    position: relative
+    width: 30px
+
+    @media(min-width: 600px)
+      min-width: 50px
+      width: 50px
+
+    @media(min-width: 1200px)
+      min-width: 70px
+      padding-top: 75px
+      padding-bottom: 75px
+      width: 70px
+
+    .slick-slider
+      align-items: center
+      display: flex
+      height: auto
+
+    .slick-slide
+      cursor: pointer
+
+      img
+        transition: transform 0.3s
+        transform: scale(1)
+
+    .slick-current
+      img
+        transform: scale(1.05)
+
+    .slick-arrow
+      height: 30px
+      justify-content: center
+      left: 50%
+      transform: translateX(-50%)
+      width: 30px
+
+      @media(min-width: 600px)
+        height: 50px
+        width: 50px
+
+      @media(min-width: 1500px)
+        height: 70px
+        width: 70px
+
+      &__icon
+        fill: #1a1a1a
+        height: 22px
+        width: 22px
+
+    .slick-next
+      align-items: flex-start
+      top: -50px
+
+      @media(min-width: 1500px)
+        top: -70px
+
+    .slick-prev
+      align-items: flex-end
+      bottom: -50px
+      top: auto
+
+      @media(min-width: 1200px)
+        bottom: -70px
+
+  &__nav-item
+    padding-top: 10px
+    padding-bottom: 10px
+
+    @media(min-width: 600px)
+      padding-top: 20px
+      padding-bottom: 20px
+
+    img
+      margin-left: auto
+      margin-right: auto
+
+  &__slider
+    max-width: 430px
+    padding-left: 40px
+    padding-right: 40px
+    width: calc(100% - 30px)
+
+    @media(min-width: 600px)
+      width: calc(100% - 50px)
+
+    @media(min-width: 992px)
+      padding-left: 45px
+      padding-right: 45px
+
+    @media(min-width: 1200px)
+      width: calc(100% - 70px)
