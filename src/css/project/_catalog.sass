@@ -33,6 +33,7 @@
     .slick-track
       display: flex
       min-width: 100%
+      padding-bottom: 1px
 
   &__item
     border: 1px solid #d7d7d7
@@ -55,6 +56,14 @@
   text-decoration: none
   width: 170px
 
+  &:hover,
+  &:focus
+    .catalog-item__title
+      text-decoration: underline
+      
+    img
+      transform: scale(1.02)
+
   &__image-block,
   &__type,
   &__title,
@@ -69,6 +78,8 @@
     img
       margin-left: auto
       margin-right: auto
+      transition: transform 0.3s
+      transform: scale(1)
 
   &__type
     color: #9d9d9d

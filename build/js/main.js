@@ -175,6 +175,55 @@ $(document).ready(function () {
       nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_up"/></svg></button>'
     });
   }
+
+  //слайдер цены
+  if ($('.js-price-slider').length) {
+    var min = 4900;
+    var max = 28000;
+    $(".js-price-slider").ionRangeSlider({
+      skin: "round",
+      type: "double",
+      min: min,
+      max: max,
+      from: min,
+      to: max,
+      grid: false,
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function (data) {
+        $('#min').val(data.from);
+        $('#max').val(data.to);
+      }
+    });
+
+    var price_range = $(".js-price-slider").data("ionRangeSlider");
+
+    $('#min, #max').on('change', function() {
+      price_range.update({
+        from: $('#min').val(),
+          to: $('#max').val()
+      });
+
+      if($('#min').val() < min ) {
+        price_range.update({
+          from: $('#min').val(min)
+        });
+      }
+
+      if($('#max').val() < min ) {
+        price_range.update({
+          from: $('#max').val(min)
+        });
+      }
+
+      if($('#max').val() > max ) {
+        price_range.update({
+          from: $('#max').val(max)
+        });
+      }
+    });
+  }
+
 });
 
 //открытие сайдбара
@@ -240,5 +289,20 @@ $(document).on('click', '.js-catalog-switch', function () {
     $('.js-catalog-slider_1').slick('setPosition');
     $('.js-catalog-slider_2').slick('setPosition');
   }
+  return false;
+});
+
+//открытие/закрытие секции фильтра
+$(document).on('click', '.js-filter-section-opener', function () {
+  $(this).toggleClass('is-open');
+  $(this).next('.filter__section-inner').slideToggle(300, function() {
+    $(this).toggleClass('is-open');
+  });
+  return false;
+});
+
+$(document).on('click', '.js-filter-opener', function () {
+  $('body').addClass('overflow');
+  $('.filter').addClass('is-open');
   return false;
 });

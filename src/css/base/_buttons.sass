@@ -14,7 +14,7 @@
   padding: 11px 14px
   text-decoration: none
   text-align: center
-  transition: background-color 0.3s
+  transition: background-color 0.3s, color 0.3s
   vertical-align: middle
 
   &:hover,
@@ -33,6 +33,39 @@
 
     &:focus
       outline: none
+
+  &--type_2
+    background-color: #133d52
+    border: 1px solid #1a1a1a
+    font-size: 15px
+    height: 38px
+
+    &:hover,
+    &:active
+      background-color: darken(#133d52, 10%)
+      color: #fff
+
+    &:focus
+      box-shadow: 0 0 5px 2px #133d52
+
+  &--type_3
+    background-color: transparent
+    border: 1px solid #1a1a1a
+    color: #133d52
+    font-size: 15px
+    height: 38px
+
+    &:hover,
+    &:active
+      background-color: #133d52
+      color: #fff
+
+    &:focus
+      box-shadow: 0 0 5px 2px #133d52
+
+  &--big
+    font-size: 18px
+    height: 50px
 
 a.button
   align-items: center

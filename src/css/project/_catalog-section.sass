@@ -1,0 +1,316 @@
+.catalog-section
+  &__title-block
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+      margin-bottom: 20px
+
+    @media(min-width: 768px)
+      align-items: center
+      margin-bottom: 15px
+
+    h1
+      @media(min-width: 600px)
+        margin-bottom: 0
+
+    .button
+      min-width: 235px
+
+      @media(min-width: 600px)
+        margin-left: 30px
+
+      @media(max-width: 599px)
+        display: none
+
+  &__top-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @media(min-width: 992px)
+      margin-bottom: 20px
+
+    .filter-opener,
+    .select
+      width: calc(50% - 5px)
+
+    .select
+      border: 1px solid #1a1a1a
+      border-radius: 4px
+      display: flex
+      justify-content: center
+      font-size: 10px
+      text-align: center
+
+      @media(min-width: 375px)
+        font-size: 12px
+
+      @media(min-width: 992px)
+        border: none
+        font-size: 15px
+        margin-left: 30px
+        width: 180px
+
+      select
+        width: auto
+
+    .tags
+      margin-top: 15px
+      width: 100%
+
+      @media(min-width: 992px)
+        margin-top: 0
+        order: -1
+        width: calc(100% - 210px)
+
+  &__catalog
+    @media(min-width: 768px)
+      display: flex
+
+  &__filter
+    @media(min-width: 992px)
+      min-width: 290px
+      width: 290px
+
+    @media(min-width: 1500px)
+      min-width: 340px
+      width: 340px
+
+  &__list
+    flex-grow: 1
+
+    @media(min-width: 768px)
+      padding-top: 55px
+
+    .banners
+      @media(max-width: 991px)
+        margin-left: -40px
+        margin-right: -40px
+
+      @media(min-width: 992px)
+        margin-left: -20px
+        margin-right: -20px
+
+      @media(min-width: 1200px)
+        padding-top: 0
+        padding-bottom: 0
+
+      @media(min-width: 1500px)
+        margin-left: -50px
+        margin-right: -50px
+
+  &__banner
+    margin-top: 40px
+
+    @media(max-width: 991px)
+      display: none
+
+  &__text
+    margin-top: 45px
+    margin-bottom: 45px
+
+    @media(min-width: 1500px)
+      margin-top: 70px
+
+.price-inputs
+  display: flex
+  justify-content: space-between
+  margin-left: -10px
+  margin-right: -10px
+  margin-bottom: -15px
+
+  &__item
+    padding-left: 10px
+    padding-right: 10px
+    position: relative
+
+  &__item-title
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 10' height='10px' width='9px'%3E%3Cpath fill='%239c9c9c' d='M0.2,8.4h1.6v1.4c0,0.1,0,0.1,0.1,0.2C1.9,10,2,10,2,10h1.2c0.1,0,0.1,0,0.2-0.1c0,0,0.1-0.1,0.1-0.2V8.4H7c0.1,0,0.1,0,0.2-0.1c0,0,0.1-0.1,0.1-0.2V7.3c0-0.1,0-0.1-0.1-0.2C7.1,7.1,7,7,7,7H3.4V6.2h2.4c0.9,0,1.7-0.3,2.3-0.9C8.7,4.8,9,4,9,3.1c0-0.9-0.3-1.7-0.9-2.2C7.5,0.3,6.8,0,5.8,0H2C2,0,1.9,0,1.9,0.1c0,0-0.1,0.1-0.1,0.2v4.5H0.2c-0.1,0-0.1,0-0.2,0.1C0,4.8,0,4.9,0,4.9V6C0,6,0,6.1,0.1,6.1c0,0,0.1,0.1,0.2,0.1h1.6V7H0.2c-0.1,0-0.1,0-0.2,0.1C0,7.2,0,7.2,0,7.3v0.9c0,0.1,0,0.1,0.1,0.2C0.1,8.4,0.2,8.4,0.2,8.4z M3.4,1.5h2.3c0.5,0,0.9,0.1,1.2,0.4c0.3,0.3,0.5,0.7,0.5,1.2c0,0.5-0.2,0.9-0.5,1.2C6.6,4.5,6.2,4.7,5.7,4.7H3.4V1.5z'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 0 50%
+    color: #9c9c9c
+    left: 20px
+    padding-left: 14px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+.price-input
+  background-color: #fff
+  border: 1px solid #fff
+  color: #9c9c9c
+  height: 38px
+  padding: 0 10px 0 50px
+  text-align: right
+  width: 100%
+
+  &:focus
+    border-color: #ccc
+
+.tags
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  font-size: 13px
+
+  &__title
+    margin-bottom: 8px
+    margin-right: 20px
+
+.tag
+  border: 1px solid #ababab
+  border-radius: 10px
+  color: #1a1a1a
+  margin-right: 8px
+  margin-bottom: 8px
+  padding: 0 10px
+  text-decoration: none
+
+.filter-opener
+  @media(min-width: 992px)
+    display: none
+
+.filter
+  display: none
+
+  @media(min-width: 992px)
+    display: block
+    width: 270px
+
+  &.is-open
+    display: block
+
+    @media(max-width: 991px)
+      background-color: #f5f5f5
+      height: 100%
+      left: 0
+      overflow-y: auto
+      padding-top: 20px
+      padding-left: 20px
+      padding-right: 20px
+      position: fixed
+      top: 0
+      width: 100%
+      z-index: 10
+
+  &__close
+    align-items: center
+    background: none
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 10px
+    top: 19px
+    width: 40px
+
+    @media(min-width: 992px)
+      display: none
+
+  &__close-icon
+    fill: #1a1a1a
+    height: 16px
+    width: 16px
+
+  &__inner
+    @media(max-width: 991px)
+      padding-bottom: 40px
+
+  &__title
+    font-size: 22px
+    margin-bottom: 20px
+
+  &__section
+    margin-bottom: 10px
+
+  &__section-inner
+    display: none
+    padding-top: 20px
+
+    &.is-open
+      display: block
+
+  &__section-title
+    align-items: center
+    border-bottom: 1px solid #d3d3d3
+    cursor: pointer
+    display: flex
+    height: 42px
+    margin-bottom: 0
+    position: relative
+
+    &.is-open
+      &::after
+        transform: translateY(-50%) rotate(180deg)
+
+    &::after
+      background: url('../images/icons/small-arrow-down.png') no-repeat 0 0 transparent
+      content: ''
+      height: 5px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 9px
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+
+    .button
+      width: calc(50% - 10px)
+
+.catalog-list
+  display: flex
+  flex-wrap: wrap
+
+  &__item
+    border: 1px solid #d7d7d7
+    width: 100%
+
+  &--type_1
+    .catalog-list__item
+      @media(min-width: 500px)
+        margin-left: -1px
+        margin-top: -1px
+        width: 50%
+
+      @media(min-width: 660px)
+        width: 33.33333%
+
+      @media(min-width: 1050px)
+        width: 33.33333%
+
+      @media(min-width: 1200px)
+        width: 25%
+
+      @media(min-width: 1500px)
+        width: 20%
+
+      &:nth-last-child(2)
+        @media(min-width: 500px)
+          border-bottom: 1px solid #d7d7d7
+
+      &:nth-last-child(3)
+        @media(min-width: 660px)
+          border-bottom: 1px solid #d7d7d7
+
+
+
+    .catalog-item
+      padding-top: 25px
+      padding-bottom: 20px
+
+.more-block
+  margin-top: 40px
+  text-align: center
+
+  .button
+    min-width: 220px
