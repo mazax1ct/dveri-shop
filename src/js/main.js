@@ -1,3 +1,14 @@
+function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var $state = $(
+    '<span><span class="text">'+ state.text +'</span><svg class="sorting-icon" aria-hidden="true"><use xlink:href="#'+ state.element.className +'" /></svg></span>'
+  );
+  $state.find(".text").text(state.text);
+  return $state;
+};
+
 $(document).ready(function () {
   //слайдер на главной
   if ($('.js-slider').length) {
@@ -224,6 +235,15 @@ $(document).ready(function () {
     });
   }
 
+  //кастомный селект
+  $(".js-select").select2({
+    containerCssClass: 'sorting-select',
+    dropdownCssClass: 'sorting-select',
+    minimumResultsForSearch: Infinity,
+    templateResult: formatState,
+    templateSelection: formatState,
+    dropdownParent: $('.select')
+  });
 });
 
 //открытие сайдбара

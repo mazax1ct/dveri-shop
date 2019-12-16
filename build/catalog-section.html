@@ -138,6 +138,20 @@
     <symbol id="arrow_down" viewBox="0 0 22 22">
       <path d="M3.7,14.8c-0.3-0.3-0.3-0.8,0-1.1c0.3-0.3,0.8-0.3,1.1,0l5.5,5.6V0.8C10.2,0.3,10.6,0,11,0c0.4,0,0.8,0.3,0.8,0.8v18.6l5.4-5.6c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1l-6.7,7c-0.3,0.3-0.8,0.3-1.1,0L3.7,14.8z" />
     </symbol>
+    <symbol id="asc" viewBox="0 0 12 10">
+      <g>
+        <rect width="8" height="2" />
+        <rect y="4" width="10" height="2" />
+        <rect y="8" width="12" height="2" />
+      </g>
+    </symbol>
+    <symbol id="desc" viewBox="0 0 12 10">
+      <g>
+        <rect width="12" height="2" />
+        <rect y="4" width="10" height="2" />
+        <rect y="8" width="8" height="2" />
+      </g>
+    </symbol>
   </svg>
 
   <div class="wrapper">
@@ -326,9 +340,9 @@
               <div class="catalog-section__top-block">
                 <button class="js-filter-opener filter-opener button button--type_2" type="button">Фильтр</button>
                 <label class="select">
-                  <select>
-                    <option value="">Сортировать по цене ⏷</option>
-                    <option value="">Сортировать по цене ⏶</option>
+                  <select class="js-select">
+                    <option class="asc">Сортировать по цене</option>
+                    <option class="desc">Сортировать по цене</option>
                   </select>
                 </label>
                 <div class="tags">
@@ -888,7 +902,12 @@
   <script type="text/javascript" src="js/inputmask-init.js"></script>
   <script type="text/javascript" src="js/simplebar.min.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  
+  <!--ЭТИ ПОДКЛЮЧАЕМ ТОЛЬКО В РАЗДЕЛЕ КАТАЛОГА-->
   <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+  <script type="text/javascript" src="js/select2.full.min.js"></script>
+  <!--ЭТИ ПОДКЛЮЧАЕМ ТОЛЬКО В РАЗДЕЛЕ КАТАЛОГА-->
+  
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>
