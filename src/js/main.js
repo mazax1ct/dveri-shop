@@ -97,6 +97,50 @@ $(document).ready(function () {
       });
     }
 
+    if ($('.js-catalog-slider_3').length) {
+      $('.js-catalog-slider_3').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: $('.js-catalog-nav_3'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 6
+            }
+          },
+        ]
+      });
+    }
+
+    if ($('.js-catalog-slider_4').length) {
+      $('.js-catalog-slider_4').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: $('.js-catalog-nav_4'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 6
+            }
+          },
+        ]
+      });
+    }
+
     //слайдер отзывов
     if ($('.js-reviews-slider').length) {
       $('.js-reviews-slider').slick({
@@ -244,6 +288,16 @@ $(document).ready(function () {
     templateSelection: formatState,
     dropdownParent: $('.select')
   });
+
+  $('.js-select2').each(function() {
+    if ($(this).parents('.select-block').length !== 0){
+      var dropdownParent = $(this).parents('.select-block');
+      $(this).select2({
+        minimumResultsForSearch: Infinity,
+        dropdownParent: dropdownParent
+      });
+    }
+  });
 });
 
 //открытие сайдбара
@@ -321,8 +375,25 @@ $(document).on('click', '.js-filter-section-opener', function () {
   return false;
 });
 
+//открытие фильтра
 $(document).on('click', '.js-filter-opener', function () {
   $('body').addClass('overflow');
   $('.filter').addClass('is-open');
+  return false;
+});
+
+//зарытие фильтра
+$(document).on('click', '.js-filter-closer', function () {
+  $('body').removeClass('overflow');
+  $('.filter').removeClass('is-open');
+  return false;
+});
+
+//переключение табов
+$(document).on('click', '.js-tab-nav', function() {
+  $('.js-tab-nav').removeClass("is-active");
+  $(this).addClass("is-active");
+  $('.js-tab').removeClass("is-active");
+  $('.js-tab[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
   return false;
 });

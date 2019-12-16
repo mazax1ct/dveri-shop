@@ -1,23 +1,44 @@
 .product-detail
+  @media(min-width: 1500px)
+    margin-bottom: 65px
 
-.product-detail2
+  &--furniture
+    .product-images__slider
+      display: flex
+
+      .slick-slider
+        max-width: 100%
+        width: 100%
+
+      .slick-list,
+      .slick-track
+        height: 100%
+
+      .product-images__slider-item
+        align-items: center
+        display: flex
+
+    .quantity
+      margin-bottom: 30px
 
   &__title-block
-    @media(min-width: 600px)
-      align-items: center
-      display: flex
-      margin-bottom: 30px
+    align-items: center
+    display: flex
+    margin-bottom: 30px
 
     @media(min-width: 1200px)
       margin-bottom: 40px
 
     h1
+      margin-bottom: 0
+
       @media(min-width: 600px)
-        margin-right: 30px
-        margin-bottom: 0
+        margin-right: 10px
 
     .button
-      @media(max-width: 599px)
+      margin-left: auto
+
+      @media(max-width: 1199px)
         display: none
 
   &__inner
@@ -30,12 +51,93 @@
       min-width: 520px
       width: 43.23%
 
-  &__description
-    @media(min-width: 992px)
-      max-width: 620px
+  &__options
+    flex-grow: 1
+
+  &__options-row
+    @media(min-width: 600px) and (max-width: 991px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1200px)
+      display: flex
+      margin-left: 0
+      margin-right: 0
+
+  &__options-block
+    &:not(:last-child)
+      margin-bottom: 25px
+
+    @media(min-width: 600px) and (max-width: 991px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1200px)
+      flex-grow: 1
+      padding-left: 0
+      padding-right: 0
+      width: 50%
+
+    &:first-child
+      @media(min-width: 1200px)
+        max-width: 260px
+
+    &:last-child
+      @media(min-width: 1200px)
+        padding-left: 20px
+
+      @media(min-width: 1300px)
+        padding-left: 40px
+
+      @media(min-width: 1500px)
+        padding-left: 70px
+
+  &__options-title
+    font-size: 18px
+    margin-bottom: 10px
 
     @media(min-width: 1500px)
-      padding-left: 20px
+      font-size: 22px
+
+  .product-images__inner
+    @media(min-width: 600px)
+      margin-bottom: 20px
+
+  .product-images__button-block
+    @media(min-width: 600px)
+      padding-left: 30px
+
+    @media(min-width: 992px)
+      padding-left: 40px
+
+    @media(min-width: 1200px)
+      padding-left: 60px
+
+.add-fovorite,
+.compare
+  align-items: center
+  background: none
+  border: none
+  cursor: pointer
+  display: flex
+  height: 30px
+  justify-content: center
+  min-width: 30px
+  margin-left: 5px
+  margin-right: 5px
+  padding: 0
+  width: 30px
+
+  &.is-active
+    .add-fovorite__icon
+      fill: red
+
+  &__icon
+    fill: #9c9c9c
+    height: 16px
+    width: 16px
 
 .product-images
   max-width: 520px
@@ -43,14 +145,15 @@
   margin-right: auto
   margin-bottom: 40px
 
+  @media(min-width: 992px)
+    margin-bottom: 0
+
   .button
+    display: block
     max-width: 280px
     margin-left: auto
     margin-right: auto
     width: 100%
-
-    @media(min-width: 600px)
-      display: none
 
   &__inner
     display: flex
@@ -156,3 +259,262 @@
 
     @media(min-width: 1200px)
       width: calc(100% - 70px)
+
+.sq
+  display: flex
+  margin-left: -5px
+  margin-right: -5px
+
+  @media(min-width: 600px) and (max-width: 991px)
+    display: block
+    margin-left: 0
+    margin-right: 0
+
+  @media(min-width: 1200px)
+    display: block
+    margin-left: 0
+    margin-right: 0
+
+  &__item
+    padding-left: 5px
+    padding-right: 5px
+    width: calc(100% - 110px)
+
+    @media(min-width: 600px) and (max-width: 991px)
+      padding-left: 0
+      padding-right: 0
+      width: 100%
+
+    @media(min-width: 1200px)
+      padding-left: 0
+      padding-right: 0
+      width: 100%
+
+    &:not(:last-child)
+      @media(min-width: 600px) and (max-width: 991px)
+        margin-bottom: 20px
+
+      @media(min-width: 1200px)
+        margin-bottom: 30px
+
+    &--quantity
+      width: 110px
+
+  .select-block
+    margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      max-width: 260px
+      margin-bottom: 20px
+
+  a
+    color: #9c9c9c
+
+.quantity
+  display: flex
+
+  &__button
+    align-items: center
+    background-color: #fff
+    border: none
+    cursor: pointer
+    display: flex
+    height: 50px
+    justify-content: center
+    padding: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 1200px)
+      width: 60px
+
+    &:hover,
+    &:focus
+      background-color: darken(#fff, 5%)
+
+  &__input
+    background-color: #fff
+    border: none
+    color: #9c9c9c
+    font-size: 15px
+    height: 50px
+    padding: 17px 0 18px
+    text-align: center
+    width: 30px
+
+    @media(min-width: 1200px)
+      width: 50px
+
+.additional
+  margin-top: 10px
+  margin-bottom: 25px
+
+  .checkbox-label
+    align-items: center
+    display: flex
+    justify-content: space-between
+    max-width: 220px
+
+  .price
+    min-width: 54px
+
+.price-block
+  align-items: flex-start
+  display: flex
+  margin-bottom: 15px
+
+  &__price
+    line-height: 1
+    font-size: 40px
+
+    &--new
+      color: #ec564b
+      margin-right: 30px
+
+    &--old
+      font-size: 15px
+      text-decoration: line-through
+
+.credit-note
+  color: #9c9c9c
+
+.buy-block
+  text-align: center
+
+  @media(min-width: 600px)
+    max-width: 280px
+    text-align: left
+
+  .button
+    margin-bottom: 10px
+    max-width: 280px
+    width: 100%
+
+.colors
+  display: flex
+  flex-wrap: wrap
+  margin-left: -10px
+  margin-right: -10px
+
+  &:not(:last-child)
+    margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      margin-bottom: 15px
+
+.color
+  cursor: pointer
+  height: 50px
+  min-width: 50px
+  margin-right: 10px
+  margin-left: 10px
+  margin-bottom: 20px
+  position: relative
+  width: 50px
+
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .color__icon
+      background-color: rgba(#1a1a1a, 0.3)
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13' width='13' height='13'%3E%3Cpath fill='%23fff' d='M1.8,6.3L0.7,7.5l3.6,3.6l8-8l-1.1-1.1L4.3,8.8L1.8,6.3z'/%3E%3C/svg%3E%0A")
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      border-radius: 50%
+      height: 24px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 25px
+
+  img
+    border-radius: 4px
+
+.product-detail2
+  &__title-block
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+    h1
+      @media(min-width: 600px)
+        margin-right: 30px
+        margin-bottom: 0
+
+    .button
+      margin-left: auto
+
+      @media(max-width: 599px)
+        display: none
+
+  &__inner
+    @media(min-width: 992px)
+      display: flex
+
+  &__images
+    @media(min-width: 992px)
+      max-width: 520px
+      min-width: 520px
+      width: 43.23%
+
+  &__description
+    @media(min-width: 992px)
+      max-width: 620px
+
+    @media(min-width: 1500px)
+      padding-left: 20px
+
+  .product-images
+    .button
+      @media(min-width: 600px)
+        display: none
+
+.tabs-nav
+  border-bottom: 1px solid #d7d7d7
+  display: flex
+  overflow-x: auto
+
+  &__item
+    color: #9c9c9c
+    margin-right: 40px
+    padding-top: 15px
+    padding-bottom: 25px
+    text-decoration: none
+    transition: color 0.3s
+    white-space: nowrap
+
+    @media(min-width: 1500px)
+      margin-right: 110px
+
+    &:hover,
+    &:focus
+      color: rgba(#1a1a1a, 0.7)
+
+    &.is-active
+      color: #1a1a1a
+
+      &:hover,
+      &:focus
+        color: #1a1a1a
+
+.tabs
+  margin-bottom: 40px
+
+.tab
+  display: none
+  padding-top: 20px
+
+  @media(min-width: 1200px)
+    padding-top: 40px
+
+  &.is-active
+    display: block

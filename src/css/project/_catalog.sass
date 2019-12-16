@@ -18,6 +18,19 @@
     &.is-active
       display: block
 
+.container
+  .catalog-slider
+    margin-left: -20px
+    margin-right: -20px
+
+    @media(min-width: 1500px)
+      margin-left: -50px
+      margin-right: -50px
+
+    .simplebar-track.simplebar-horizontal
+      left: 20px
+      width: calc(100% - 40px)
+
 .catalog-slider
   overflow: auto
 
@@ -60,7 +73,7 @@
   &:focus
     .catalog-item__title
       text-decoration: underline
-      
+
     img
       transform: scale(1.02)
 
@@ -80,6 +93,11 @@
       margin-right: auto
       transition: transform 0.3s
       transform: scale(1)
+
+  &__image
+    align-items: center
+    display: flex
+    min-height: 225px
 
   &__type
     color: #9d9d9d

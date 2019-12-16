@@ -319,19 +319,51 @@
       @media(min-width: 1500px)
         width: 20%
 
-      &:nth-last-child(2)
-        @media(min-width: 500px)
-          border-bottom: 1px solid #d7d7d7
-
-      &:nth-last-child(3)
-        @media(min-width: 660px)
-          border-bottom: 1px solid #d7d7d7
-
-
-
     .catalog-item
       padding-top: 25px
       padding-bottom: 20px
+
+  &--type_2
+    .catalog-list__item
+      @media(min-width: 500px)
+        margin-left: -1px
+        margin-top: -1px
+        width: 50%
+
+      @media(min-width: 768px)
+        width: 33.33333%
+
+      @media(min-width: 1900px)
+        width: 25%
+
+    .catalog-item
+      min-width: 240px
+      padding-top: 25px
+      padding-bottom: 20px
+      width: 240px
+
+      @media(min-width: 500px)
+        min-width: 200px
+        width: 200px
+
+      @media(min-width: 992px)
+        min-width: 170px
+        width: 170px
+
+      @media(min-width: 1200px)
+        min-width: 200px
+        width: 200px
+
+      @media(min-width: 1350px)
+        min-width: 270px
+        width: 270px
+
+    .catalog-item__image
+      align-items: flex-end
+
+      img
+        margin-left: 5px
+        margin-right: 5px
 
 .more-block
   margin-top: 40px
