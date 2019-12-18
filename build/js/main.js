@@ -285,18 +285,11 @@ $(document).ready(function () {
     dropdownCssClass: 'sorting-select',
     minimumResultsForSearch: Infinity,
     templateResult: formatState,
-    templateSelection: formatState,
-    dropdownParent: $('.select')
+    templateSelection: formatState
   });
 
-  $('.js-select2').each(function() {
-    if ($(this).parents('.select-block').length !== 0){
-      var dropdownParent = $(this).parents('.select-block');
-      $(this).select2({
-        minimumResultsForSearch: Infinity,
-        dropdownParent: dropdownParent
-      });
-    }
+  $('.js-select2').select2({
+    minimumResultsForSearch: Infinity
   });
 });
 
