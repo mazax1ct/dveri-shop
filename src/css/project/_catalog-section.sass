@@ -55,55 +55,6 @@
       .select2-container
         width: 100% !important
 
-      .select2-dropdown
-        border-color: #1a1a1a
-        overflow: hidden
-
-      .select2-container--open .select2-dropdown--above
-        margin-top: -1px
-
-      .select2-container--open .select2-dropdown--below
-        margin-top: 1px
-
-      .select2-container .select2-selection--single
-        background: none
-        border: none
-        height: 38px
-
-      .select2-container .select2-selection--single .select2-selection__rendered
-        line-height: 38px
-        padding-right: 8px
-
-        & > span
-          align-items: center
-          display: flex
-          justify-content: center
-
-      .select2-container--default .select2-selection--single .select2-selection__arrow
-        display: none
-
-      .select2-results__option
-        margin-bottom: 0
-        padding: 7px 6px 6px
-
-        & > span
-          align-items: center
-          display: flex
-          justify-content: center
-
-      .text
-        padding-top: 1px
-
-      .sorting-icon
-        fill: #444
-        height: 10px
-        margin-left: 5px
-        min-width: 10px
-        width: 10px
-
-        @media(min-width: 768px)
-          margin-left: 15px
-
     .tags
       margin-top: 15px
       width: 100%
@@ -156,6 +107,63 @@
 
     @media(min-width: 1500px)
       margin-top: 70px
+
+.sorting-select
+  &.select2-dropdown
+    border-color: #1a1a1a
+    font-size: 10px
+    overflow: hidden
+
+    @media(min-width: 375px)
+      font-size: 12px
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+  &.select2-dropdown--above
+    margin-top: -1px
+
+  &.select2-dropdown--below
+    margin-top: 1px
+
+  .select2-container .select2-selection--single
+    background: none
+    border: none
+    height: 38px
+
+  .select2-container .select2-selection--single .select2-selection__rendered
+    line-height: 38px
+    padding-right: 8px
+
+    & > span
+      align-items: center
+      display: flex
+      justify-content: center
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    display: none
+
+  .select2-results__option
+    margin-bottom: 0
+    padding: 7px 6px 6px
+
+    & > span
+      align-items: center
+      display: flex
+      justify-content: center
+
+  .text
+    padding-top: 1px
+
+  .sorting-icon
+    fill: #444
+    height: 10px
+    margin-left: 5px
+    min-width: 10px
+    width: 10px
+
+    @media(min-width: 768px)
+      margin-left: 15px
 
 .price-inputs
   display: flex

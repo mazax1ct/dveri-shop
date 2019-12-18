@@ -281,7 +281,6 @@ $(document).ready(function () {
 
   //кастомный селект
   $(".js-select").select2({
-    containerCssClass: 'sorting-select',
     dropdownCssClass: 'sorting-select',
     minimumResultsForSearch: Infinity,
     templateResult: formatState,
@@ -289,6 +288,7 @@ $(document).ready(function () {
   });
 
   $('.js-select2').select2({
+    dropdownCssClass: 'select-block',
     minimumResultsForSearch: Infinity
   });
 });
