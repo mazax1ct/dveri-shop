@@ -1,0 +1,76 @@
+.coop
+  margin-bottom: 40px
+
+  @media(min-width: 1200px)
+    display: flex
+
+  @media(min-width: 1500px)
+    margin-bottom: 80px
+
+  &__image
+    margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      max-width: 700px
+      margin-bottom: 0
+      width: 50%
+
+  &__features
+    @media(min-width: 1200px)
+      padding-left: 40px
+      width: 50%
+
+    @media(min-width: 1500px)
+      padding-left: 80px
+
+.coop-features
+  margin-left: -20px
+  margin-right: -20px
+  overflow-x: auto
+
+  @media(min-width: 1200px)
+    margin: 0
+    overflow: visible
+
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      flex-wrap: wrap
+
+  &__item
+    border: 1px solid #d7d7d7
+    border-left: none
+    min-width: 255px
+    min-height: 230px
+    padding: 20px
+
+    @media(min-width: 1200px)
+      border: none
+      min-width: 0
+      min-height: 0
+      margin-bottom: 20px
+      max-width: 300px
+      padding: 0
+      width: 50%
+
+    @media(min-width: 1500px)
+      margin-bottom: 35px
+
+    &:last-child,
+    &:nth-last-child(2)
+      margin-bottom: 0
+
+.coop-feature
+  font-size: 18px
+  line-height: 1.38
+
+  @media(min-width: 1200px)
+    font-size: 14px
+
+  @media(min-width: 1500px)
+    font-size: 18px
+
+  &__icon
+    min-height: 37px
+    margin-bottom: 10px

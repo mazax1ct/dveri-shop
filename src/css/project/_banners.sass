@@ -3,9 +3,30 @@
   @media(max-width: 1199px)
     margin-top: 30px
 
+.container
+  .banners--indented
+    margin-left: -20px
+    margin-right: -20px
+    padding-left: 0
+    padding-right: 0
+    padding-top: 0
+    padding-bottom: 20px
+
+    @media(min-width: 600px)
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1200px)
+      padding-bottom: 0
+
+    @media(min-width: 1500px)
+      margin-left: -25px
+      margin-right: -25px
+
 .banners
   @media(min-width: 600px)
     display: flex
+    flex-wrap: wrap
 
   &--indented
     padding-top: 20px
@@ -33,6 +54,17 @@
       @media(min-width: 1500px)
         padding-left: 25px
         padding-right: 25px
+
+  &--3_col
+    .banners__item
+      @media(min-width: 600px)
+        padding-bottom: 20px
+
+      @media(min-width: 768px)
+        width: 33.33333%
+
+      @media(min-width: 1500px)
+        padding-bottom: 50px
 
   &__item
     @media(min-width: 600px)

@@ -1,0 +1,84 @@
+.tips-list
+  margin-bottom: -20px
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1500px)
+    margin-bottom: -50px
+    margin-left: -25px
+    margin-right: -25px
+
+  &__item
+    display: flex
+    margin-bottom: 20px
+
+    @media(min-width: 1500px)
+      margin-bottom: 50px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1500px)
+      padding-left: 25px
+      padding-right: 25px
+
+.tip
+  background-color: #fff
+  color: #1a1a1a
+  display: flex
+  flex-direction: column
+  height: auto
+  line-height: 1.388
+  padding: 20px
+  text-decoration: none
+  width: 100%
+
+  @media(min-width: 992px)
+    align-items: center
+    flex-direction: row
+
+  &:hover,
+  &:focus
+    .tip__title
+      text-decoration: underline
+
+    .tip__image
+      transform: scale(1.02)
+
+  &__image-block
+    margin-bottom: 20px
+    text-align: center
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      min-width: 50%
+      width: 50%
+
+    @media(min-width: 1500px)
+      min-width: 330px
+      width: 330px
+
+  &__image
+    transition: transform 0.3s
+    transform: scale(1)
+
+  &__info
+    @media(min-width: 992px)
+      padding-left: 20px
+
+    @media(min-width: 1500px)
+      padding-left: 40px
+
+  &__title
+    display: block
+    font-size: 18px
+    line-height: 1.2
+
+    @media(min-width: 1200px)
+      font-size: 22px
