@@ -390,3 +390,14 @@ $(document).on('click', '.js-tab-nav', function() {
   $('.js-tab[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
   return false;
 });
+
+//переключение табов
+$(document).on('click', '.js-tab2-nav', function() {
+  $('.js-tab2-nav').removeClass("is-active");
+  $(this).addClass("is-active");
+  $('.js-tab2-nav[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
+
+  $('.js-tab2').removeClass("is-active");
+  $('.js-tab2[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
+  return false;
+});

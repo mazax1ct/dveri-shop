@@ -1,0 +1,84 @@
+.tabs2
+  margin-top: 40px
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    border: 1px solid #bfbfbf
+    display: flex
+
+  @media(min-width: 1500px)
+    margin-bottom: 50px
+
+  &__nav
+    border-right: 1px solid #bfbfbf
+    display: none
+    min-width: 300px
+    width: 300px
+
+    @media(min-width: 768px)
+      display: block
+
+    @media(min-width: 992px)
+      min-width: 370px
+      width: 370px
+
+  &__tabs
+    @media(min-width: 768px)
+      flex-grow: 1
+
+    .tab2-opener
+      background-color: #ccc
+      @media(min-width: 768px)
+        display: none
+
+      &::after
+        background: url('../images/icons/tabs2-arrow-down.png') no-repeat 0 0 transparent
+        content: ''
+        height: 7px
+        left: auto
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+        width: 12px
+
+      &.is-active
+        &::after
+          background-image: url('../images/icons/tabs2-arrow-down-white.png')
+
+  .table
+    color: #1a1a1a
+
+.tab2-opener
+  cursor: pointer
+  font-size: 18px
+  line-height: 29px
+  margin-bottom: 0
+  padding: 18px 30px 18px 20px
+  position: relative
+
+  @media(min-width: 1500px)
+    padding-left: 60px
+    padding-right: 60px
+
+  &.is-active
+    background-color: #e22a1b
+    color: #fff
+
+.tab2
+  border: 1px solid #bfbfbf
+  border-top: none
+  display: none
+  padding: 20px
+
+  @media(min-width: 768px)
+    border: none
+
+  @media(min-width: 1200px)
+    padding: 40px
+
+  @media(min-width: 1500px)
+    padding: 80px
+
+  &.is-active
+    display: block

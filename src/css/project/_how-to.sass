@@ -1,0 +1,61 @@
+.how-to
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 40px
+  overflow-x: auto
+
+  @media(min-width: 1200px)
+    border: 1px solid #bfbfbf
+    margin: 0
+    overflow: visible
+
+  @media(min-width: 1500px)
+    margin-bottom: 45px
+
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      flex-wrap: wrap
+
+    &--4_col
+      .how-to__item
+        @media(min-width: 1200px)
+          width: 25%
+
+  &__item
+    border: 1px solid #d7d7d7
+    border-left: none
+    min-width: 255px
+    min-height: 200px
+    padding: 30px 20px
+
+    @media(min-width: 1200px)
+      border: none
+      min-width: 0
+      min-height: 0
+      padding: 40px 0 40px 40px
+      width: 33.33333%
+
+    @media(min-width: 1500px)
+      padding: 55px 0 60px 70px
+
+.ht
+  font-size: 18px
+  line-height: 1.2
+
+  &__icon
+    min-height: 43px
+    margin-bottom: 15px
+
+  &__small
+    color: #9c9c9c
+    font-size: 15px
+
+  a
+    color: #e22a1b
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
