@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Магазины</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/side-bar.html
+    <main class="main">
+      <div class="main__inner">
+        //= template/header.html
+        <div class="page-content">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+              <li class="breadcrumbs__item">Магазины</li>
+            </ul>
+            <div class="map-container">
+              <div id="map" class="map"></div>
+              <template>
+                <div class="map-popup-container">
+                  <div class="map-popup">
+                    <button type="button" class="map-popup__close" title="Закрыть">
+                      <svg class="map-popup__close-icon" aria-hidden="true">
+                        <use xlink:href="#close" />
+                      </svg>
+                    </button>
+                    <p class="map-popup__title">Невский центр</p>
+                    <p class="map-popup__address">ст. м. «Пл. Восстания», Невский пр. 114-116 Ежедневно с 10: 00 до 23: 00</p>
+                    <p class="map-popup__time">Ежедневно с 10:00 до 23:00</p>
+                    <div class="map-popup__pictures">
+                      <div class="map-popup__pictures-list">
+                        <img class="map-popup__picture" src="images/content/img_8.jpg" alt="Картинка">
+                      </div>
+                      <div class="map-popup__pictures-buttons">
+                        <button onclick="minusSlide()" type="button" class="map-popup__pictures-button map-popup__pictures-button--prev" title="Назад">
+                          <svg class="map-popup__pictures-arrow-icon" aria-hidden="true">
+                            <use xlink:href="#slider_arrow_left" /></svg>
+                        </button>
+                        <button onclick="plusSlide()" type="button" class="map-popup__pictures-button map-popup__pictures-button--next" title="Вперед">
+                          <svg class="map-popup__pictures-arrow-icon" aria-hidden="true">
+                            <use xlink:href="#slider_arrow_right" /></svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <h1>Магазины в Петербурге</h1>
+            <div class="shops-list">
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"></p>
+                  <p class="shop__title"><a href="shop.html">Лиговский проспект, 160</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels">
+                    <span class="shop__label shop__label--new">NEW</span>
+                    <span class="shop__label shop__label--hyper">ГИПЕР</span>
+                  </p>
+                  <p class="shop__title"><a href="shop.html">пр. Непокоренных, 17 к.4</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"></p>
+                  <p class="shop__title"><a href="shop.html">пр. Просвещения, 69</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"></p>
+                  <p class="shop__title"><a href="shop.html">пр. Ленинский, 108, корпус 1</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels">
+                    <span class="shop__label shop__label--new">NEW</span>
+                  </p>
+                  <p class="shop__title"><a href="shop.html">пр. Большевиков, 11</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"><span class="shop__label shop__label--new">NEW</span></p>
+                  <p class="shop__title"><a href="shop.html">Гипермаркет на пр. Славы, 40</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"></p>
+                  <p class="shop__title"><a href="shop.html">Парнас, 6-й Верхний пер. дом 12</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item">
+                <div class="shop">
+                  <p class="shop__labels"></p>
+                  <p class="shop__title"><a href="shop.html">Лиговский проспект, 160</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="shops-list">
+              <div class="shops-list__item shops-list__item--big">
+                <h2>Отдел по работе<br> с дизайнерами и строителями</h2>
+                <div class="shop">
+                  <p class="shop__title"><a href="shop.html">Лиговский проспект, 160</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+              <div class="shops-list__item shops-list__item--big">
+                <h2>Склад<br> готовой продукции</h2>
+                <div class="shop">
+                  <p class="shop__title"><a href="shop.html">Лиговский проспект, 160</a></p>
+                  <p class="shop__metro"><img src="images/icons/metro.svg" alt="м."> Обводной канал</p>
+                  <p class="shop__work-time">
+                    <span class="color-grey">Время работы:</span><br>
+                    <span class="color-grey">ПН-СБ:</span> 11.00-20.00<br>
+                    <span class="color-grey">ВС:</span> 11.00-19.00
+                  </p>
+                  <p class="shop__phone"><span class="color-grey">Тел.:</span> <a href="tel:+78123094730">+7 (812) 309-47-30</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/scripts.html
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+
+</html>

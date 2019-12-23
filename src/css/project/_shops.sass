@@ -1,0 +1,200 @@
+.shops-list
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: 768px)
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+      padding-right: 40px
+      width: 25%
+
+    &--big
+      @media(min-width: 768px)
+        width: 50%
+
+      @media(min-width: 1200px)
+        width: 50%
+
+.shop
+  &__labels
+    align-items: center
+    display: flex
+    margin-bottom: 10px
+    min-height: 20px
+
+  &__label
+    align-items: center
+    border-radius: 10px
+    color: #fff
+    display: flex
+    font-size: 11px
+    height: 20px
+    justify-content: center
+    line-height: 10px
+    margin-right: 5px
+    padding: 7px 14px 3px 14px
+    vertical-align: top
+
+    &--new
+      background-color: #e22a1b
+
+    &--hyper
+      background-color: #133d52
+
+  &__title
+    font-size: 18px
+    margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+
+    a
+      color: #1a1a1a
+
+  &__metro
+    line-height: 13px
+    margin-bottom: 15px
+
+    img
+      margin-right: 5px
+      position: relative
+      margin-top: -4px
+      vertical-align: middle
+
+  &__work-time
+    font-size: 14px
+    margin-bottom: 15px
+
+  &__phone
+    font-size: 14px
+
+    a
+      color: #1a1a1a
+      text-decoration: none
+
+.shop-detail
+  margin-bottom: 40px
+
+  @media(min-width: 992px)
+    display: flex
+
+  @media(min-width: 1500px)
+    margin-bottom: 60px
+
+  &__block
+    margin-bottom: 20px
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      width: 50%
+
+    &:first-child
+      @media(min-width: 992px)
+        padding-right: 40px
+        max-width: 650px
+
+      @media(min-width: 1500px)
+        padding-right: 80px
+
+  &__label
+    align-items: center
+    border-radius: 10px
+    color: #fff
+    display: inline-flex
+    font-size: 11px
+    font-weight: 400
+    height: 20px
+    justify-content: center
+    line-height: 10px
+    margin-left: 5px
+    padding: 5px 14px 3px 14px
+    vertical-align: top
+
+    &--new
+      background-color: #e22a1b
+
+    &--hyper
+      background-color: #133d52
+
+  &__about
+    @media(min-width: 600px)
+      display: flex
+      margin-bottom: 20px
+
+    @media(min-width: 1500px)
+      margin-bottom: 40px
+
+  &__about-block
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      margin-bottom: 0
+      width: 50%
+
+  &__metro
+    line-height: 13px
+    margin-bottom: 15px
+
+    img
+      margin-right: 5px
+      position: relative
+      margin-top: -4px
+      vertical-align: middle
+
+  &__work-time
+    font-size: 14px
+    margin-bottom: 15px
+
+  &__phone
+    font-size: 14px
+
+    a
+      color: #1a1a1a
+      text-decoration: none
+
+.shop-map
+  min-height: 280px
+
+.shop-gallery
+  overflow-x: auto
+  margin-left: -20px
+  padding-left: 20px
+
+  @media(min-width: 992px)
+    margin-left: 0
+    padding-left: 0
+
+  &__list
+    display: flex
+
+  &__item
+    margin-right: 20px
+    min-width: 240px
+    width: 240px
+
+    @media(min-width:992px)
+      min-width: 166px
+      width: 166px
+
+    @media(min-width: 1500px)
+      margin-right: 40px
+
+    img
+      transition: transform 0.3s
+      transform: scale(1)
+
+    a
+      &:hover,
+      &:focus
+        img
+          transform: scale(1.05)
