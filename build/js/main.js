@@ -329,11 +329,11 @@ var onSideBarEscPress = function (evt) {
 };
 
 //открытие поиска
-$(document).on('click', '.js-search-opener', function () {
+/*$(document).on('click', '.js-search-opener', function () {
   $('.search-bar').toggleClass('is-open');
   $('.search-bar__input').focus();
   return false;
-});
+});*/
 
 //открытие/закрытие меню в футере
 $(document).on('click', '.js-footer-menu-opener', function () {

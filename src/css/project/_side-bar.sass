@@ -44,7 +44,7 @@
       margin-right: 0
       margin-bottom: 0
 
-    &.is-open
+    //&.is-open
       @media(min-width: 992px) and (max-width: 1199px)
         .search-bar__label
           opacity: 1
@@ -55,7 +55,7 @@
 
       @media(min-width: 992px) and (max-width: 1199px)
         height: 100%
-        left: 100%
+        left: 50px
         opacity: 0
         overflow: hidden
         position: absolute
@@ -82,7 +82,7 @@
       width: 100%
 
       @media(min-width: 992px) and (max-width: 1199px)
-        padding-left: 10px
+        padding-left: 18px
 
       @media(min-width: 1200px)
         padding-left: 60px
@@ -216,7 +216,7 @@
   overflow-y: auto
   position: fixed
   top: 0
-  transition: left 0.3s
+  transition: left 0.3s, width 0.3s
   width: 310px
   z-index: 11
 
@@ -238,6 +238,25 @@
     left: 0
     overflow: visible
     width: 50px
+
+  &:hover
+    @media(min-width: 992px)
+      width: 310px
+
+    .catalog-menu__link-text
+      @media(min-width: 992px)
+        opacity: 1
+        width: 260px
+
+    .service-menu__link-text
+      @media(min-width: 992px)
+        opacity: 1
+        width: 260px
+
+    .search-bar__label
+      @media(min-width: 992px)
+        opacity: 1
+        width: 260px
 
   &__inner
     background-color: #fff
@@ -313,7 +332,7 @@
     margin-right: 0
     margin-bottom: 0
 
-  &.is-open
+  //&.is-open
     @media(min-width: 992px)
       .search-bar__label
         opacity: 1
@@ -324,7 +343,7 @@
 
     @media(min-width: 992px)
       height: 100%
-      left: 100%
+      left: 50px
       opacity: 0
       overflow: hidden
       position: absolute
@@ -344,7 +363,7 @@
     width: 100%
 
     @media(min-width: 992px)
-      padding-left: 10px
+      padding-left: 18px
 
     &::-webkit-input-placeholder
       color: #9c9c9c
@@ -433,15 +452,15 @@
 
     @media(min-width: 992px)
       align-items: center
-      background-color: #e22a1b
+      //background-color: #e22a1b
       display: flex
-      height: 100%
-      left: 100%
+      //height: 100%
+      //left: 100%
       opacity: 0
       overflow: hidden
-      position: absolute
-      padding-left: 15px
-      top: 0
+      //position: absolute
+      //padding-left: 15px
+      //top: 0
       transition: width 0.3s, opacity 0.3s, padding 0.3s
       width: 0
 
@@ -530,15 +549,15 @@
 
     @media(min-width: 992px)
       align-items: center
-      background-color: #e22a1b
+      //background-color: #e22a1b
       display: flex
-      height: 100%
-      left: 100%
-      opacity: 0
+      //height: 100%
+      //left: 100%
+      //opacity: 0
       overflow: hidden
-      position: absolute
-      padding-left: 15px
-      top: 0
+      //position: absolute
+      //padding-left: 15px
+      //top: 0
       transition: width 0.3s, opacity 0.3s, padding 0.3s
       width: 0
 
