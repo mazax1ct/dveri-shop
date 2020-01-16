@@ -11,6 +11,9 @@
       width: 310px
 
     &__inner
+      @media(min-width: 768px)
+        width: 310px
+
       @media(min-width: 1200px)
         padding-top: 20px
 
@@ -214,6 +217,7 @@
   height: 100%
   left: -310px
   overflow-y: auto
+  overflow-x: hidden
   position: fixed
   top: 0
   transition: left 0.3s, width 0.3s
@@ -236,8 +240,35 @@
   @media(min-width: 992px)
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
     left: 0
-    overflow: visible
     width: 50px
+
+  &.subnav-is-open
+    @media(min-width: 768px)
+      width: 740px !important
+
+    .side-bar__inner
+      @media(min-width: 768px)
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
+        width: 310px
+
+    .catalog-menu__link-text
+      @media(min-width: 768px)
+        opacity: 1
+        width: 260px
+
+    .service-menu__link-text
+      @media(min-width: 768px)
+        opacity: 1
+        width: 260px
+
+    .search-bar__label
+      @media(min-width: 768px)
+        opacity: 1
+        width: 260px
+
+    &:hover
+      @media(min-width: 768px)
+        width: 740px
 
   &:hover
     @media(min-width: 992px)
@@ -260,13 +291,14 @@
 
   &__inner
     background-color: #fff
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
     display: flex
     flex-direction: column
     min-height: 100%
     position: relative
     padding-top: 25px
     padding-bottom: 20px
-    z-index: 1
+    z-index: 2
 
     @media(min-width: 992px)
       padding-top: 0
@@ -316,6 +348,80 @@
     display: flex
     flex-direction: column
     flex-grow: 1
+
+  &__subnav
+    background-color: #fff
+    display: none
+    height: 100%
+    left: -430px
+    overflow-y: auto
+    overflow-x: hidden
+    position: absolute
+    top: 0
+    transition: left 0.3s, width 0.3s
+    width: 430px
+    z-index: 1
+
+    @media(min-width: 768px)
+      display: block
+
+    &.is-open
+      @media(min-width: 768px)
+        left: 310px
+
+.subnav
+  padding-left: 20px
+  padding-right: 20px
+
+  &__close
+    align-items: center
+    background-color: #fff
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 40px
+    left: auto
+    position: absolute
+    padding: 0
+    right: 10px
+    top: 10px
+    width: 40px
+
+  &__close-icon
+    fill: #1a1a1a
+    height: 20px
+    width: 20px
+
+  &__title
+    font-size: 20px
+    font-weight: 700
+    padding-top: 15px
+    padding-top: 15px
+
+  &__title-link
+    color: #1a1a1a
+    text-decoration: none
+    transition: opacity 0.3s
+
+    &:hover,
+    &:focus
+      opacity: 0.7
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+
+  &__list-item
+    margin-bottom: 0
+    padding: 5px
+    width: 33.33333%
+
+  &__list-link
+    color: #1e1e1e
+    display: block
+    text-align: center
 
 .search-bar
   border-top: 1px solid #ccc

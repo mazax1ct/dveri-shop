@@ -184,7 +184,7 @@
         <nav class="side-bar__nav">
           <ul class="catalog-menu">
             <li class="catalog-menu__item">
-              <a class="catalog-menu__link is-active" href="catalog-section.html">
+              <a class="js-subnav-opener catalog-menu__link is-active" href="catalog-section.html" data-href="subnav_1">
                 <span class="catalog-menu__icon-block">
                   <svg class="catalog-menu__icon" aria-hidden="true">
                     <use xlink:href="#catalog_section_1" />
@@ -194,7 +194,7 @@
               </a>
             </li>
             <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="catalog-section-entrance.html">
+              <a class="js-subnav-opener catalog-menu__link" href="catalog-section-entrance.html" data-href="subnav_2">
                 <span class="catalog-menu__icon-block">
                   <svg class="catalog-menu__icon" aria-hidden="true">
                     <use xlink:href="#catalog_section_2" />
@@ -204,7 +204,7 @@
               </a>
             </li>
             <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="catalog-section-furniture.html">
+              <a class="js-subnav-opener catalog-menu__link" href="catalog-section-furniture.html" data-href="subnav_3">
                 <span class="catalog-menu__icon-block">
                   <svg class="catalog-menu__icon" aria-hidden="true">
                     <use xlink:href="#catalog_section_3" />
@@ -295,6 +295,96 @@
             <li class="mm-menu__item"><a class="mm-menu__link" href="shops.html">Магазины <span class="mm-menu__count">10</span></a></li>
           </ul>
         </nav>
+      </div>
+      <div class="side-bar__subnav subnav" data-target="subnav_1">
+        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+          <svg class="subnav__close-icon" aria-hidden="true">
+            <use xlink:href="#close" />
+          </svg>
+        </button>
+        <p class="subnav__title">
+          <a class="subnav__title-link" href="#">Межкомнатные двери</a>
+        </p>
+        <ul class="subnav__list">
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Profil Doors</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Velldoris</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Turen Becker</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Zadoor</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Форест</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Поставский Мебельный Центр</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Эстет</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Фрамир</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Status</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Questdoors</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Акма</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Арсенал</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Greenwood</a>
+          </li>
+          <li class="subnav__list-item">
+            <a class="subnav__list-link" href="#">Linedoor</a>
+          </li>
+        </ul>
+      </div>
+      <div class="side-bar__subnav subnav" data-target="subnav_2">
+        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+          <svg class="subnav__close-icon" aria-hidden="true">
+            <use xlink:href="#close" />
+          </svg>
+        </button>
+        <p class="subnav__title">
+          <a class="subnav__title-link" href="#">Входные двери</a>
+        </p>
+        <ul class="subnav__list">
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Stardis</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Valberg</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Бульдорс</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Выбор</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Зенит</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Кондор</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Тоун</a></li>
+        </ul>
+      </div>
+      <div class="side-bar__subnav subnav" data-target="subnav_3">
+        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+          <svg class="subnav__close-icon" aria-hidden="true">
+            <use xlink:href="#close" />
+          </svg>
+        </button>
+        <p class="subnav__title">
+          <a class="subnav__title-link" href="#">Фурнитура</a>
+        </p>
+        <ul class="subnav__list">
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli Luxury</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Renz</a></li>
+          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Rucetti</a></li>
+    
+        </ul>
       </div>
     </div>
     <main class="main">

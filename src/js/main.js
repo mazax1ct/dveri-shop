@@ -328,12 +328,29 @@ var onSideBarEscPress = function (evt) {
   }
 };
 
-//открытие поиска
-/*$(document).on('click', '.js-search-opener', function () {
-  $('.search-bar').toggleClass('is-open');
-  $('.search-bar__input').focus();
+//открытие подменю в сайдбаре
+$(document).on('click', '.js-subnav-opener', function () {
+  if($('body').width() > 767) {
+    if(!$(this).hasClass('open')) {
+      $('.js-subnav-opener').removeClass('open');
+      $(this).addClass('open');
+      //$('body').addClass('overflow');
+      $('.side-bar').addClass('subnav-is-open');
+      $('.side-bar__subnav').removeClass('is-open');
+      $('.side-bar__subnav[data-target="'+ $(this).attr('data-href') +'"]').addClass('is-open');
+      return false;
+    }
+  }
+});
+
+//закрытие подменю сайдбара по крестику
+$(document).on('click', '.js-subnav-close', function () {
+  $('.js-subnav-opener').removeClass('open');
+  $('.side-bar').removeClass('subnav-is-open');
+  $('.side-bar__subnav').removeClass('is-open');
+  //$('body').removeClass('overflow');
   return false;
-});*/
+});
 
 //открытие/закрытие меню в футере
 $(document).on('click', '.js-footer-menu-opener', function () {
