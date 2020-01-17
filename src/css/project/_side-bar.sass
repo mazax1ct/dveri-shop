@@ -410,18 +410,27 @@
 
   &__list
     display: flex
+    font-size: 13px
     flex-wrap: wrap
     list-style: none
 
   &__list-item
     margin-bottom: 0
-    padding: 5px
+    padding: 5px 15px 0
     width: 33.33333%
 
   &__list-link
     color: #1e1e1e
     display: block
     text-align: center
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+    img
+      max-width: 80px
 
   &__link-block
     font-size: 13px
