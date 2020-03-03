@@ -7,7 +7,7 @@
   display: block
   font-size: 18px
   line-height: 1.388
-  margin-bottom: 20px
+  //margin-bottom: 20px
   overflow: hidden
   position: relative
   text-decoration: none
@@ -15,11 +15,11 @@
 
   @media(min-width: 1200px)
     min-height: 400px
-    margin-bottom: 40px
+    //margin-bottom: 40px
 
   @media(min-width: 1500px)
     min-height: 620px
-    margin-bottom: 50px
+    //margin-bottom: 50px
 
   &:hover,
   &:focus
@@ -92,17 +92,25 @@
     display: flex
     margin-bottom: 20px
 
-    @media(min-width: 1500px)
-      margin-bottom: 50px
-
     @media(min-width: 600px)
       padding-left: 10px
       padding-right: 10px
       width: 50%
 
     @media(min-width: 1500px)
+      margin-bottom: 50px
       padding-left: 25px
       padding-right: 25px
+
+    &--big
+      min-width: 100%
+      width: 100%
+
+      @media(min-width: 1200px)
+        margin-bottom: 40px
+
+      @media(min-width: 1500px)
+        margin-bottom: 50px
 
 .action
   background-color: #fff

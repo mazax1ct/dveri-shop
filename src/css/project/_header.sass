@@ -106,15 +106,26 @@
     @media(min-width: 1600px)
       margin-right: 40px
 
-  &__phone
+    a
+      border-bottom: 1px dotted transparent
+      color: #1a1a1a
+      font-size: 16px
+      transition: border-color 0.3s
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        border-bottom-color: #1a1a1a
+
+  //&__phone
     border-bottom: 1px dotted transparent
     color: #1a1a1a
     font-size: 16px
     transition: border-color 0.3s
     text-decoration: none
 
-    &:hover,
-    &:focus
+    //&:hover,
+    //&:focus
       border-bottom-color: #1a1a1a
 
   &__recall-button
