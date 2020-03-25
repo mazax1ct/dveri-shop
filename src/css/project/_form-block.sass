@@ -50,6 +50,7 @@
   &__form
     @media(min-width: 768px)
       display: flex
+      flex-wrap: wrap
       margin-left: -15px
       margin-right: -15px
       max-width: 690px
@@ -63,6 +64,15 @@
       padding-left: 15px
       padding-right: 15px
       width: 33.33333%
+
+    &--wide
+      @media(min-width: 768px)
+        margin-top: 15px
+        order: 4
+        width: 100%
+
+      .checkbox-label
+        max-width: 410px
 
 .info-block + .manager-request
   margin-top: 40px
@@ -141,5 +151,27 @@
       width: 50%
 
     &.form-block__button-block
+      @media(min-width: 768px)
+        order: 3
+
+      @media(min-width: 992px)
+        order: 4
+
       @media(min-width: 992px)
         margin-top: 35px
+
+    &--wide
+      @media(min-width: 768px)
+        margin-top: 15px
+        order: 4
+        width: 100%
+
+      @media(min-width: 992px)
+        order: 3
+        width: 100%
+
+      .checkbox-label
+        max-width: 410px
+
+        @media(min-width: 992px)
+          max-width: 500px

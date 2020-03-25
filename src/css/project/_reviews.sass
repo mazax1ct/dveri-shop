@@ -178,7 +178,7 @@
   padding: 20px
   width: 100%
 
-  @media(min-width: 768px)
+  @media(min-width: 980px)
     flex-direction: row-reverse
 
   @media(min-width: 1200px)
@@ -191,7 +191,7 @@
     padding-top: 50px
     padding-bottom: 25px
 
-    @media(min-width: 768px)
+    @media(min-width: 980px)
       background-position: 20px 10px
       font-size: 13px
       padding-left: 20px
@@ -222,13 +222,17 @@
     display: flex
     padding-top: 20px
 
-    @media(min-width: 768px)
+    @media(min-width: 980px)
       border-top: none
       border-right: 1px solid #d7d7d7
       flex-direction: column
+      flex-basis: 135px
+      min-width: 135px
       padding-right: 20px
 
     @media(min-width: 1200px)
+      flex-basis: 180px
+      min-width: 180px
       padding-right: 30px
       padding-top: 50px
 
@@ -239,7 +243,7 @@
     min-width: 50px
     margin-right: 20px
 
-    @media(min-width: 768px)
+    @media(min-width: 980px)
       margin-bottom: 10px
       margin-right: 0
 
@@ -249,6 +253,13 @@
   &__author-name
     font-size: 18px
     margin-bottom: 0
+
+    @media(min-width: 980px)
+      font-size: 11px
+      margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      font-size: 14px
 
   &__date
     color: #9c9c9c
@@ -303,6 +314,9 @@
 
   .input-label
     margin-bottom: 5px
+
+  .checkbox-label
+    max-width: 410px
 
   .textarea
     height: 100px

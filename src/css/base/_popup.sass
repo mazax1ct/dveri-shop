@@ -1,0 +1,50 @@
+.popup
+  display: none
+
+  &.fancybox-content
+    padding: 0
+
+.popup-form
+  padding: 35px 20px 45px
+  background-color: #c8e0d5
+
+  @media(min-width: 1200px)
+    padding-right: 40px
+    padding-left: 40px
+
+  @media(min-width: 1500px)
+    width: 630px
+    min-width: 630px
+    padding-top: 60px
+    padding-right: 90px
+    padding-bottom: 70px
+    padding-left: 90px
+
+  &__title
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 10px
+    letter-spacing: -.5px
+    color: #133d52
+
+    @media(min-width: 1200px)
+      font-size: 35px
+      margin-bottom: 20px
+
+  &__button-block
+    margin-top: 25px
+
+    @media(min-width: 1200px)
+      margin-top: 35px
+
+  &__button
+    width: 100%
+
+  .input-label
+    margin-bottom: 20px
+
+  .input-label .textarea.focus + .input-label__label,
+  .input-label .textarea:focus + .input-label__label,
+  .input-label.filled .textarea + .input-label__label
+    bottom: 84%
