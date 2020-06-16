@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Корзина</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/side-bar.html
+    <main class="main">
+      <div class="main__inner">
+        //= template/header.html
+        <div class="page-content">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+              <li class="breadcrumbs__item">Корзина</li>
+            </ul>
+            <h1>Корзина</h1>
+            <div class="cart-block">
+              <div class="cart-block__left">
+                <div class="cart">
+                  <div class="cart__title-block">
+                    <div class="cart__title cart__title--1">Товар</div>
+                    <div class="cart__title cart__title--3">Цена</div>
+                    <div class="cart__title cart__title--4">Количество</div>
+                    <div class="cart__title cart__title--5">Итого</div>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__description">
+                      <p class="cart-item__title">
+                        <a href="#">
+                          <span class="cart-item__image"><img src="images/content/img_40.jpg" alt=""></span>
+                          Входная дверь Hausdoors HD-4
+                        </a>
+                      </p>
+                      <div class="cart-item__buttons">
+                        <button class="cart-item__button" type="button">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="cart-item__info cart-item__info--price">3000 ₽</div>
+                    <div class="cart-item__info cart-item__info--qnt">
+                      <div class="quantity">
+                        <button class="quantity__button" type="button" title="Уменьшить">
+                          <img src="images/icons/small-arrow-down.png" alt="Уменьшить">
+                        </button>
+                        <input class="quantity__input" type="text" readonly="" value="1">
+                        <button class="quantity__button" type="button" title="Увеличить">
+                          <img src="images/icons/small-arrow-up.png" alt="Увеличить">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item__info cart-item__info--price cart-item__info--summ">6000 ₽</div>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__description">
+                      <p class="cart-item__title">
+                        <a href="#">
+                          <span class="cart-item__image"><img src="images/content/img_36.png" alt=""></span>
+                          Ручка Renz 603 CF Кофе
+                        </a>
+                      </p>
+                      <div class="cart-item__buttons">
+                        <button class="cart-item__button" type="button">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="cart-item__info cart-item__info--price">3000 ₽</div>
+                    <div class="cart-item__info cart-item__info--qnt">
+                      <div class="quantity">
+                        <button class="quantity__button" type="button" title="Уменьшить">
+                          <img src="images/icons/small-arrow-down.png" alt="Уменьшить">
+                        </button>
+                        <input class="quantity__input" type="text" readonly="" value="1">
+                        <button class="quantity__button" type="button" title="Увеличить">
+                          <img src="images/icons/small-arrow-up.png" alt="Увеличить">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item__info cart-item__info--price cart-item__info--summ">6000 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-block__right">
+                <div class="total">
+                  <div class="total__info">
+                    <p class="total__info-title">Ваш заказ (2)</p>
+                    <p class="total__info-row">Товаров на: <span class="total__price">6600 ₽</span></p>
+                    <p class="total__info-row">В том числе НДС: <span class="total__price">0 ₽</span></p>
+                    <p class="total__summ"><span class="total__summ-title">Итого:</span> <span class="total__summ-price">16 000 ₽</span></p>
+                  </div>
+                  <button class="total__button button" type="button" data-fancybox="checout" data-src="#checkout">Оформить заказ</button>
+                  <div id="checkout" class="popup popup-form">
+                    <p class="popup-form__title">Оформить заказ</p>
+                    <form action="/" method="post">
+                      <label class="input-label" for="name">
+                        <input id="name" class="js-input input" type="text" name="name" value="">
+                        <span class="input-label__label">Имя</span>
+                      </label>
+                      <label class="input-label" for="phone">
+                        <input id="phone" class="js-input js-phone-mask input" type="text" name="phone" value="">
+                        <span class="input-label__label">Телефон</span>
+                      </label>
+                      <label class="input-label" for="email">
+                        <input id="email" class="js-input input" type="text" name="phone" value="">
+                        <span class="input-label__label">Email</span>
+                      </label>
+                      <label class="checkbox-label error" for="terms">
+                        <input id="terms" type="checkbox">
+                        <span class="checkbox-icon"></span>
+                        Я ознакомился с <a href="#">Политикой конфиденциальности</a> и даю своё согласие на обработку своих персональных данных
+                      </label>
+                      <div class="popup-form__button-block">
+                        <button class="popup-form__button button" type="submit">Оформить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/scripts.html
+
+</body>
+
+</html>
