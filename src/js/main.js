@@ -141,6 +141,27 @@ $(document).ready(function () {
       });
     }
 
+    if ($('.js-catalog-slider_5').length) {
+      $('.js-catalog-slider_5').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 5
+            }
+          },
+        ]
+      });
+    }
+
     //слайдер отзывов
     if ($('.js-reviews-slider').length) {
       $('.js-reviews-slider').slick({

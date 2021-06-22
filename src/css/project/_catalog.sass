@@ -30,6 +30,57 @@
       left: 20px
       width: calc(100% - 40px)
 
+  .catalog-section
+    .catalog-slider
+      margin-bottom: 30px
+
+      @media(min-width: 1200px)
+        margin-left: -1px
+        margin-right: 0
+        overflow: visible
+        padding-right: 5px
+
+      .catalog-slider__item
+        background-color: #fff
+        display: flex
+        min-width: 180px
+        padding-top: 15px
+        padding-bottom: 15px
+        width: 180px
+
+      .catalog-item
+        min-width: 100px
+        width: 100px
+
+      .catalog-item__image-block
+        margin-bottom: auto
+
+      .catalog-item__title
+        font-size: 10px
+        margin-top: 10px
+        margin-bottom: 0
+        text-align: center
+
+      .slick-next,
+      .slick-prev
+        align-items: center
+        border: 1px solid #d7d7d7
+        background-color: #f5f5f5
+        display: flex
+        justify-content: center
+        z-index: 1
+
+        svg
+          fill: #1a1a1a
+          height: 16px
+          width: 16px
+
+      .slick-prev
+        left: -20px
+
+      .slick-next
+        right: -20px
+
 .catalog-slider
   overflow: auto
 
@@ -41,6 +92,7 @@
 
     &.slick-initialized
       display: block
+      overflow: visible
 
     .slick-track
       display: flex
