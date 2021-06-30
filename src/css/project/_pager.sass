@@ -1,0 +1,59 @@
+.pager-block
+  margin-top: 50px
+  text-align: center
+
+  //@media(min-width: 768px)
+    text-align: left
+
+.pager
+  display: flex
+  justify-content: center
+  list-style: none
+  padding: 0
+
+  //@media(min-width: 768px)
+    justify-content: flex-start
+
+  &__item
+    margin-left: 3px
+    margin-right: 3px
+    margin-bottom: 0
+
+    @media(min-width: 768px)
+      margin-left: 5px
+      margin-right: 5px
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    align-items: center
+    border: 1px solid #ababab
+    border-radius: 5px
+    background-color: transparent
+    color: #1a1a1a
+    cursor: pointer
+    display: flex
+    font-family: 'Muller', Arial, sans-serif
+    font-size: 14px
+    height: 40px
+    justify-content: center
+    line-height: 16px
+    padding: 2px 0 0
+    text-decoration: none
+    transition: background-color 0.3s, color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      background-color: #133d52
+      border-color: #133d52
+      color: #fff
+
+    &.is-active
+      background-color: #e22a1b
+      border-color: #e22a1b
+      color: #fff
