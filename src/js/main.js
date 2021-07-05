@@ -439,3 +439,12 @@ $(document).on('click', '.js-tab2-nav', function() {
   $('.js-tab2[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
   return false;
 });
+
+//открытие/закрытие ката в секции фильтра
+$(document).on('click', '.js-filter-section-cut', function () {
+  var oldText = $(this).text();
+  $(this).text($(this).attr('data-text'));
+  $(this).attr('data-text', oldText);
+  $(this).prev('.filter__section-cut').slideToggle();
+  return false;
+});
