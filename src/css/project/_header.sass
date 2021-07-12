@@ -1,79 +1,33 @@
 .main-page
   .header
-    background-color: #f5f5f5
-
-    @media(min-width: 992px)
-      background-color: rgba(0,0,0,0.4)
-      box-shadow: 0 0 2px 1px rgba(0,0,0,0.1)
-      left: 0
-      min-height: 126px
-      position: absolute
-      top: 0
-
-    &__inner
-      @media(min-width: 992px)
-        min-height: 126px
-
-    &__phone-block
-      @media(min-width: 1600px)
-        margin-right: auto
-
-      a
-        color: #fff
-
-        &:hover,
-        &:focus
-          border-bottom-color: #fff
-
-    //&__phone
-      color: #fff
-
-      //&:hover,
-      //&:focus
-        border-bottom-color: #fff
-
-    &__recall-button
-      border: 1px solid rgba(255,255,255,0.3)
-      color: #fff
-
-      &:hover,
-      &:focus
-        background-color: rgba(255,255,255,0.3)
-
     .logo
       @media(min-width: 992px)
         display: none
 
-  .main-menu
-    @media(min-width: 1600px)
-      margin-left: auto
-      margin-right: auto
+  .header__phone-block
+    @media(min-width: 992px)
+      align-items: center
+      display: flex
 
-    &__item
-      &:not(:last-child)
-        margin-right: 20px
+    @media(min-width: 1200px) and (max-width: 1349px)
+      display: block
 
-        @media(min-width: 1200px)
-          margin-right: 20px
+  .header__phone-block-inner
+    @media(min-width: 992px)
+      margin-left: 20px
 
-        @media(min-width: 1400px)
-          margin-right: 30px
+    @media(min-width: 1200px) and (max-width: 1349px)
+      margin-left: 0
 
-        @media(min-width: 1600px)
-          margin-right: 45px
+    @media(min-width: 1350px)
+      margin-left: 30px
 
-        @media(min-width: 1900px)
-          margin-right: 70px
+    @media(min-width: 1900px)
+      margin-left: 80px
 
-    &__link
-      color: #fff
-
-  .cart-link
-    color: #fff
-
-    &__icon
-      @media(min-width: 992px)
-        fill: #fff
+  .header__whatsapp
+    @media(min-width: 992px) and (max-width: 1199px)
+      margin-bottom: 0
 
 .header
   background-color: #fff
@@ -86,9 +40,7 @@
   z-index: 10
 
   @media(min-width: 992px)
-    background-color: #f5f5f5
     box-shadow: none
-    min-height: 97px
     left: auto
     position: static
     top: auto
@@ -99,61 +51,99 @@
     justify-content: space-between
     min-height: 68px
 
-    @media(min-width: 992px)
-      min-height: 97px
+    @media(min-width: 1900px)
+      justify-content: flex-start
+      min-height: 90px
 
   &__phone-block
     display: none
-    line-height: 1.388
-    text-align: center
+    font-size: 12px
+    margin-right: 20px
 
     @media(min-width: 992px)
       display: block
 
+    @media(min-width: 1200px)
+      align-items: center
+      display: flex
+
     @media(min-width: 1600px)
       margin-right: 40px
 
-    a
-      border-bottom: 1px dotted transparent
-      color: #1a1a1a
-      font-size: 16px
-      transition: border-color 0.3s
-      text-decoration: none
+    @media(min-width: 1900px)
+      margin-right: 80px
 
-      &:hover,
-      &:focus
-        border-bottom-color: #1a1a1a
+  &__phone-block-inner
+    @media(min-width: 1200px)
+      margin-left: 20px
 
-  //&__phone
-    border-bottom: 1px dotted transparent
+    @media(min-width: 1350px)
+      margin-left: 30px
+
+    @media(min-width: 1900px)
+      margin-left: 80px
+
+  &__phone,
+  &__whatsapp
+    align-items: center
     color: #1a1a1a
-    font-size: 16px
-    transition: border-color 0.3s
+    display: flex
+    line-height: 1
     text-decoration: none
+    vertical-align: top
 
-    //&:hover,
-    //&:focus
-      border-bottom-color: #1a1a1a
+    @media(min-width: 1350px)
+      font-size: 14px
 
-  &__recall-button
-    background: none
-    border: 1px solid rgba(#1a1a1a, 0.3)
-    border-radius: 16px
-    color: #1a1a1a
-    cursor: pointer
-    font-size: 13px
-    height: 20px
-    line-height: 10px
-    margin-top: 3px
-    padding-top: 5px
-    padding-bottom: 3px
-    padding-left: 14px
-    padding-right: 14px
-    transition: background-color 0.3s
+    @media(min-width: 1500px)
+      font-size: 15px
+
+    @media(min-width: 1900px)
+      font-size: 16px
 
     &:hover,
     &:focus
-      background-color: rgba(#1a1a1a, 0.3)
+      span
+        border-bottom-color: #1a1a1a
+
+    span
+      border-bottom: 1px dotted transparent
+      transition: border-color 0.3s
+      white-space: nowrap
+
+    svg
+      fill: #1a1a1a
+      height: 14px
+      margin-top: -2px
+      margin-right: 6px
+      width: 14px
+
+  &__phone
+    @media(min-width: 1350px)
+      margin-bottom: 5px
+
+  &__whatsapp
+    font-size: 12px
+    margin-bottom: 5px
+
+    svg
+      fill: #01e675
+
+  &__recall-button
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #9C9C9C
+    color: #9C9C9C
+    cursor: pointer
+    font-size: 12px
+    line-height: 1
+    padding: 5px 0 3px
+    transition: border-color 0.3s, color 0.3s
+
+    &:hover,
+    &:focus
+      border-color: #1a1a1a
+      color: #1a1a1a
 
   .logo
     left: 50%
@@ -165,6 +155,7 @@
     @media(min-width: 992px)
       left: auto
       min-width: 80px
+      margin-right: 20px
       position: static
       top: auto
       transform: none
@@ -174,8 +165,8 @@
       min-width: 127px
       width: 127px
 
-    @media(min-width: 1600px)
-      margin-right: 80px
+    @media(min-width: 1900px)
+      margin-right: 128px
 
 .burger
   align-items: center
@@ -201,35 +192,50 @@
 
   @media(min-width: 992px)
     display: block
+    margin-right: 20px
+    margin-left: 0
 
-  @media(min-width: 1600px)
-    margin-right: auto
+  @media(min-width: 1900px)
+    margin-right: 70px
 
   &__list
     align-items: center
     display: flex
-    font-size: 15px
+    font-size: 12px
     list-style: none
     margin: 0
     padding: 0
 
-    @media(min-width: 992px) and (max-width: 1499px)
-      font-size: 13px
+    @media(min-width: 1500px)
+      font-size: 14px
+
+    @media(min-width: 1900px)
+      font-size: 16px
 
   &__item
     margin-bottom: 0
+    position: relative
 
     &:not(:last-child)
       margin-right: 20px
 
-      @media(min-width: 1200px)
+      @media(min-width: 1350px)
+        margin-right: 25px
+
+      @media(min-width: 1500px)
         margin-right: 30px
 
-      @media(min-width: 1400px)
-        margin-right: 45px
-
       @media(min-width: 1900px)
-        margin-right: 70px
+        margin-right: 40px
+
+    &.root
+      &:hover
+        .main-menu__dropdown
+          display: block
+
+      .main-menu__link
+        &:focus + .main-menu__dropdown
+          display: block
 
   &__link
     align-items: center
@@ -245,22 +251,56 @@
       .main-menu__link-text
         text-decoration: underline
 
+    svg
+      fill: #1a1a1a
+      height: 12px
+      margin-left: 6px
+      width: 12px
+
   &__count
     align-items: center
-    border: 1px solid #bababa
-    border-radius: 20px
+    border: 1px solid #F3F3F3
+    border-radius: 50%
+    color: #E22A1B
     display: flex
-    font-size: 11px
+    font-size: 12px
     justify-content: center
-    height: 20px
-    line-height: 11px
+    height: 25px
+    line-height: 1
     margin-left: 10px
     margin-top: -2px
     padding-top: 4px
     padding-bottom: 3px
     text-align: center
     text-decoration: none
-    width: 36px
+    width: 25px
+
+  &__dropdown
+    background-color: #fff
+    display: none
+    list-style: none
+    padding: 0
+    padding-bottom: 3px
+    position: absolute
+    left: -15px
+    margin-top: -10px
+    top: 100%
+    white-space: nowrap
+    z-index: 1
+
+  &__dropdown-item
+    margin-bottom: 0
+
+  &__dropdown-link
+    color: #1a1a1a
+    display: block
+    padding: 5px 15px
+    text-decoration: none
+
+    &:hover,
+    &:focus,
+    &.is-active
+      text-decoration: underline
 
 .cart-link
   align-items: center

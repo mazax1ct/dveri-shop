@@ -19,34 +19,59 @@
 
 <body>
   <header class="header">
-    <div class="header__inner container">
-      <button class="js-side-bar-opener burger" type="button" title="Открыть меню">
-        <svg class="burger__icon" aria-hidden="true">
-          <use xlink:href="#burger" />
-        </svg>
-      </button>
-      <a class="logo" href="main.html"><img width="127" height="47" src="images/logo.svg" alt="Дверишоп"></a>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a class="main-menu__link is-active" href="about.html"><span class="main-menu__link-text">О компании</span></a>
-          <li class="main-menu__item"><a class="main-menu__link" href="zamer.html"><span class="main-menu__link-text">Замер и установка</span></a>
-          <li class="main-menu__item"><a class="main-menu__link" href="pay-delivery.html"><span class="main-menu__link-text">Оплата и доставка</span></a>
-          <li class="main-menu__item"><a class="main-menu__link" href="works.html"><span class="main-menu__link-text">Работы</span></a>
-          <li class="main-menu__item"><a class="main-menu__link" href="reviews.html"><span class="main-menu__link-text">Отзывы</span></a>
-          <li class="main-menu__item"><a class="main-menu__link" href="shops.html"><span class="main-menu__link-text">Магазины</span> <span class="main-menu__count">10</span></a></li>
-        </ul>
-      </nav>
-      <div class="header__phone-block">
-        <a class="header__phone" href="tel:+78124674429">+7 812 467-44-29</a><br>
-        <button class="header__recall-button" type="button">Перезвоните мне</button>
+      <div class="header__inner container">
+          <button class="js-side-bar-opener burger" type="button" title="Открыть меню">
+              <svg class="burger__icon" aria-hidden="true">
+                  <use xlink:href="#burger" />
+              </svg>
+          </button>
+          <a class="logo" href="main.html"><img width="127" height="47" src="images/logo.svg" alt="Дверишоп"></a>
+          <nav class="main-menu">
+              <ul class="main-menu__list">
+                  <li class="main-menu__item"><a class="main-menu__link is-active" href="actions.html"><span class="main-menu__link-text">Акции</span> <span class="main-menu__count">9</span></a></li>
+                  <li class="main-menu__item root">
+                      <a class="main-menu__link" href="#">
+                          <span class="main-menu__link-text">Услуги</span>
+                          <svg aria-hidden="true">
+                              <use xlink:href="#chevron_down" />
+                          </svg>
+                      </a>
+                      <ul class="main-menu__dropdown">
+                          <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="zamer.html">Замер и установка</a></li>
+                          <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="pay-delivery.html">Оплата и доставка</a></li>
+                      </ul>
+                  </li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="abour.html"><span class="main-menu__link-text">О компании</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="works.html"><span class="main-menu__link-text">Портфолио</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="reviews.html"><span class="main-menu__link-text">Отзывы</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Дизайнерам</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="shops.html"><span class="main-menu__link-text">Магазины</span> <span class="main-menu__count">10</span></a></li>
+              </ul>
+          </nav>
+          <div class="header__phone-block">
+              <a class="header__whatsapp" href="https://api.whatsapp.com/send?phone=79213634968" target="_blank">
+                  <svg aria-hidden="true">
+                      <use xlink:href="#whatsapp" />
+                  </svg>
+                  <span>WhatsApp</span>
+              </a>
+              <div class="header__phone-block-inner">
+                  <a class="header__phone" href="tel:+78124674429">
+                      <svg aria-hidden="true">
+                          <use xlink:href="#phone" />
+                      </svg>
+                      <span>+7 812 467-44-29</span>
+                  </a>
+                  <button class="header__recall-button" type="button">Перезвоните мне</button>
+              </div>
+          </div>
+          <a class="cart-link" href="cart.html" title="Корзина">
+              <svg class="cart-link__icon" aria-hidden="true">
+                  <use xlink:href="#cart" />
+              </svg>
+              <span class="cart-link__count">4</span>
+          </a>
       </div>
-      <a class="cart-link" href="cart.html" title="Корзина">
-        <svg class="cart-link__icon" aria-hidden="true">
-          <use xlink:href="#cart" />
-        </svg>
-        <span class="cart-link__count">4</span>
-      </a>
-    </div>
   </header>
   <div class="wrapper">
     <div class="page-content">
