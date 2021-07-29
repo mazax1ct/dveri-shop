@@ -2,707 +2,722 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Межкомнатные двери</title>
+    <title>Межкомнатные двери</title>
 
-  <meta name="description" content="">
+    <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-  //= template/favicon.html
+    //= template/favicon.html
 
-  //= template/style.html
+    //= template/style.html
 </head>
 
 <body>
 
-  //= template/sprite.html
+    //= template/sprite.html
 
-  <div class="wrapper">
-    //= template/side-bar.html
-    <main class="main">
-      <div class="main__inner">
-        //= template/header.html
-        <div class="page-content">
-          <div class="container">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-              <li class="breadcrumbs__item">Межкомнатные двери</li>
-            </ul>
-            <div class="catalog-section">
-              <div class="catalog-section__title-block">
-                <h1>Межкомнатные двери</h1>
-                <button class="button" type="button">Вызвать замерщика</button>
-              </div>
-              <div class="catalog-section__top-block">
-                <button class="js-filter-opener filter-opener button button--type_2" type="button">Фильтр</button>
-                <label class="select sorting-select">
-                  <select class="js-select">
-                    <option class="asc">Сортировать по цене</option>
-                    <option class="desc">Сортировать по цене</option>
-                  </select>
-                </label>
-                <div class="tags">
-                  <p class="tags__title">Популярные запросы:</p>
-                  <a class="tag" href="#">ламинированные</a>
-                  <a class="tag" href="#">массив дуба</a>
-                  <a class="tag" href="#">массив сосны</a>
-                  <a class="tag" href="#">венге</a>
-                  <a class="tag" href="#">вишня</a>
-                  <a class="tag" href="#">классика</a>
-                  <a class="tag" href="#">модерн</a>
-                  <a class="tag" href="#">орех</a>
-                </div>
-              </div>
-              <div class="catalog-section__catalog">
-                <div class="catalog-section__filter">
-                  <div class="filter">
-                    <button class="js-filter-closer filter__close" type="button" title="Закрыть фильтр">
-                      <svg class="filter__close-icon" aria-hidden="true">
-                        <use xlink:href="#close" />
-                      </svg>
-                    </button>
-                    <form class="filter__inner" method="post" action="/">
-                      <p class="filter__title">Фильтр</p>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title is-open">Цена</p>
-                        <div class="filter__section-inner is-open">
-                          <div class="price-inputs">
-                            <div class="price-inputs__item">
-                              <span class="price-inputs__item-title">от</span>
-                              <input id="min" class="price-input" type="text" placeholder="от 4900" value="4900">
+    <div class="wrapper">
+        //= template/side-bar.html
+        <main class="main">
+            <div class="main__inner">
+                //= template/header.html
+                <div class="page-content">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+                            <li class="breadcrumbs__item">Межкомнатные двери</li>
+                        </ul>
+                        <div class="catalog-section">
+                            <div class="catalog-section__title-block">
+                                <h1>Межкомнатные двери</h1>
+                                <button class="button" type="button">Вызвать замерщика</button>
                             </div>
-                            <div class="price-inputs__item">
-                              <span class="price-inputs__item-title">до</span>
-                              <input id="max" class="price-input" type="text" placeholder="до 28000" value="28000">
+                            <div class="catalog-section__top-block">
+                                <button class="js-filter-opener filter-opener button button--type_2" type="button">Фильтр</button>
+                                <!--<div class="tags">
+                                  <p class="tags__title">Популярные запросы:</p>
+                                  <a class="tag" href="#">ламинированные</a>
+                                  <a class="tag" href="#">массив дуба</a>
+                                  <a class="tag" href="#">массив сосны</a>
+                                  <a class="tag" href="#">венге</a>
+                                  <a class="tag" href="#">вишня</a>
+                                  <a class="tag" href="#">классика</a>
+                                  <a class="tag" href="#">модерн</a>
+                                  <a class="tag" href="#">орех</a>
+                                </div>-->
                             </div>
-                          </div>
-                          <input class="js-price-slider" type="text" name="price_range" value="" />
+                            <div class="catalog-section__catalog">
+                                <div class="catalog-section__filter">
+                                    <div class="filter">
+                                        <button class="js-filter-closer filter__close" type="button" title="Закрыть фильтр">
+                                            <svg class="filter__close-icon" aria-hidden="true">
+                                                <use xlink:href="#close" />
+                                            </svg>
+                                        </button>
+                                        <form class="filter__inner" method="post" action="/">
+                                            <p class="filter__title">Фильтр</p>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title is-open">Цена</p>
+                                                <div class="filter__section-inner is-open">
+                                                    <div class="price-inputs">
+                                                        <div class="price-inputs__item">
+                                                            <span class="price-inputs__item-title">от</span>
+                                                            <input id="min" class="price-input" type="text" placeholder="от 4900" value="4900">
+                                                        </div>
+                                                        <div class="price-inputs__item">
+                                                            <span class="price-inputs__item-title">до</span>
+                                                            <input id="max" class="price-input" type="text" placeholder="до 28000" value="28000">
+                                                        </div>
+                                                    </div>
+                                                    <input class="js-price-slider" type="text" name="price_range" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title is-open">Наличие</p>
+                                                <div class="filter__section-inner is-open">
+                                                    <label class="checkbox-label" for="checkbox_1">
+                                                        <input id="checkbox_1" type="checkbox" name="stock" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        на складе
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_2">
+                                                        <input id="checkbox_2" type="checkbox" name="stock" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        под заказ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title is-open">Производитель</p>
+                                                <div class="filter__section-inner is-open">
+                                                    <label class="checkbox-label" for="checkbox_3">
+                                                        <input id="checkbox_3" type="checkbox" name="fabric" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        Profildoors
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_4">
+                                                        <input id="checkbox_4" type="checkbox" name="fabric" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        Velldoris
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_5">
+                                                        <input id="checkbox_5" type="checkbox" name="fabric" value="3">
+                                                        <span class="checkbox-icon"></span>
+                                                        Turen Becker
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_6">
+                                                        <input id="checkbox_6" type="checkbox" name="fabric" value="4">
+                                                        <span class="checkbox-icon"></span>
+                                                        Zadoor
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_7">
+                                                        <input id="checkbox_7" type="checkbox" name="fabric" value="5">
+                                                        <span class="checkbox-icon"></span>
+                                                        Форест
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_3">
+                                                        <input id="checkbox_3" type="checkbox" name="fabric" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        Profildoors
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_4">
+                                                        <input id="checkbox_4" type="checkbox" name="fabric" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        Velldoris
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_5">
+                                                        <input id="checkbox_5" type="checkbox" name="fabric" value="3">
+                                                        <span class="checkbox-icon"></span>
+                                                        Turen Becker
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_6">
+                                                        <input id="checkbox_6" type="checkbox" name="fabric" value="4">
+                                                        <span class="checkbox-icon"></span>
+                                                        Zadoor
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_7">
+                                                        <input id="checkbox_7" type="checkbox" name="fabric" value="5">
+                                                        <span class="checkbox-icon"></span>
+                                                        Форест
+                                                    </label>
+                                                    <div class="filter__section-cut">
+                                                        <label class="checkbox-label" for="checkbox_3">
+                                                            <input id="checkbox_3" type="checkbox" name="fabric" value="1">
+                                                            <span class="checkbox-icon"></span>
+                                                            Profildoors
+                                                        </label>
+                                                        <label class="checkbox-label" for="checkbox_4">
+                                                            <input id="checkbox_4" type="checkbox" name="fabric" value="2">
+                                                            <span class="checkbox-icon"></span>
+                                                            Velldoris
+                                                        </label>
+                                                        <label class="checkbox-label" for="checkbox_5">
+                                                            <input id="checkbox_5" type="checkbox" name="fabric" value="3">
+                                                            <span class="checkbox-icon"></span>
+                                                            Turen Becker
+                                                        </label>
+                                                        <label class="checkbox-label" for="checkbox_6">
+                                                            <input id="checkbox_6" type="checkbox" name="fabric" value="4">
+                                                            <span class="checkbox-icon"></span>
+                                                            Zadoor
+                                                        </label>
+                                                        <label class="checkbox-label" for="checkbox_7">
+                                                            <input id="checkbox_7" type="checkbox" name="fabric" value="5">
+                                                            <span class="checkbox-icon"></span>
+                                                            Форест
+                                                        </label>
+                                                    </div>
+                                                    <button class="js-filter-section-cut filter__section-cut-toggler" type="button" data-text="Скрыть">Показать все</button>
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title">Цвет</p>
+                                                <div class="filter__section-inner ">
+                                                    <label class="checkbox-label" for="checkbox_8">
+                                                        <input id="checkbox_8" type="checkbox" name="color" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        Белый
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_9">
+                                                        <input id="checkbox_9" type="checkbox" name="color" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        Черный
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_10">
+                                                        <input id="checkbox_10" type="checkbox" name="color" value="3">
+                                                        <span class="checkbox-icon"></span>
+                                                        Серый
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title">Цвет</p>
+                                                <div class="filter__section-inner ">
+                                                    <label class="filter__color">
+                                                        <input type="checkbox" name="color_" value="1">
+                                                        <span class="filter__color-icon"><img src="images/content/img_41.jpg" alt="Серый"></span>
+                                                        Серый
+                                                    </label>
+                                                    <label class="filter__color">
+                                                        <input type="checkbox" name="color_" value="1">
+                                                        <span class="filter__color-icon"><img src="images/content/img_42.jpg" alt="Бордо"></span>
+                                                        Бордо
+                                                    </label>
+                                                    <label class="filter__color">
+                                                        <input type="checkbox" name="color_" value="1">
+                                                        <span class="filter__color-icon"><img src="images/content/img_43.jpg" alt="Светло-серый"></span>
+                                                        Светло-серый
+                                                    </label>
+                                                    <label class="filter__color">
+                                                        <input type="checkbox" name="color_" value="1">
+                                                        <span class="filter__color-icon"><img src="images/content/img_44.jpg" alt="Белый"></span>
+                                                        Белый
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title">Стиль</p>
+                                                <div class="filter__section-inner ">
+                                                    <label class="checkbox-label" for="checkbox_11">
+                                                        <input id="checkbox_11" type="checkbox" name="style" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        Классика
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_12">
+                                                        <input id="checkbox_12" type="checkbox" name="style" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        Модерн
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_13">
+                                                        <input id="checkbox_13" type="checkbox" name="style" value="3">
+                                                        <span class="checkbox-icon"></span>
+                                                        Стекло
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_14">
+                                                        <input id="checkbox_14" type="checkbox" name="style" value="4">
+                                                        <span class="checkbox-icon"></span>
+                                                        Хайтек
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__section">
+                                                <p class="js-filter-section-opener filter__section-title">Материал</p>
+                                                <div class="filter__section-inner ">
+                                                    <label class="checkbox-label" for="checkbox_15">
+                                                        <input id="checkbox_15" type="checkbox" name="material" value="1">
+                                                        <span class="checkbox-icon"></span>
+                                                        Массив дуба
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_16">
+                                                        <input id="checkbox_16" type="checkbox" name="material" value="2">
+                                                        <span class="checkbox-icon"></span>
+                                                        Массив ольхи
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_17">
+                                                        <input id="checkbox_17" type="checkbox" name="material" value="3">
+                                                        <span class="checkbox-icon"></span>
+                                                        Массив сосны
+                                                    </label>
+                                                    <label class="checkbox-label" for="checkbox_18">
+                                                        <input id="checkbox_18" type="checkbox" name="material" value="4">
+                                                        <span class="checkbox-icon"></span>
+                                                        Пвх
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__buttons">
+                                                <button class="button button--type_2" type="submit">Применить</button>
+                                                <button class="button button--type_3" type="reset">Сбросить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="catalog-section__banner">
+                                        <a href="#"><img src="images/content/img_35.jpg" alt="Получи sms-купон на скидку"></a>
+                                    </div>
+                                </div>
+                                <div class="catalog-section__list">
+                                    <div class="catalog-section__list-top">
+                                        <label class="select sorting-select">
+                                            <select class="js-select">
+                                                <option class="asc">Сортировать по цене</option>
+                                                <option class="desc">Сортировать по цене</option>
+                                            </select>
+                                        </label>
+
+                                        <div class="catalog-section__show-block">
+                                            <span class="catalog-section__show-block-title">Показать:</span>
+                                            <a class="catalog-section__show-button is-active" href="#">24</a>
+                                            <a class="catalog-section__show-button" href="#">48</a>
+                                            <a class="catalog-section__show-button" href="#">72</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="js-custom-scroll-mobile catalog-slider">
+                                        <div class="js-catalog-slider_5 catalog-slider__list">
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                </a>
+                                            </div>
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Velldoris Unica 1</span>
+                                                </a>
+                                            </div>
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                </a>
+                                            </div>
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                </a>
+                                            </div>
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Zadoor L6 ПО венге</span>
+                                                </a>
+                                            </div>
+                                            <div class="catalog-slider__item">
+                                                <a class="catalog-item" href="#">
+                                                    <span class="catalog-item__image-block">
+                                                        <span class="catalog-item__image">
+                                                            <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                        </span>
+                                                    </span>
+                                                    <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <style>
+                                        @media(min-width: 1024px) {
+                                            .container .catalog-section .catalog-slider {
+                                                margin-left: 0;
+                                                margin-right: 0;
+                                            }
+                                        }
+                                    </style>
+
+                                    <div class="catalog-list catalog-list--type_1">
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">79 990 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">81 900 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Unica 1</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Zadoor L6 ПО венге</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Unica 1</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Zadoor L6 ПО венге</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Unica 1</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Zadoor L6 ПО венге</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price">8 820 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Turen Becker Соммер</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="catalog-list__item">
+                                            <a class="catalog-item" href="catalog-detail.html">
+                                                <span class="catalog-item__image-block">
+                                                    <span class="catalog-item__image">
+                                                        <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
+                                                    </span>
+                                                    <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
+                                                </span>
+                                                <span class="catalog-item__type">Дверь</span>
+                                                <span class="catalog-item__title">Velldoris Unica 1</span>
+                                                <span class="catalog-item__price-block">
+                                                    <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
+                                                    <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="more-block">
+                                        <button class="button button--type_3 button--big" type="button">Показать ещё</button>
+                                    </div>
+                                    <div class="catalog-section__text page-text">
+                                        <h2 style="max-width: 660px;">Большой выбор межкомнатных дверей в магазине "Двери Shop"</h2>
+                                        <p>В нашем каталоге Вы найдете большой выбор дверей на любой вкус и бюджет. В ассортименте крашеные и ламинированные изделия, продукция из массива и пластика с покрытием из шпона, экошпона и других материалов.
+                                        </p>
+                                        <p>На сайте представлены различные виды дверей с фото и ценами, а также подробная информация об условиях оплаты и доставки. Для Вашего удобства предусмотрена фильтрация по цветам, производителям, материалам,
+                                            стоимости и другим
+                                            параметрам.</p>
+                                        <p>У нас Вы можете купить глухие межкомнатные двери, а также изделия со вставками из пластика, стекла и других материалов, с оригинальным декором и фурнитурой. Чтобы подробнее узнать о доступных предложениях,
+                                            ознакомьтесь с
+                                            каталогом на сайте.</p>
+                                    </div>
+
+                                    //= template/banners3.html
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title is-open">Наличие</p>
-                        <div class="filter__section-inner is-open">
-                          <label class="checkbox-label" for="checkbox_1">
-                            <input id="checkbox_1" type="checkbox" name="stock" value="1">
-                            <span class="checkbox-icon"></span>
-                            на складе
-                          </label>
-                          <label class="checkbox-label" for="checkbox_2">
-                            <input id="checkbox_2" type="checkbox" name="stock" value="2">
-                            <span class="checkbox-icon"></span>
-                            под заказ
-                          </label>
-                        </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title is-open">Производитель</p>
-                        <div class="filter__section-inner is-open">
-                          <label class="checkbox-label" for="checkbox_3">
-                            <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                            <span class="checkbox-icon"></span>
-                            Profildoors
-                          </label>
-                          <label class="checkbox-label" for="checkbox_4">
-                            <input id="checkbox_4" type="checkbox" name="fabric" value="2">
-                            <span class="checkbox-icon"></span>
-                            Velldoris
-                          </label>
-                          <label class="checkbox-label" for="checkbox_5">
-                            <input id="checkbox_5" type="checkbox" name="fabric" value="3">
-                            <span class="checkbox-icon"></span>
-                            Turen Becker
-                          </label>
-                          <label class="checkbox-label" for="checkbox_6">
-                            <input id="checkbox_6" type="checkbox" name="fabric" value="4">
-                            <span class="checkbox-icon"></span>
-                            Zadoor
-                          </label>
-                          <label class="checkbox-label" for="checkbox_7">
-                            <input id="checkbox_7" type="checkbox" name="fabric" value="5">
-                            <span class="checkbox-icon"></span>
-                            Форест
-                          </label>
-                          <label class="checkbox-label" for="checkbox_3">
-                            <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                            <span class="checkbox-icon"></span>
-                            Profildoors
-                          </label>
-                          <label class="checkbox-label" for="checkbox_4">
-                            <input id="checkbox_4" type="checkbox" name="fabric" value="2">
-                            <span class="checkbox-icon"></span>
-                            Velldoris
-                          </label>
-                          <label class="checkbox-label" for="checkbox_5">
-                            <input id="checkbox_5" type="checkbox" name="fabric" value="3">
-                            <span class="checkbox-icon"></span>
-                            Turen Becker
-                          </label>
-                          <label class="checkbox-label" for="checkbox_6">
-                            <input id="checkbox_6" type="checkbox" name="fabric" value="4">
-                            <span class="checkbox-icon"></span>
-                            Zadoor
-                          </label>
-                          <label class="checkbox-label" for="checkbox_7">
-                            <input id="checkbox_7" type="checkbox" name="fabric" value="5">
-                            <span class="checkbox-icon"></span>
-                            Форест
-                          </label>
-                          <div class="filter__section-cut">
-                            <label class="checkbox-label" for="checkbox_3">
-                              <input id="checkbox_3" type="checkbox" name="fabric" value="1">
-                              <span class="checkbox-icon"></span>
-                              Profildoors
-                            </label>
-                            <label class="checkbox-label" for="checkbox_4">
-                              <input id="checkbox_4" type="checkbox" name="fabric" value="2">
-                              <span class="checkbox-icon"></span>
-                              Velldoris
-                            </label>
-                            <label class="checkbox-label" for="checkbox_5">
-                              <input id="checkbox_5" type="checkbox" name="fabric" value="3">
-                              <span class="checkbox-icon"></span>
-                              Turen Becker
-                            </label>
-                            <label class="checkbox-label" for="checkbox_6">
-                              <input id="checkbox_6" type="checkbox" name="fabric" value="4">
-                              <span class="checkbox-icon"></span>
-                              Zadoor
-                            </label>
-                            <label class="checkbox-label" for="checkbox_7">
-                              <input id="checkbox_7" type="checkbox" name="fabric" value="5">
-                              <span class="checkbox-icon"></span>
-                              Форест
-                            </label>
-                          </div>
-                          <button class="js-filter-section-cut filter__section-cut-toggler" type="button" data-text="Скрыть">Показать все</button>
-                        </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title">Цвет</p>
-                        <div class="filter__section-inner ">
-                          <label class="checkbox-label" for="checkbox_8">
-                            <input id="checkbox_8" type="checkbox" name="color" value="1">
-                            <span class="checkbox-icon"></span>
-                            Белый
-                          </label>
-                          <label class="checkbox-label" for="checkbox_9">
-                            <input id="checkbox_9" type="checkbox" name="color" value="2">
-                            <span class="checkbox-icon"></span>
-                            Черный
-                          </label>
-                          <label class="checkbox-label" for="checkbox_10">
-                            <input id="checkbox_10" type="checkbox" name="color" value="3">
-                            <span class="checkbox-icon"></span>
-                            Серый
-                          </label>
-                        </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title">Цвет</p>
-                        <div class="filter__section-inner ">
-                          <label class="filter__color">
-                            <input type="checkbox" name="color_" value="1">
-                            <span class="filter__color-icon"><img src="images/content/img_41.jpg" alt="Серый"></span>
-                            Серый
-                          </label>
-                          <label class="filter__color">
-                            <input type="checkbox" name="color_" value="1">
-                            <span class="filter__color-icon"><img src="images/content/img_42.jpg" alt="Бордо"></span>
-                            Бордо
-                          </label>
-                          <label class="filter__color">
-                            <input type="checkbox" name="color_" value="1">
-                            <span class="filter__color-icon"><img src="images/content/img_43.jpg" alt="Светло-серый"></span>
-                            Светло-серый
-                          </label>
-                          <label class="filter__color">
-                            <input type="checkbox" name="color_" value="1">
-                            <span class="filter__color-icon"><img src="images/content/img_44.jpg" alt="Белый"></span>
-                            Белый
-                          </label>
-                        </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title">Стиль</p>
-                        <div class="filter__section-inner ">
-                          <label class="checkbox-label" for="checkbox_11">
-                            <input id="checkbox_11" type="checkbox" name="style" value="1">
-                            <span class="checkbox-icon"></span>
-                            Классика
-                          </label>
-                          <label class="checkbox-label" for="checkbox_12">
-                            <input id="checkbox_12" type="checkbox" name="style" value="2">
-                            <span class="checkbox-icon"></span>
-                            Модерн
-                          </label>
-                          <label class="checkbox-label" for="checkbox_13">
-                            <input id="checkbox_13" type="checkbox" name="style" value="3">
-                            <span class="checkbox-icon"></span>
-                            Стекло
-                          </label>
-                          <label class="checkbox-label" for="checkbox_14">
-                            <input id="checkbox_14" type="checkbox" name="style" value="4">
-                            <span class="checkbox-icon"></span>
-                            Хайтек
-                          </label>
-                        </div>
-                      </div>
-                      <div class="filter__section">
-                        <p class="js-filter-section-opener filter__section-title">Материал</p>
-                        <div class="filter__section-inner ">
-                          <label class="checkbox-label" for="checkbox_15">
-                            <input id="checkbox_15" type="checkbox" name="material" value="1">
-                            <span class="checkbox-icon"></span>
-                            Массив дуба
-                          </label>
-                          <label class="checkbox-label" for="checkbox_16">
-                            <input id="checkbox_16" type="checkbox" name="material" value="2">
-                            <span class="checkbox-icon"></span>
-                            Массив ольхи
-                          </label>
-                          <label class="checkbox-label" for="checkbox_17">
-                            <input id="checkbox_17" type="checkbox" name="material" value="3">
-                            <span class="checkbox-icon"></span>
-                            Массив сосны
-                          </label>
-                          <label class="checkbox-label" for="checkbox_18">
-                            <input id="checkbox_18" type="checkbox" name="material" value="4">
-                            <span class="checkbox-icon"></span>
-                            Пвх
-                          </label>
-                        </div>
-                      </div>
-                      <div class="filter__buttons">
-                        <button class="button button--type_2" type="submit">Применить</button>
-                        <button class="button button--type_3" type="reset">Сбросить</button>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="catalog-section__banner">
-                    <a href="#"><img src="images/content/img_35.jpg" alt="Получи sms-купон на скидку"></a>
-                  </div>
+                    </div>
                 </div>
-                <div class="catalog-section__list">
-                  <div class="catalog-section__show-block">
-                    Показать:
-                    <a class="catalog-section__show-button is-active" href="#">24</a>
-                    <a class="catalog-section__show-button" href="#">48</a>
-                    <a class="catalog-section__show-button" href="#">72</a>
-                  </div>
-
-                  <div class="js-custom-scroll-mobile catalog-slider">
-                    <div class="js-catalog-slider_5 catalog-slider__list">
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Turen Becker Соммер</span>
-                        </a>
-                      </div>
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Velldoris Unica 1</span>
-                        </a>
-                      </div>
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        </a>
-                      </div>
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Turen Becker Соммер</span>
-                        </a>
-                      </div>
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Zadoor L6 ПО венге</span>
-                        </a>
-                      </div>
-                      <div class="catalog-slider__item">
-                        <a class="catalog-item" href="#">
-                          <span class="catalog-item__image-block">
-                            <span class="catalog-item__image">
-                              <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
-                            </span>
-                          </span>
-                          <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="catalog-list catalog-list--type_1">
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">79 990 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">81 900 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Unica 1</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Zadoor L6 ПО венге</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Unica 1</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Zadoor L6 ПО венге</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Unica 1</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_11.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_12.jpg" alt="Zadoor L6 ПО венге">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Zadoor L6 ПО венге</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price">8 820 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_13.jpg" alt="Velldoris Smart ПГ Дуб">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Smart ПГ Дуб</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">2 620 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">3 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_9.jpg" alt="Turen Becker Соммер">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--hit">ХИТ</span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Turen Becker Соммер</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">5 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">9 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="catalog-list__item">
-                      <a class="catalog-item" href="catalog-detail.html">
-                        <span class="catalog-item__image-block">
-                          <span class="catalog-item__image">
-                            <img src="images/content/img_10.jpg" alt="Velldoris Unica 1">
-                          </span>
-                          <span class="catalog-item__marker catalog-item__marker--action">АКЦИЯ</span>
-                        </span>
-                        <span class="catalog-item__type">Дверь</span>
-                        <span class="catalog-item__title">Velldoris Unica 1</span>
-                        <span class="catalog-item__price-block">
-                          <span class="catalog-item__price catalog-item__price--new">8 820 р.</span>
-                          <span class="catalog-item__price catalog-item__price--old">12 990 р.</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="more-block">
-                    <button class="button button--type_3 button--big" type="button">Показать ещё</button>
-                  </div>
-                  <div class="catalog-section__text page-text">
-                    <h2 style="max-width: 660px;">Большой выбор межкомнатных дверей в магазине "Двери Shop"</h2>
-                    <p>В нашем каталоге Вы найдете большой выбор дверей на любой вкус и бюджет. В ассортименте крашеные и ламинированные изделия, продукция из массива и пластика с покрытием из шпона, экошпона и других материалов.</p>
-                    <p>На сайте представлены различные виды дверей с фото и ценами, а также подробная информация об условиях оплаты и доставки. Для Вашего удобства предусмотрена фильтрация по цветам, производителям, материалам, стоимости и другим
-                      параметрам.</p>
-                    <p>У нас Вы можете купить глухие межкомнатные двери, а также изделия со вставками из пластика, стекла и других материалов, с оригинальным декором и фурнитурой. Чтобы подробнее узнать о доступных предложениях, ознакомьтесь с
-                      каталогом на сайте.</p>
-                  </div>
-
-                  //= template/banners3.html
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      //= template/footer.html
-    </main>
-  </div>
+            //= template/footer.html
+        </main>
+    </div>
 
-  //= template/scripts.html
+    //= template/scripts.html
 
 </body>
 

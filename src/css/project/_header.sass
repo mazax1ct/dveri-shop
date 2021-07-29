@@ -79,12 +79,12 @@
 
     @media(min-width: 1350px)
       margin-left: 30px
+      text-align: center
 
     @media(min-width: 1900px)
       margin-left: 80px
 
-  &__phone,
-  &__whatsapp
+  &__phone
     align-items: center
     color: #1a1a1a
     display: flex
@@ -94,6 +94,7 @@
 
     @media(min-width: 1350px)
       font-size: 14px
+      margin-bottom: 3px
 
     @media(min-width: 1500px)
       font-size: 15px
@@ -118,16 +119,73 @@
       margin-right: 6px
       width: 14px
 
-  &__phone
-    @media(min-width: 1350px)
+  &__whatsapp
+    color: #1a1a1a
+    display: inline-block
+    font-size: 12px
+    text-align: center
+    text-decoration: none
+
+    @media(min-width: 1200px)
       margin-bottom: 5px
 
-  &__whatsapp
-    font-size: 12px
-    margin-bottom: 5px
+    @media(min-width: 1350px)
+      font-size: 14px
+      margin-bottom: 0
+
+    @media(min-width: 1500px)
+      font-size: 15px
+
+    @media(min-width: 1900px)
+      font-size: 16px
 
     svg
       fill: #01e675
+      height: 14px
+      margin-top: -2px
+      margin-right: 6px
+      width: 14px
+
+    &:hover,
+    &:focus
+      .header__whatsapp-inner
+        span
+          border-bottom-color: #1a1a1a
+
+      .header__whatsapp-sign
+        border-color: #1a1a1a
+        color: #1a1a1a
+
+  &__whatsapp-inner
+    align-items: center
+    color: #1a1a1a
+    display: flex
+    line-height: 1
+    text-decoration: none
+    vertical-align: top
+
+    @media(min-width: 1350px)
+      margin-bottom: 3px
+
+    span
+      border-bottom: 1px dotted transparent
+      transition: border-color 0.3s
+      white-space: nowrap
+
+  &__whatsapp-sign
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #9C9C9C
+    color: #9C9C9C
+    cursor: pointer
+    display: none
+    font-size: 12px
+    line-height: 1
+    padding: 5px 0 3px
+    transition: border-color 0.3s, color 0.3s
+
+    @media(min-width: 1350px)
+      display: inline-block
 
   &__recall-button
     background-color: transparent

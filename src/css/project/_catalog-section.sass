@@ -26,7 +26,7 @@
   &__top-block
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: center
     margin-bottom: 20px
 
     .filter-opener,
@@ -34,29 +34,10 @@
       width: calc(50% - 5px)
 
     .filter-opener
+      height: 40px
       min-width: 0
-
-    .select
-      border: 1px solid #1a1a1a
-      border-radius: 4px
-      display: flex
-      height: 38px
-      justify-content: center
-      font-size: 10px
-      text-align: center
-
-      @media(min-width: 375px)
-        font-size: 12px
-
-      @media(min-width: 768px)
-        font-size: 15px
-
-      @media(min-width: 992px)
-        margin-left: 30px
-        width: 195px
-
-      .select2-container
-        width: 100% !important
+      max-width: 280px
+      width: 100%
 
     .tags
       margin-top: 15px
@@ -104,14 +85,56 @@
         margin-left: -50px
         margin-right: -50px
 
+  &__list-top
+    align-items: flex-end
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 20px
+
+    .select
+      border: 1px solid #1a1a1a
+      border-radius: 4px
+      display: flex
+      height: 40px
+      justify-content: center
+      font-size: 10px
+      margin-bottom: 10px
+      text-align: center
+
+      @media(min-width: 375px)
+        font-size: 12px
+
+      @media(min-width: 768px)
+        font-size: 15px
+
+      @media(min-width: 992px)
+        width: 195px
+
+      .select2-container
+        width: 100% !important
+
   &__show-block
     align-items: center
     display: flex
-    margin-bottom: 30px
-    text-align: right
+    flex-wrap: wrap
+    margin-bottom: 10px
+    width: 140px
 
     @media(min-width: 768px)
-      justify-content: flex-end
+      width: auto
+
+  &__show-block-title
+    display: block
+    font-size: 12px
+    margin-bottom: 5px
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      margin-right: 10px
+      margin-bottom: 0
+      width: auto
 
   &__show-button
     align-items: center
@@ -126,11 +149,13 @@
     height: 40px
     justify-content: center
     line-height: 16px
-    margin-left: 10px
     padding: 2px 0 0
     text-decoration: none
     transition: background-color 0.3s, color 0.3s
     width: 40px
+
+    &:not(:last-child)
+      margin-right: 10px
 
     &:hover,
     &:focus
