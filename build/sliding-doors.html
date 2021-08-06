@@ -190,269 +190,334 @@
 
   <div class="wrapper">
     <div class="side-bar">
-      <div class="side-bar__inner">
-        <button class="js-side-bar-close side-bar__close" type="button" title="Закрыть меню">
-          <svg class="side-bar__close-icon" aria-hidden="true">
-            <use xlink:href="#close" />
-          </svg>
-        </button>
-        <div class="side-bar__phone-block">
-          <a class="side-bar__phone" href="tel:+78124674429">+7 812 467-44-29</a>
+        <div class="side-bar__inner">
+            <button class="js-side-bar-close side-bar__close" type="button" title="Закрыть меню">
+                <svg class="side-bar__close-icon" aria-hidden="true">
+                    <use xlink:href="#close" />
+                </svg>
+            </button>
+            <div class="side-bar__phone-block">
+                <a class="side-bar__phone" href="tel:+78124674429">+7 812 467-44-29</a>
+            </div>
+            <a class="side-bar__logo" href="main.html">
+                <img width="127" height="47" src="images/logo.svg" alt="Дверишоп">
+            </a>
+            <form class="search-bar" method="post" action="search.html">
+                <label class="search-bar__label" for="search">
+                    <input id="search" class="search-bar__input" type="text" name="search" value="" placeholder="Найти двери" autocomplete="off">
+                </label>
+                <button class="search-bar__button" type="submit" title="Найти">
+                    <svg class="search-bar__button-icon" aria-hidden="true">
+                        <use xlink:href="#search" />
+                    </svg>
+                </button>
+            </form>
+            <nav class="side-bar__nav">
+                <ul class="catalog-menu">
+                    <li class="catalog-menu__item">
+                        <a class="js-subnav-opener sub-nav-is-big catalog-menu__link is-active" href="catalog-section.html" data-href="subnav_1">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_1" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Межкомнатные двери</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="js-subnav-opener catalog-menu__link" href="catalog-section-entrance.html" data-href="subnav_2">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_2" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Входные двери</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="js-subnav-opener catalog-menu__link" href="catalog-section-furniture.html" data-href="subnav_3">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_3" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Фурнитура</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="catalog-menu__link" href="#">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon stroke-fill-revert" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_4" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Перегородки</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="catalog-menu__link" href="sliding-doors.html">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_5" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Раздвижные двери</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="catalog-menu__link" href="#">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_6" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Двери спец. назначения</span>
+                        </a>
+                    </li>
+                    <li class="catalog-menu__item">
+                        <a class="catalog-menu__link" href="actions.html">
+                            <span class="catalog-menu__icon-block">
+                                <svg class="catalog-menu__icon stroke-fill-revert" aria-hidden="true">
+                                    <use xlink:href="#catalog_section_7" />
+                                </svg>
+                            </span>
+                            <span class="catalog-menu__link-text">Акции</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="service-menu">
+                    <li class="service-menu__item">
+                        <a class="service-menu__link" href="#">
+                            <span class="service-menu__icon-block">
+                                <svg class="service-menu__icon" aria-hidden="true">
+                                    <use xlink:href="#service_menu_1" />
+                                </svg>
+                            </span>
+                            <span class="service-menu__link-text">Вызвать замерщика</span>
+                        </a>
+                    </li>
+                    <li class="service-menu__item">
+                        <a class="service-menu__link" href="#">
+                            <span class="service-menu__icon-block">
+                                <svg class="service-menu__icon stroke-fill-revert" aria-hidden="true">
+                                    <use xlink:href="#service_menu_2" />
+                                </svg>
+                            </span>
+                            <span class="service-menu__link-text">Распродажа</span>
+                        </a>
+                    </li>
+                    <li class="service-menu__item">
+                        <a class="service-menu__link" href="#">
+                            <span class="service-menu__icon-block">
+                                <svg class="service-menu__icon stroke-fill-revert" aria-hidden="true">
+                                    <use xlink:href="#service_menu_3" />
+                                </svg>
+                            </span>
+                            <span class="service-menu__link-text">Купить оптом</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mm-menu">
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="about.html">О Компании</a></li>
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="zamer.html">Замер и установка</a></li>
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="pay-delivery.html">Оплата и доставка</a></li>
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="works.html">Работы</a></li>
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="reviews.html">Отзывы</a></li>
+                    <li class="mm-menu__item"><a class="mm-menu__link" href="shops.html">Магазины <span class="mm-menu__count">10</span></a></li>
+                </ul>
+            </nav>
         </div>
-        <a class="side-bar__logo" href="main.html">
-          <img width="127" height="47" src="images/logo.svg" alt="Дверишоп">
-        </a>
-        <form class="search-bar" method="post" action="search.html">
-          <label class="search-bar__label" for="search">
-            <input id="search" class="search-bar__input" type="text" name="search" value="" placeholder="Найти двери" autocomplete="off">
-          </label>
-          <button class="search-bar__button" type="submit" title="Найти">
-            <svg class="search-bar__button-icon" aria-hidden="true">
-              <use xlink:href="#search" />
-            </svg>
-          </button>
-        </form>
-        <nav class="side-bar__nav">
-          <ul class="catalog-menu">
-            <li class="catalog-menu__item">
-              <a class="js-subnav-opener catalog-menu__link is-active" href="catalog-section.html" data-href="subnav_1">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_section_1" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Межкомнатные двери</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="js-subnav-opener catalog-menu__link" href="catalog-section-entrance.html" data-href="subnav_2">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_section_2" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Входные двери</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="js-subnav-opener catalog-menu__link" href="catalog-section-furniture.html" data-href="subnav_3">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_section_3" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Фурнитура</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="#">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon stroke-fill-revert" aria-hidden="true">
-                    <use xlink:href="#catalog_section_4" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Перегородки</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="sliding-doors.html">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_section_5" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Раздвижные двери</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="#">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_section_6" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Двери спец. назначения</span>
-              </a>
-            </li>
-            <li class="catalog-menu__item">
-              <a class="catalog-menu__link" href="actions.html">
-                <span class="catalog-menu__icon-block">
-                  <svg class="catalog-menu__icon stroke-fill-revert" aria-hidden="true">
-                    <use xlink:href="#catalog_section_7" />
-                  </svg>
-                </span>
-                <span class="catalog-menu__link-text">Акции</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="service-menu">
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">
-                <span class="service-menu__icon-block">
-                  <svg class="service-menu__icon" aria-hidden="true">
-                    <use xlink:href="#service_menu_1" />
-                  </svg>
-                </span>
-                <span class="service-menu__link-text">Вызвать замерщика</span>
-              </a>
-            </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">
-                <span class="service-menu__icon-block">
-                  <svg class="service-menu__icon stroke-fill-revert" aria-hidden="true">
-                    <use xlink:href="#service_menu_2" />
-                  </svg>
-                </span>
-                <span class="service-menu__link-text">Распродажа</span>
-              </a>
-            </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">
-                <span class="service-menu__icon-block">
-                  <svg class="service-menu__icon stroke-fill-revert" aria-hidden="true">
-                    <use xlink:href="#service_menu_3" />
-                  </svg>
-                </span>
-                <span class="service-menu__link-text">Купить оптом</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="mm-menu">
-            <li class="mm-menu__item"><a class="mm-menu__link" href="about.html">О Компании</a></li>
-            <li class="mm-menu__item"><a class="mm-menu__link" href="zamer.html">Замер и установка</a></li>
-            <li class="mm-menu__item"><a class="mm-menu__link" href="pay-delivery.html">Оплата и доставка</a></li>
-            <li class="mm-menu__item"><a class="mm-menu__link" href="works.html">Работы</a></li>
-            <li class="mm-menu__item"><a class="mm-menu__link" href="reviews.html">Отзывы</a></li>
-            <li class="mm-menu__item"><a class="mm-menu__link" href="shops.html">Магазины <span class="mm-menu__count">10</span></a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="side-bar__subnav subnav" data-target="subnav_1">
-        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
-          <svg class="subnav__close-icon" aria-hidden="true">
-            <use xlink:href="#close" />
-          </svg>
-        </button>
-        <p class="subnav__title">
-          Выбор по фабрике
-        </p>
-        <ul class="subnav__list">
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/profil.jpg" alt="Profil Doors" title="Profil Doors">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/velldoris.jpg" alt="Velldoris" title="Velldoris">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/turen.jpg" alt="Turen Becker" title="Turen Becker">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/zadoor.jpg" alt="Zadoor" title="Zadoor">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/forest.jpg" alt="Форест" title="Форест">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/post.jpg" alt="Поставский Мебельный Центр" title="Поставский Мебельный Центр">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/estet.jpg" alt="Эстет" title="Эстет">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/framir.jpg" alt="Фрамир" title="Фрамир">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/status.jpg" alt="Status" title="Status">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/quest.jpg" alt="Questdoors" title="Questdoors">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/akma.jpg" alt="Акма" title="Акма">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/arsenal.jpg" alt="Арсенал" title="Арсенал">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/greenwood.jpg" alt="Greenwood" title="Greenwood">
-            </a>
-          </li>
-          <li class="subnav__list-item">
-            <a class="subnav__list-link" href="#">
-              <img src="images/content/fabrics/linedoor.jpg" alt="Linedoor" title="Linedoor">
-            </a>
-          </li>
-        </ul>
-        <p class="subnav__link-block">
-          <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
-        </p>
-      </div>
-      <div class="side-bar__subnav subnav" data-target="subnav_2">
-        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
-          <svg class="subnav__close-icon" aria-hidden="true">
-            <use xlink:href="#close" />
-          </svg>
-        </button>
-        <p class="subnav__title">
-          <a class="subnav__title-link" href="#">Входные двери</a>
-        </p>
-        <ul class="subnav__list">
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Stardis</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Valberg</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Бульдорс</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Выбор</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Зенит</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Кондор</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Тоун</a></li>
-        </ul>
-        <p class="subnav__link-block">
-          <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
-        </p>
-      </div>
-      <div class="side-bar__subnav subnav" data-target="subnav_3">
-        <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
-          <svg class="subnav__close-icon" aria-hidden="true">
-            <use xlink:href="#close" />
-          </svg>
-        </button>
-        <p class="subnav__title">
-          <a class="subnav__title-link" href="#">Фурнитура</a>
-        </p>
-        <ul class="subnav__list">
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli Luxury</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Renz</a></li>
-          <li class="subnav__list-item"><a class="subnav__list-link" href="#">Rucetti</a></li>
-        </ul>
-        <p class="subnav__link-block">
-          <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
-        </p>
-      </div>
+        <div class="side-bar__subnav side-bar__subnav--big subnav" data-target="subnav_1">
+            <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+                <svg class="subnav__close-icon" aria-hidden="true">
+                    <use xlink:href="#close" />
+                </svg>
+            </button>
+            <!--<p class="subnav__title">Выбор по фабрике</p>-->
+            <ul class="sections-list">
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/a67/a6754bfa6ba250378aa69aa327ef6470.png" alt="Profil Doors" title="Profil Doors">
+                            <span class="section-item__link-title">Profil Doors</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/aa7/aa774aa81debe6aec31fb6b1cb67f505.png" alt="VellDoris" title="VellDoris">
+                            <span class="section-item__link-title">VellDoris</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" style="color: #72AB3A" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/f50/f50280343f703703a3daf7a1b94d1344.jpg" alt="Фрамир" title="Фрамир">
+                            <span class="section-item__link-title">Фрамир</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" style="color: #00A150" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/15d/15dfa69d1011bd0a4ac1939f9530d0af.png" alt="Estet" title="Estet">
+                            <span class="section-item__link-title">Estet</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" style="color: #51251C" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/059/059bbd5750b2f8ce0f6034a7ee691138.jpg" alt="ЛайнДор" title="ЛайнДор">
+                            <span class="section-item__link-title">ЛайнДор</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/3d3/3d3a5afc668c396e9506ca1f17dcf2f4.png" alt="Colorit" title="Colorit">
+                            <span class="section-item__link-title">Colorit</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/efc/efc1fd7f551e4e4e0d26f04581ee5ffc.png" alt="Deform" title="Deform">
+                            <span class="section-item__link-title">Deform</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" style="color: #EC691F" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/6b3/6b3e54765a948a4fa23369adb3920f05.png" alt="Uberture" title="Uberture">
+                            <span class="section-item__link-title">Uberture</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="images/content/fabrics/urkas.jpg" alt="Юркас" title="Юркас">
+                            <span class="section-item__link-title">Юркас</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+            </ul>
+            <!--<p class="subnav__link-block">
+                <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
+            </p>-->
+        </div>
+        <div class="side-bar__subnav subnav" data-target="subnav_2">
+            <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+                <svg class="subnav__close-icon" aria-hidden="true">
+                    <use xlink:href="#close" />
+                </svg>
+            </button>
+            <!--<p class="subnav__title">
+                <a class="subnav__title-link" href="#">Входные двери</a>
+            </p>-->
+            <!--<ul class="subnav__list">
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Stardis</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Valberg</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Бульдорс</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Выбор</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Зенит</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Кондор</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Тоун</a></li>
+            </ul>-->
+            <!--<p class="subnav__link-block">
+                <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
+            </p>-->
+            <ul class="sections-list">
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/d95/d95b0ab130c6e53adb772038d3d21b01.png" alt="Выбор" title="Выбор">
+                            <span class="section-item__link-title">Выбор</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/4c8/4c8a9d7ff32fdd16c6b2f8d9c4fc7c48.png" alt="РАЙТВЕР" title="РАЙТВЕР">
+                            <span class="section-item__link-title">РАЙТВЕР</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/930/9304b77c95fff348477d8da4d9bc47dc.png" alt="Промет" title="Промет">
+                            <span class="section-item__link-title">Промет</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/e6c/e6cc49f727238fbef5d8cb07ba02d0f1.jpg" alt="DIVA" title="DIVA">
+                            <span class="section-item__link-title">DIVA</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/a4d/a4d973e34c816a30634083822b20d9fb.png" alt="STALLER" title="STALLER">
+                            <span class="section-item__link-title">STALLER</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+                <li class="sections-list__item">
+                    <div class="section-item">
+                        <a class="section-item__link" href="#">
+                            <img src="https://dverishop.ru/upload/iblock/5fb/5fbbbf29d6d1d3d9a3d3bc53f97dc983.jpg" alt="STARDIS" title="STARDIS">
+                            <span class="section-item__link-title">STARDIS</span>
+                        </a>
+                        <p class="section-item__text">Страница «О компании» или «О нас» часто подразумевается «по умолчанию»: вроде это же очевидно, зачем она нужна</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="side-bar__subnav subnav" data-target="subnav_3">
+            <button class="js-subnav-close subnav__close" type="button" title="Закрыть">
+                <svg class="subnav__close-icon" aria-hidden="true">
+                    <use xlink:href="#close" />
+                </svg>
+            </button>
+            <p class="subnav__title">
+                <a class="subnav__title-link" href="#">Фурнитура</a>
+            </p>
+            <ul class="subnav__list">
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Morelli Luxury</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Renz</a></li>
+                <li class="subnav__list-item"><a class="subnav__list-link" href="#">Rucetti</a></li>
+            </ul>
+            <p class="subnav__link-block">
+                <a class="subnav__link" href="#">Выбрать по другим параметрам</a>
+            </p>
+        </div>
     </div>
     <main class="main">
       <div class="main__inner">
