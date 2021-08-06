@@ -477,14 +477,24 @@
   position: relative
   padding-left: 140px
 
+  &:hover
+    .section-item__pseudo-link
+      color: #e22a1b
+      text-decoration: none
+
+      svg
+        fill: #e22a1b
+
   &__link
     color: #1a1a1a
     display: block
     font-size: 18px
     font-weight: 500
     margin-bottom: 10px
+    transition: color 0.3s
 
     &:hover
+      color: #e22a1b !important
       text-decoration: none
 
     &::after
@@ -500,7 +510,7 @@
       max-width: 117px
       max-height: 80px
       left: 0
-      position: absolute        
+      position: absolute
 
   &__link-title
     display: block
@@ -508,6 +518,22 @@
   &__text
     color: rgba(#000, 0.7)
     font-size: 12px
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  &__pseudo-link
+    align-items: center
+    display: flex
+    font-size: 12px
+    text-decoration: underline
+    transition: color 0.3s
+
+    svg
+      height: 10px
+      margin-left: 10px
+      transition: fill 0.3s
+      width: 10px
 
 .search-bar
   border-top: 1px solid #ccc
