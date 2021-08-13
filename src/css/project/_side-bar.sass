@@ -474,16 +474,23 @@
     padding-bottom: 30px
 
 .section-item
+  background-color: transparent
   position: relative
   padding-left: 140px
+  transition: background-color 0.3s
 
   &:hover
-    .section-item__pseudo-link
-      color: #e22a1b
+    background-color: #e22a1b
+    color: #fff
+
+    .section-item__link,
+    .section-item__pseudo-link,
+    .section-item__text
+      color: #fff !important
       text-decoration: none
 
       svg
-        fill: #e22a1b
+        fill: #fff
 
   &__link
     color: #1a1a1a
@@ -493,17 +500,19 @@
     margin-bottom: 10px
     transition: color 0.3s
 
-    &:hover
-      color: #e22a1b !important
+    //&:hover
+      //color: #e22a1b !important
       text-decoration: none
 
     &::after
       bottom: 0
+      background-color: transparent
       content: ''
       left: 0
       position: absolute
       right: 0
       top: 0
+      transition: background-color 0.3s
       z-index: 1
 
     img
@@ -518,6 +527,7 @@
   &__text
     color: rgba(#000, 0.7)
     font-size: 12px
+    transition: color 0.3s
 
     &:not(:last-child)
       margin-bottom: 10px
