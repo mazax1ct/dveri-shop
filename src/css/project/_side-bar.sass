@@ -480,7 +480,6 @@
   transition: background-color 0.3s
 
   &:hover
-    background-color: #e22a1b
     color: #fff
 
     .section-item__link,
@@ -492,6 +491,20 @@
       svg
         fill: #fff
 
+    &::before
+      background-color: #e22a1b
+
+  &::before
+    bottom: 0
+    background-color: transparent
+    content: ''
+    display: block
+    left: 140px
+    position: absolute
+    top: 0
+    transition: background-color 0.3s
+    width: calc(100% - 140px)
+
   &__link
     color: #1a1a1a
     display: block
@@ -499,10 +512,6 @@
     font-weight: 500
     margin-bottom: 10px
     transition: color 0.3s
-
-    //&:hover
-      //color: #e22a1b !important
-      text-decoration: none
 
     &::after
       bottom: 0
@@ -523,10 +532,12 @@
 
   &__link-title
     display: block
+    position: relative
 
   &__text
     color: rgba(#000, 0.7)
     font-size: 12px
+    position: relative
     transition: color 0.3s
 
     &:not(:last-child)
@@ -536,6 +547,7 @@
     align-items: center
     display: flex
     font-size: 12px
+    position: relative
     text-decoration: underline
     transition: color 0.3s
 
