@@ -486,30 +486,15 @@
   width: 100%
 
   &:hover
-    color: #fff
+    text-decoration: none
 
-    .section-item__link,
-    .section-item__pseudo-link,
-    .section-item__text
-      color: #fff !important
+    .section-item__link-title,
+    .section-item__pseudo-link
+      color: #e22a1b !important
       text-decoration: none
 
       svg
-        fill: #fff
-
-    &::before
-      background-color: #e22a1b
-
-  &::before
-    bottom: -10px
-    background-color: transparent
-    content: ''
-    display: block
-    left: 125px
-    position: absolute
-    top: -10px
-    transition: background-color 0.3s
-    width: calc(100% - 125px)
+        fill: #e22a1b
 
   &__link
     color: #1a1a1a
@@ -518,6 +503,7 @@
     font-weight: 500
     margin-bottom: 10px
     transition: color 0.3s
+    text-decoration: none
 
     &::after
       bottom: 0
@@ -541,6 +527,7 @@
   &__link-title
     display: block
     position: relative
+    transition: color 0.3s
 
   &__text
     color: rgba(#000, 0.7)
