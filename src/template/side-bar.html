@@ -11,16 +11,23 @@
         <a class="side-bar__logo" href="main.html">
             <img width="127" height="47" src="images/logo.svg" alt="Дверишоп">
         </a>
-        <form class="search-bar" method="post" action="search.html">
-            <label class="search-bar__label" for="search">
-                <input id="search" class="search-bar__input" type="text" name="search" value="" placeholder="Найти двери" autocomplete="off">
-            </label>
-            <button class="search-bar__button" type="submit" title="Найти">
-                <svg class="search-bar__button-icon" aria-hidden="true">
-                    <use xlink:href="#search" />
+        <div class="search-popup">
+            <button class="js-search-closer search-popup__close" type="button" title="Закрыть">
+                <svg aria-hidden="true">
+                    <use xlink:href="#close" />
                 </svg>
             </button>
-        </form>
+            <form class="search-bar" method="post" action="search.html">
+                <label class="search-bar__label" for="search">
+                    <input id="search" class="search-bar__input" type="text" name="search" value="" placeholder="Найти двери" autocomplete="off">
+                </label>
+                <button class="search-bar__button" type="submit" title="Найти">
+                    <svg class="search-bar__button-icon" aria-hidden="true">
+                        <use xlink:href="#search" />
+                    </svg>
+                </button>
+            </form>
+        </div>
         <nav class="side-bar__nav">
             <ul class="catalog-menu">
                 <li class="catalog-menu__item">

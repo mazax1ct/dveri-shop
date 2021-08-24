@@ -9,25 +9,18 @@
       align-items: center
       display: flex
 
-    @media(min-width: 1200px) and (max-width: 1349px)
+    @media(min-width: 992px) and (max-width: 1349px)
       display: block
 
   .header__phone-block-inner
-    @media(min-width: 992px)
-      margin-left: 20px
+    @media(min-width: 1350px)
+      margin-left: 30px
 
     @media(min-width: 1200px) and (max-width: 1349px)
       margin-left: 0
 
-    @media(min-width: 1350px)
-      margin-left: 30px
-
     @media(min-width: 1900px)
-      margin-left: 80px
-
-  .header__whatsapp
-    @media(min-width: 992px) and (max-width: 1199px)
-      margin-bottom: 0
+      margin-left: 60px
 
 .header
   background-color: #fff
@@ -51,9 +44,15 @@
     justify-content: space-between
     min-height: 68px
 
+    @media(min-width: 1500px)
+      padding-left: 30px
+      padding-right: 30px
+
     @media(min-width: 1900px)
       justify-content: flex-start
       min-height: 90px
+      padding-left: 50px
+      padding-right: 50px
 
   &__phone-block
     display: none
@@ -71,7 +70,7 @@
       margin-right: 40px
 
     @media(min-width: 1900px)
-      margin-right: 80px
+      margin-right: 60px
 
   &__phone-block-inner
     @media(min-width: 1200px)
@@ -82,7 +81,7 @@
       text-align: center
 
     @media(min-width: 1900px)
-      margin-left: 80px
+      margin-left: 60px
 
   &__phone
     align-items: center
@@ -226,6 +225,28 @@
     @media(min-width: 1900px)
       margin-right: 128px
 
+  &__search-opener
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: none
+    height: 40px
+    justify-content: center
+    padding: 0
+    width: 40px
+
+    @media(min-width: 992px)
+      display: flex
+
+    @media(min-width: 1900px)
+      margin-right: 60px
+
+    svg
+      fill: #1a1a1a
+      height: 18px
+      width: 18px
+
 .burger
   align-items: center
   background: none
@@ -254,7 +275,7 @@
     margin-left: 0
 
   @media(min-width: 1900px)
-    margin-right: 70px
+    margin-right: 60px
 
   &__list
     align-items: center

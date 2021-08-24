@@ -466,3 +466,16 @@ $(document).on('click', '.js-filter-section-cut', function () {
   $(this).prev('.filter__section-cut').slideToggle();
   return false;
 });
+
+//открытие поиска в шапке
+$(document).on('click', '.js-search-opener', function () {
+  $('.search-popup').addClass('is-open');
+  $('.search-bar__input').focus();
+  return false;
+});
+
+//закрытие поиска в шапке
+$(document).on('click', '.js-search-closer', function () {
+  $('.search-popup').removeClass('is-open');
+  return false;
+});
