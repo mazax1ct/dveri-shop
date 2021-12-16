@@ -368,6 +368,7 @@
 
     &--big
       @media(min-width: 1200px)
+        left: -550px
         padding-left: 30px
         padding-right: 30px
         width: 860px
@@ -916,3 +917,50 @@
     padding-bottom: 3px
     text-align: center
     width: 36px
+
+.nav-outer
+  padding-top: 40px
+  padding-bottom: 40px
+  padding-right: 40px
+
+  @media(min-width: 768px)
+    display: flex
+
+    justify-content: space-between
+
+  &__left
+    width: calc(100% - 140px)
+
+    @media(min-width: 1200px)
+      columns: 3
+
+  &__right
+    width: 120px
+
+    a
+      display: block
+
+      &:not(:last-child)
+        margin-bottom: 15px
+
+  &__list
+    list-style: none
+    margin-bottom: 40px
+    overflow: hidden
+    padding: 0
+
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
+    a
+      display: block
+      padding-top: 5px
+      padding-bottom: 5px
+
+  a
+    color: #1a1a1a
+
+    &:hover,
+    &:focus
+      color: #e22a1b
