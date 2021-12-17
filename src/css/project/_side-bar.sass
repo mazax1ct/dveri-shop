@@ -923,22 +923,23 @@
   padding-bottom: 40px
   padding-right: 40px
 
-  @media(min-width: 768px)
-    display: flex
-
-    justify-content: space-between
-
   &__left
-    width: calc(100% - 140px)
+    &--type_1
+      @media(min-width: 1200px)
+        columns: 4
 
-    @media(min-width: 1200px)
-      columns: 3
+      .nav-outer__list
+        overflow: hidden
 
   &__right
-    width: 120px
+    align-items: center
+    display: flex
+    flex-wrap: wrap
 
     a
       display: block
+      max-width: 120px
+      padding: 10px
 
       &:not(:last-child)
         margin-bottom: 15px
@@ -946,7 +947,6 @@
   &__list
     list-style: none
     margin-bottom: 40px
-    overflow: hidden
     padding: 0
 
     li
@@ -957,6 +957,32 @@
       display: block
       padding-top: 5px
       padding-bottom: 5px
+
+    &--type_1
+      align-items: center
+      display: flex
+      flex-wrap: wrap
+
+      &:not(:last-child)
+        margin-bottom: 20px
+
+      li
+        margin-bottom: 8px
+
+        &:not(:last-child)
+          margin-right: 8px
+
+      a
+        border: 1px solid rgba(#1a1a1a, 0.5)
+        border-radius: 20px
+        padding: 6px 16px 4px
+        text-decoration: none
+        transition: border-color 0.3s, color 0.3s
+
+        &:hover,
+        &:focus
+          color: #e53506
+          border-color: #e53506
 
   a
     color: #1a1a1a
