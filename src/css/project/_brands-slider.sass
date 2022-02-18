@@ -1,0 +1,76 @@
+.brands-slider
+  margin-bottom: 25px
+  overflow: auto
+
+  @media(min-width: 1200px)
+    margin-left: -18px
+    margin-right: -12px
+    padding-left: 12px
+    padding-right: 12px
+
+  .simplebar-track.simplebar-horizontal
+    left: 6px
+    width: calc(100% - 12px)
+
+  &__list
+    display: flex
+
+    @media(min-width: 1200px)
+      overflow: auto
+
+    &.slick-initialized
+      display: block
+      overflow: visible
+
+    .slick-track
+      display: flex
+      min-width: 100%
+      padding-bottom: 1px
+
+  &__item
+    padding-left: 6px
+    padding-right: 6px
+
+    &:first-child
+      @media(max-width: 1199px)
+        padding-left: 0
+
+    &:last-child
+      @media(max-width: 1199px)
+        padding-right: 0
+
+  .slick-next,
+  .slick-prev
+    align-items: center
+    border: 1px solid #D7D7D7
+    background-color: #f5f5f5
+    border-radius: 6px
+    display: flex
+    height: 24px
+    justify-content: center
+    width: 24px
+    z-index: 1
+
+    svg
+      fill: #1a1a1a
+      height: 12px
+      width: 12px
+
+  .slick-prev
+    left: -6px
+
+  .slick-next
+    right: -6px
+
+.brands-item
+  align-items: center
+  border-radius: 6px
+  background-color: #fff
+  display: flex
+  height: 70px
+  justify-content: center
+  min-width: 130px
+  padding: 16px
+
+  img
+    max-height: 30px

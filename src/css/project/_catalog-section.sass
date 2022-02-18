@@ -15,7 +15,8 @@
         margin-bottom: 0
 
     .button
-      min-width: 235px
+      font-size: 14px
+      min-width: 180px
 
       @media(min-width: 600px)
         margin-left: 30px
@@ -40,13 +41,16 @@
       width: 100%
 
     .tags
+      background-color: #fff
+      border-radius: 6px
       margin-top: 15px
+      padding: 16px 16px 8px
       width: 100%
 
       @media(min-width: 992px)
         margin-top: 0
         order: -1
-        width: calc(100% - 235px)
+        //width: calc(100% - 235px)
 
   &__catalog
     @media(min-width: 768px)
@@ -62,10 +66,9 @@
       width: 340px
 
   &__list
-    flex-grow: 1
 
-    //@media(min-width: 768px)
-      padding-top: 55px
+  &__list
+    flex-grow: 1
 
     @media(min-width: 992px)
       width: calc(100% - 290px)
@@ -277,20 +280,77 @@
   align-items: center
   display: flex
   flex-wrap: wrap
-  font-size: 13px
+  font-size: 12px
 
   &__title
+    font-size: 16px
     margin-bottom: 8px
     margin-right: 20px
 
+    &--toggler
+      align-items: center
+      display: flex
+      margin-right: 0
+      position: relative
+      width: 100%
+
+      &::before
+        content: ''
+        cursor: pointer
+        height: 200%
+        left: 0
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+        z-index: 1
+
+      &.is-active
+        svg
+          transform: rotate(-180deg)
+
+      svg
+        width: 12px
+        height: 12px
+        margin-left: 6px
+        fill: #1a1a1a
+
+      @media(min-width: 768px)
+        display: none
+
+  &__dropdown
+    display: none
+
+    @media(min-width: 768px)
+      display: flex !important
+
+  &__dropdown-list
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+    .tags__title
+      @media(max-width: 767px)
+        display: none
+
 .tag
-  border: 1px solid #ababab
-  border-radius: 10px
-  color: #1a1a1a
+  align-items: center
+  border: 1px solid #E7E7E7
+  border-radius: 50px
+  color: #4A4A4A
+  display: flex
+  font-size: 12px
+  height: 34px
   margin-right: 8px
   margin-bottom: 8px
-  padding: 1px 10px 0
+  padding: 8px 12px 6px
   text-decoration: none
+  transition: border-color 0.3s, color 0.3s
+
+  &:hover,
+  &:focus
+    color: #E22A1B
+    border-color: #E22A1B
 
 .filter-opener
   @media(min-width: 992px)

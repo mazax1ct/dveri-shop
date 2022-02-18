@@ -222,6 +222,34 @@ $(document).ready(function () {
         ]
       });
     }
+
+    //слайдер брендов, серий
+    if ($('.js-brands-slider').length) {
+      $('.js-brands-slider').slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 6,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 8
+            }
+          },
+          {
+            breakpoint: 1900,
+            settings: {
+              slidesToShow: 10
+            }
+          },
+        ]
+      });
+    }
   }
 
   //слайдер картинок на деталке товара
@@ -477,5 +505,12 @@ $(document).on('click', '.js-search-opener', function () {
 //закрытие поиска в шапке
 $(document).on('click', '.js-search-closer', function () {
   $('.search-popup').removeClass('is-open');
+  return false;
+});
+
+//открытие/закрытие тегов в разделе каталога
+$(document).on('click', '.js-tags-toggler', function () {
+  $(this).toggleClass('is-active');
+  $(this).closest('.tags').find('.tags__dropdown').slideToggle();
   return false;
 });
